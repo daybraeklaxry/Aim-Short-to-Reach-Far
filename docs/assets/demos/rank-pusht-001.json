@@ -1,0 +1,16 @@
+{
+  "task": "pusht",
+  "query_ordinal": 1,
+  "query_id": "ap-fresh-pusht-001",
+  "condition": "prefix_a",
+  "direct_steps": 280,
+  "rank_steps": 154,
+  "name": "rank-pusht-001",
+  "fps": 20,
+  "actions_per_second": 20,
+  "rendering": "Saved physical states; terminal states held after stopping.",
+  "selection": "First two query-ordered Direct failures paired with AP-rank successes of more than ten actions, under the first assigned perturbation, on PushT and Cube.",
+  "model_calls_for_rendering": 0,
+  "simulated_actions_for_rendering": 0,
+  "goal_overlay": "PushT green overlay shows the evaluated goal pose."
+}

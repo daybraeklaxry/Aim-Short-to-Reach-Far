@@ -1,0 +1,34 @@
+[
+  {
+    "task": "pusht",
+    "query_ordinal": 1,
+    "query_id": "ap-fresh-pusht-001",
+    "condition": "prefix_a",
+    "direct_steps": 280,
+    "rank_steps": 154
+  },
+  {
+    "task": "pusht",
+    "query_ordinal": 2,
+    "query_id": "ap-fresh-pusht-002",
+    "condition": "prefix_a",
+    "direct_steps": 280,
+    "rank_steps": 138
+  },
+  {
+    "task": "cube",
+    "query_ordinal": 1,
+    "query_id": "ap-fresh-cube-001",
+    "condition": "prefix_a",
+    "direct_steps": 150,
+    "rank_steps": 44
+  },
+  {
+    "task": "cube",
+    "query_ordinal": 88,
+    "query_id": "ap-fresh-cube-088",
+    "condition": "prefix_a",
+    "direct_steps": 150,
+    "rank_steps": 53
+  }
+]
