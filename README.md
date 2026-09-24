@@ -17,7 +17,11 @@
   <a href="REPRODUCING.md"><strong>Code &amp; Data Guide</strong></a>
 </p>
 
-[![Anchored Planning: the same predictions can select different actions when the target changes.](docs/assets/figure-1.svg)](https://daybraeklaxry.github.io/Aim-Short-to-Reach-Far/)
+<p align="center">
+  <a href="https://daybraeklaxry.github.io/Aim-Short-to-Reach-Far/">
+    <img src="docs/assets/figure-1.svg" width="100%" alt="Anchored Planning: the same predictions can select different actions when the target changes.">
+  </a>
+</p>
 
 **A frozen world model can support better control when the planning target changes.** Reaching a distant goal may require first moving away from it. Anchored Planning retrieves a recorded observation as an intermediate target, then uses the frozen model to evaluate actions from the current state. The same target supports **AP-CEM**, which synthesizes actions, and **AP-rank**, which selects among recorded action blocks.
 
