@@ -25,8 +25,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..600&amp;family=Source+Serif+4:opsz,wght@20,400&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=reading-v2">
-  <script src="gallery.js?v=reading-v2" defer></script>
+  <link rel="stylesheet" href="styles.css?v=four-tasks">
+  <script src="gallery.js?v=four-tasks" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to article</a>
@@ -41,28 +41,70 @@
     </div>
     <nav aria-label="Resources"><a href="paper.pdf">Paper</a><span aria-hidden="true">·</span><a href="https://github.com/daybraeklaxry/Aim-Short-to-Reach-Far">Code</a><span aria-hidden="true">·</span><a href="#citation">BibTeX</a></nav>
   </header>
-  <article class="demo hero-demo breakout" id="pusht-000" aria-label="PushT comparison">
-
-      <div class="video-pair" tabindex="0" role="group" aria-label="PushT comparison; activate a video or press Space to pause or play">
+  <div class="demo-group hero-comparisons breakout" id="opening-comparisons">
+      <div class="comparison-legend" aria-label="Comparison legend">
+        <span><span class="method-dot" aria-hidden="true"></span>Aiming at the goal</span>
+        <span><span class="method-dot blue" aria-hidden="true"></span>Aiming short</span>
+      </div>
+      <div class="comparison-grid"><article class="demo" id="pusht-000" aria-label="PushT comparison">
+      <h3>PushT</h3><p class="task-goal">Push the gray T onto the green goal shape.</p>
+      <div class="video-pair" tabindex="0" role="group" aria-label="PushT comparison; activate a video or press Space to pause or play this grid">
         <figure class="video-side baseline">
-          <figcaption><span class="method-dot" aria-hidden="true"></span>Aiming at the goal</figcaption>
           <video muted loop playsinline preload="none" width="360" height="360" poster="assets/comparisons/pusht-000-baseline.jpg"
             data-src="assets/comparisons/pusht-000-baseline.mp4" data-poster="assets/comparisons/pusht-000-baseline.jpg"
             aria-label="PushT: Aiming at the goal. Replay of recorded physical states, with the final state held when the controller stops.">PushT: Aiming at the goal. Replay of recorded physical states, with the final state held when the controller stops.</video>
         </figure><figure class="video-side ap">
-          <figcaption><span class="method-dot" aria-hidden="true"></span>Aiming short</figcaption>
           <video muted loop playsinline preload="none" width="360" height="360" poster="assets/comparisons/pusht-000-ap.jpg"
             data-src="assets/comparisons/pusht-000-ap.mp4" data-poster="assets/comparisons/pusht-000-ap.jpg"
             aria-label="PushT: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.">PushT: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.</video>
         </figure>
       </div>
-      <div class="demo-footer">
-        <a class="goal-link" href="assets/demos/pusht-000-goal.jpg" aria-label="Open the goal image for PushT">
-          <img src="assets/demos/pusht-000-goal.jpg" width="48" height="48" loading="eager" alt="Shared goal for PushT"><span>Goal</span>
-        </a>
-        <button class="pair-restart" type="button" aria-label="Replay the PushT comparison" title="Replay"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9a8 8 0 1 1-.5 5M4 3v6h6"/></svg></button>
-      </div><p class="video-description">Same frozen world model, same start, same goal. Aiming at the goal, the planner does not reach it within its step budget. Aiming short, it does.</p>
-    </article>
+    </article><article class="demo" id="cube-000" aria-label="Cube comparison">
+      <h3>Cube</h3><p class="task-goal">Move the red cube to the unmarked <a href="assets/demos/cube-000-goal.jpg">goal on the right</a>.</p>
+      <div class="video-pair" tabindex="0" role="group" aria-label="Cube comparison; activate a video or press Space to pause or play this grid">
+        <figure class="video-side baseline">
+          <video muted loop playsinline preload="none" width="360" height="360" poster="assets/comparisons/cube-000-baseline.jpg"
+            data-src="assets/comparisons/cube-000-baseline.mp4" data-poster="assets/comparisons/cube-000-baseline.jpg"
+            aria-label="Cube: Aiming at the goal. Replay of recorded physical states, with the final state held when the controller stops.">Cube: Aiming at the goal. Replay of recorded physical states, with the final state held when the controller stops.</video>
+        </figure><figure class="video-side ap">
+          <video muted loop playsinline preload="none" width="360" height="360" poster="assets/comparisons/cube-000-ap.jpg"
+            data-src="assets/comparisons/cube-000-ap.mp4" data-poster="assets/comparisons/cube-000-ap.jpg"
+            aria-label="Cube: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.">Cube: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.</video>
+        </figure>
+      </div>
+    </article><article class="demo" id="reacher-000" aria-label="Reacher comparison">
+      <h3>Reacher</h3><p class="task-goal">Match the unmarked <a href="assets/demos/reacher-000-goal.jpg">goal pose</a>: arm tip up and left.</p>
+      <div class="video-pair" tabindex="0" role="group" aria-label="Reacher comparison; activate a video or press Space to pause or play this grid">
+        <figure class="video-side baseline">
+          <video muted loop playsinline preload="none" width="360" height="360" poster="assets/comparisons/reacher-000-baseline.jpg"
+            data-src="assets/comparisons/reacher-000-baseline.mp4" data-poster="assets/comparisons/reacher-000-baseline.jpg"
+            aria-label="Reacher: Aiming at the goal. Replay of recorded physical states, with the final state held when the controller stops.">Reacher: Aiming at the goal. Replay of recorded physical states, with the final state held when the controller stops.</video>
+        </figure><figure class="video-side ap">
+          <video muted loop playsinline preload="none" width="360" height="360" poster="assets/comparisons/reacher-000-ap.jpg"
+            data-src="assets/comparisons/reacher-000-ap.mp4" data-poster="assets/comparisons/reacher-000-ap.jpg"
+            aria-label="Reacher: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.">Reacher: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.</video>
+        </figure>
+      </div>
+    </article><article class="demo" id="tworoom-008" aria-label="TwoRoom comparison">
+      <h3>TwoRoom</h3><p class="task-goal">Move through the gap to the unmarked <a href="assets/demos/tworoom-008-goal.jpg">goal on the right</a>.</p>
+      <div class="video-pair" tabindex="0" role="group" aria-label="TwoRoom comparison; activate a video or press Space to pause or play this grid">
+        <figure class="video-side baseline">
+          <video muted loop playsinline preload="none" width="360" height="360" poster="assets/comparisons/tworoom-008-baseline.jpg"
+            data-src="assets/comparisons/tworoom-008-baseline.mp4" data-poster="assets/comparisons/tworoom-008-baseline.jpg"
+            aria-label="TwoRoom: Aiming at the goal. Replay of recorded physical states, with the final state held when the controller stops.">TwoRoom: Aiming at the goal. Replay of recorded physical states, with the final state held when the controller stops.</video>
+        </figure><figure class="video-side ap">
+          <video muted loop playsinline preload="none" width="360" height="360" poster="assets/comparisons/tworoom-008-ap.jpg"
+            data-src="assets/comparisons/tworoom-008-ap.mp4" data-poster="assets/comparisons/tworoom-008-ap.jpg"
+            aria-label="TwoRoom: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.">TwoRoom: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.</video>
+        </figure>
+      </div>
+    </article></div>
+      <div class="grid-controls"><button class="group-replay" type="button" aria-label="Replay all comparisons in this grid">Replay</button></div>
+    </div>
+  <div class="opening-description breakout">
+    <p>Same frozen world model, same start, same goal in each pair. Aiming at the goal, the planner does not reach the goal within its step budget; aiming short, it does.</p>
+    <p>Selected examples: for each task, the first query in a fixed order where aiming short succeeds and aiming at the goal fails. Average success rates are shown below.</p>
+  </div>
   <dl class="findings breakout" aria-label="Results at a glance">
     <div><dt>9.2% → 59.8%</dt><dd>Average success over four tasks. Same model, same search; only the target changes.</dd></div>
     <div><dt>67.0% → 83.8%</dt><dd>When the planner chooses among eight recorded action sequences instead of searching.</dd></div>
@@ -75,7 +117,7 @@
       <a href="assets/figure-1.svg" aria-label="Open the paper illustration at full size">
         <img src="assets/figure-1.svg" width="396" height="150" loading="lazy" decoding="async" alt="The same predicted outcomes lead to different actions when scored against the goal or a nearby point on a recorded route. Aiming short sustains success on PushT.">
       </a>
-      <figcaption><p>(a) The same three predicted outcomes. Scored against the goal, the planner picks u₁; scored against a nearby recorded target, it picks u₂, which lies on the route. (b) PushT: as the goal moves farther away, aiming at the goal collapses while aiming short keeps working.</p><details class="paper-caption"><summary>Paper caption</summary><p><strong>Changing the target improves control with the same frozen predictor.</strong> (a) Both target rules score the same endpoints <i>p</i><sub>i</sub> = <i>F</i>(<i>z</i><sub>t</sub>, <i>u</i><sub>i</sub>). Final-goal scoring selects <i>u</i><sub>1</sub>; observed-target scoring selects <i>u</i><sub>2</sub>. Solid curves show predictions; dashed segments show scoring distances. The target inset shows a recorded successor; positions and observations are schematic. (b) On PushT, intermediate targets sustain control as the recorded goal offset grows. Curves use paired standard-start queries and the same frozen LeWM weights.</p></details></figcaption>
+      <figcaption>(a) The same three predicted outcomes. Scored against the goal, the planner picks u₁; scored against a nearby recorded target, it picks u₂, which lies on the route. (b) PushT: as the goal moves farther away, aiming at the goal collapses while aiming short keeps working. Gray: aiming at the goal. Blue: aiming short. Red and black show a learned target and the released LeWM planner; see the paper.</figcaption>
     </figure>
   </section>
   <section class="reading-section" id="method">
@@ -90,7 +132,7 @@
       <a href="assets/figure-2.svg" aria-label="Open the paper illustration at full size">
         <img src="assets/figure-2.svg" width="960" height="504" loading="lazy" decoding="async" alt="Find a recorded moment matching now and a later moment matching the goal; take the nearby observation and choose actions with the frozen world model.">
       </a>
-      <figcaption><details class="paper-caption"><summary>Paper caption</summary><p><strong>Anchored Planning: observed targets, live predictions.</strong> (a) Match the current and goal images to recorded source and distant images. The leading record’s five-step successor supplies <i>q</i><sub>obs</sub>. The distant offset is <i>h</i> = max(5, <i>H</i> − <i>t</i>), for goal offset <i>H</i> and <i>t</i> executed actions. (b) Each strip is a candidate block <i>u</i><sub>i</sub>: Gaussian CEM synthesizes actions; AP-rank retrieves eight blocks. (c) The frozen model predicts endpoints <i>p</i><sub>i</sub> = <i>F</i>(<i>z</i><sub>t</sub>, <i>u</i><sub>i</sub>). The dashed segment shows distance to <i>q</i><sub>obs</sub>. Select the closest endpoint, execute up to five actions, observe, and repeat. All glyphs and positions are schematic.</p></details></figcaption>
+      <figcaption>Candidates come from search (left) or from recorded action sequences (right).</figcaption>
     </figure>
   </section>
   <section class="reading-section" id="distance">
@@ -101,7 +143,7 @@
         <source media="(max-width: 760px)" srcset="assets/charts/distance-mobile.svg">
         <img src="assets/charts/distance.svg" width="1000" height="442" loading="lazy" decoding="async" alt="Mean success at goal distances of 25, 50 and 100 actions. The gap is 33.4 points at 25 actions and 47.9 points at 100 actions.">
       </picture>
-      <figcaption><a href="assets/figure-3.svg">See the full figure in the paper</a><details class="paper-caption"><summary>Paper caption</summary><p><strong>Mean observed-target gains are larger beyond the shortest offset.</strong> Standard-start queries retain their source as <i>H</i> changes. Action allowance preserves each task’s <i>B</i>/<i>H</i>; planner lookahead stays fixed. Original-offset points reuse Table 1.</p></details></figcaption>
+      <figcaption><a href="assets/figure-3.svg">See the full figure in the paper</a></figcaption>
     </figure>
   </section>
   <section class="reading-section" id="search">
@@ -112,171 +154,133 @@
         <source media="(max-width: 760px)" srcset="assets/charts/search-mobile.svg">
         <img src="assets/charts/search.svg" width="1000" height="442" loading="lazy" decoding="async" alt="Mean success with increasing search iterations. At thirty iterations, aiming at the goal reaches 9.2 percent and aiming short reaches 59.8 percent. Two iterations aiming short already beat thirty aiming at the goal.">
       </picture>
-      <figcaption><a href="assets/figure-5.svg">See the full figure in the paper</a><details class="paper-caption"><summary>Paper caption</summary><p><strong>Two intermediate-target iterations exceed 30 final-goal iterations on every task.</strong> Standard-start curves join iteration counts 1, 2, 5, 10, 30; stars mark LeWM. Work counts mean predicted five-action blocks per episode, including early stopping.</p></details></figcaption>
+      <figcaption><a href="assets/figure-5.svg">See the full figure in the paper</a></figcaption>
     </figure>
   </section>
-  <section class="reading-section" id="examples">
-    <h2>More examples</h2>
-    <p class="selection-note">Selected examples: for each task, the first queries in a fixed order where aiming short succeeds and aiming at the goal fails. Average success rates are shown above.</p>
-    <div class="demo-list breakout"><article class="demo" id="cube-000" aria-label="Cube comparison">
-      <h3>Cube</h3>
-      <div class="video-pair" tabindex="0" role="group" aria-label="Cube comparison; activate a video or press Space to pause or play">
+  <details class="more-examples breakout" id="more-examples">
+    <summary>More examples</summary>
+    <div class="demo-group" id="second-comparisons">
+      <div class="comparison-legend" aria-label="Comparison legend">
+        <span><span class="method-dot" aria-hidden="true"></span>Aiming at the goal</span>
+        <span><span class="method-dot blue" aria-hidden="true"></span>Aiming short</span>
+      </div>
+      <div class="comparison-grid"><article class="demo" id="pusht-001" aria-label="PushT comparison">
+      <h3>PushT</h3><a class="task-goal-link" href="assets/demos/pusht-001-goal.jpg">Goal image</a>
+      <div class="video-pair" tabindex="0" role="group" aria-label="PushT comparison; activate a video or press Space to pause or play this grid">
         <figure class="video-side baseline">
-          <figcaption><span class="method-dot" aria-hidden="true"></span>Aiming at the goal</figcaption>
           <video muted loop playsinline preload="none" width="360" height="360"
-            data-src="assets/comparisons/cube-000-baseline.mp4" data-poster="assets/comparisons/cube-000-baseline.jpg"
+            data-src="assets/comparisons/pusht-001-baseline.mp4" data-poster="assets/comparisons/pusht-001-baseline.jpg"
+            aria-label="PushT: Aiming at the goal. Replay of recorded physical states, with the final state held when the controller stops.">PushT: Aiming at the goal. Replay of recorded physical states, with the final state held when the controller stops.</video>
+        </figure><figure class="video-side ap">
+          <video muted loop playsinline preload="none" width="360" height="360"
+            data-src="assets/comparisons/pusht-001-ap.mp4" data-poster="assets/comparisons/pusht-001-ap.jpg"
+            aria-label="PushT: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.">PushT: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.</video>
+        </figure>
+      </div>
+    </article><article class="demo" id="cube-002" aria-label="Cube comparison">
+      <h3>Cube</h3><a class="task-goal-link" href="assets/demos/cube-002-goal.jpg">Goal image</a>
+      <div class="video-pair" tabindex="0" role="group" aria-label="Cube comparison; activate a video or press Space to pause or play this grid">
+        <figure class="video-side baseline">
+          <video muted loop playsinline preload="none" width="360" height="360"
+            data-src="assets/comparisons/cube-002-baseline.mp4" data-poster="assets/comparisons/cube-002-baseline.jpg"
             aria-label="Cube: Aiming at the goal. Replay of recorded physical states, with the final state held when the controller stops.">Cube: Aiming at the goal. Replay of recorded physical states, with the final state held when the controller stops.</video>
         </figure><figure class="video-side ap">
-          <figcaption><span class="method-dot" aria-hidden="true"></span>Aiming short</figcaption>
           <video muted loop playsinline preload="none" width="360" height="360"
-            data-src="assets/comparisons/cube-000-ap.mp4" data-poster="assets/comparisons/cube-000-ap.jpg"
+            data-src="assets/comparisons/cube-002-ap.mp4" data-poster="assets/comparisons/cube-002-ap.jpg"
             aria-label="Cube: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.">Cube: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.</video>
         </figure>
       </div>
-      <div class="demo-footer">
-        <a class="goal-link" href="assets/demos/cube-000-goal.jpg" aria-label="Open the goal image for Cube">
-          <img src="assets/demos/cube-000-goal.jpg" width="48" height="48" loading="lazy" alt="Shared goal for Cube"><span>Goal</span>
-        </a>
-        <button class="pair-restart" type="button" aria-label="Replay the Cube comparison" title="Replay"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9a8 8 0 1 1-.5 5M4 3v6h6"/></svg></button>
-      </div>
-    </article>
-<article class="demo" id="reacher-000" aria-label="Reacher comparison">
-      <h3>Reacher</h3>
-      <div class="video-pair" tabindex="0" role="group" aria-label="Reacher comparison; activate a video or press Space to pause or play">
+    </article><article class="demo" id="reacher-002" aria-label="Reacher comparison">
+      <h3>Reacher</h3><a class="task-goal-link" href="assets/demos/reacher-002-goal.jpg">Goal image</a>
+      <div class="video-pair" tabindex="0" role="group" aria-label="Reacher comparison; activate a video or press Space to pause or play this grid">
         <figure class="video-side baseline">
-          <figcaption><span class="method-dot" aria-hidden="true"></span>Aiming at the goal</figcaption>
           <video muted loop playsinline preload="none" width="360" height="360"
-            data-src="assets/comparisons/reacher-000-baseline.mp4" data-poster="assets/comparisons/reacher-000-baseline.jpg"
+            data-src="assets/comparisons/reacher-002-baseline.mp4" data-poster="assets/comparisons/reacher-002-baseline.jpg"
             aria-label="Reacher: Aiming at the goal. Replay of recorded physical states, with the final state held when the controller stops.">Reacher: Aiming at the goal. Replay of recorded physical states, with the final state held when the controller stops.</video>
         </figure><figure class="video-side ap">
-          <figcaption><span class="method-dot" aria-hidden="true"></span>Aiming short</figcaption>
           <video muted loop playsinline preload="none" width="360" height="360"
-            data-src="assets/comparisons/reacher-000-ap.mp4" data-poster="assets/comparisons/reacher-000-ap.jpg"
+            data-src="assets/comparisons/reacher-002-ap.mp4" data-poster="assets/comparisons/reacher-002-ap.jpg"
             aria-label="Reacher: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.">Reacher: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.</video>
         </figure>
       </div>
-      <div class="demo-footer">
-        <a class="goal-link" href="assets/demos/reacher-000-goal.jpg" aria-label="Open the goal image for Reacher">
-          <img src="assets/demos/reacher-000-goal.jpg" width="48" height="48" loading="lazy" alt="Shared goal for Reacher"><span>Goal</span>
-        </a>
-        <button class="pair-restart" type="button" aria-label="Replay the Reacher comparison" title="Replay"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9a8 8 0 1 1-.5 5M4 3v6h6"/></svg></button>
-      </div>
-    </article>
-<article class="demo" id="tworoom-008" aria-label="TwoRoom comparison">
-      <h3>TwoRoom</h3>
-      <div class="video-pair" tabindex="0" role="group" aria-label="TwoRoom comparison; activate a video or press Space to pause or play">
+    </article><article class="demo" id="tworoom-012" aria-label="TwoRoom comparison">
+      <h3>TwoRoom</h3><a class="task-goal-link" href="assets/demos/tworoom-012-goal.jpg">Goal image</a>
+      <div class="video-pair" tabindex="0" role="group" aria-label="TwoRoom comparison; activate a video or press Space to pause or play this grid">
         <figure class="video-side baseline">
-          <figcaption><span class="method-dot" aria-hidden="true"></span>Aiming at the goal</figcaption>
           <video muted loop playsinline preload="none" width="360" height="360"
-            data-src="assets/comparisons/tworoom-008-baseline.mp4" data-poster="assets/comparisons/tworoom-008-baseline.jpg"
+            data-src="assets/comparisons/tworoom-012-baseline.mp4" data-poster="assets/comparisons/tworoom-012-baseline.jpg"
             aria-label="TwoRoom: Aiming at the goal. Replay of recorded physical states, with the final state held when the controller stops.">TwoRoom: Aiming at the goal. Replay of recorded physical states, with the final state held when the controller stops.</video>
         </figure><figure class="video-side ap">
-          <figcaption><span class="method-dot" aria-hidden="true"></span>Aiming short</figcaption>
           <video muted loop playsinline preload="none" width="360" height="360"
-            data-src="assets/comparisons/tworoom-008-ap.mp4" data-poster="assets/comparisons/tworoom-008-ap.jpg"
+            data-src="assets/comparisons/tworoom-012-ap.mp4" data-poster="assets/comparisons/tworoom-012-ap.jpg"
             aria-label="TwoRoom: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.">TwoRoom: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.</video>
         </figure>
       </div>
-      <div class="demo-footer">
-        <a class="goal-link" href="assets/demos/tworoom-008-goal.jpg" aria-label="Open the goal image for TwoRoom">
-          <img src="assets/demos/tworoom-008-goal.jpg" width="48" height="48" loading="lazy" alt="Shared goal for TwoRoom"><span>Goal</span>
-        </a>
-        <button class="pair-restart" type="button" aria-label="Replay the TwoRoom comparison" title="Replay"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9a8 8 0 1 1-.5 5M4 3v6h6"/></svg></button>
-      </div>
     </article></div>
-    <details class="more-examples breakout" id="recorded-examples">
-      <summary>More: choosing among recorded actions</summary>
-      <p>Here the planner does not search; it picks one of eight recorded action sequences.</p>
-      <div class="demo-list"><article class="demo" id="rank-pusht-001" aria-label="PushT comparison">
-      <h3>PushT</h3>
-      <div class="video-pair" tabindex="0" role="group" aria-label="PushT comparison; activate a video or press Space to pause or play">
+      <div class="grid-controls"><button class="group-replay" type="button" aria-label="Replay all comparisons in this grid">Replay</button></div>
+    </div>
+    <p>Here the planner does not search; it picks one of eight recorded action sequences.</p>
+    <div class="demo-group" id="recorded-comparisons">
+      <div class="comparison-legend" aria-label="Comparison legend">
+        <span><span class="method-dot" aria-hidden="true"></span>Replay recorded actions</span>
+        <span><span class="method-dot blue" aria-hidden="true"></span>Aiming short</span>
+      </div>
+      <div class="comparison-grid"><article class="demo" id="rank-pusht-001" aria-label="PushT comparison">
+      <h3>PushT</h3><a class="task-goal-link" href="assets/demos/rank-pusht-001-goal.jpg">Goal image</a>
+      <div class="video-pair" tabindex="0" role="group" aria-label="PushT comparison; activate a video or press Space to pause or play this grid">
         <figure class="video-side baseline">
-          <figcaption><span class="method-dot" aria-hidden="true"></span>Replay recorded actions</figcaption>
           <video muted loop playsinline preload="none" width="360" height="360"
             data-src="assets/comparisons/rank-pusht-001-baseline.mp4" data-poster="assets/comparisons/rank-pusht-001-baseline.jpg"
             aria-label="PushT: Replay recorded actions. Replay of recorded physical states, with the final state held when the controller stops.">PushT: Replay recorded actions. Replay of recorded physical states, with the final state held when the controller stops.</video>
         </figure><figure class="video-side ap">
-          <figcaption><span class="method-dot" aria-hidden="true"></span>Aiming short</figcaption>
           <video muted loop playsinline preload="none" width="360" height="360"
             data-src="assets/comparisons/rank-pusht-001-ap.mp4" data-poster="assets/comparisons/rank-pusht-001-ap.jpg"
             aria-label="PushT: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.">PushT: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.</video>
         </figure>
       </div>
-      <div class="demo-footer">
-        <a class="goal-link" href="assets/demos/rank-pusht-001-goal.jpg" aria-label="Open the goal image for PushT">
-          <img src="assets/demos/rank-pusht-001-goal.jpg" width="48" height="48" loading="lazy" alt="Shared goal for PushT"><span>Goal</span>
-        </a>
-        <button class="pair-restart" type="button" aria-label="Replay the PushT comparison" title="Replay"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9a8 8 0 1 1-.5 5M4 3v6h6"/></svg></button>
-      </div>
-    </article>
-<article class="demo" id="rank-cube-001" aria-label="Cube comparison">
-      <h3>Cube</h3>
-      <div class="video-pair" tabindex="0" role="group" aria-label="Cube comparison; activate a video or press Space to pause or play">
+    </article><article class="demo" id="rank-cube-001" aria-label="Cube comparison">
+      <h3>Cube</h3><a class="task-goal-link" href="assets/demos/rank-cube-001-goal.jpg">Goal image</a>
+      <div class="video-pair" tabindex="0" role="group" aria-label="Cube comparison; activate a video or press Space to pause or play this grid">
         <figure class="video-side baseline">
-          <figcaption><span class="method-dot" aria-hidden="true"></span>Replay recorded actions</figcaption>
           <video muted loop playsinline preload="none" width="360" height="360"
             data-src="assets/comparisons/rank-cube-001-baseline.mp4" data-poster="assets/comparisons/rank-cube-001-baseline.jpg"
             aria-label="Cube: Replay recorded actions. Replay of recorded physical states, with the final state held when the controller stops.">Cube: Replay recorded actions. Replay of recorded physical states, with the final state held when the controller stops.</video>
         </figure><figure class="video-side ap">
-          <figcaption><span class="method-dot" aria-hidden="true"></span>Aiming short</figcaption>
           <video muted loop playsinline preload="none" width="360" height="360"
             data-src="assets/comparisons/rank-cube-001-ap.mp4" data-poster="assets/comparisons/rank-cube-001-ap.jpg"
             aria-label="Cube: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.">Cube: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.</video>
         </figure>
       </div>
-      <div class="demo-footer">
-        <a class="goal-link" href="assets/demos/rank-cube-001-goal.jpg" aria-label="Open the goal image for Cube">
-          <img src="assets/demos/rank-cube-001-goal.jpg" width="48" height="48" loading="lazy" alt="Shared goal for Cube"><span>Goal</span>
-        </a>
-        <button class="pair-restart" type="button" aria-label="Replay the Cube comparison" title="Replay"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9a8 8 0 1 1-.5 5M4 3v6h6"/></svg></button>
-      </div>
-    </article>
-<article class="demo" id="rank-pusht-002" aria-label="PushT comparison">
-      <h3>PushT</h3>
-      <div class="video-pair" tabindex="0" role="group" aria-label="PushT comparison; activate a video or press Space to pause or play">
+    </article><article class="demo" id="rank-pusht-002" aria-label="PushT comparison">
+      <h3>PushT</h3><a class="task-goal-link" href="assets/demos/rank-pusht-002-goal.jpg">Goal image</a>
+      <div class="video-pair" tabindex="0" role="group" aria-label="PushT comparison; activate a video or press Space to pause or play this grid">
         <figure class="video-side baseline">
-          <figcaption><span class="method-dot" aria-hidden="true"></span>Replay recorded actions</figcaption>
           <video muted loop playsinline preload="none" width="360" height="360"
             data-src="assets/comparisons/rank-pusht-002-baseline.mp4" data-poster="assets/comparisons/rank-pusht-002-baseline.jpg"
             aria-label="PushT: Replay recorded actions. Replay of recorded physical states, with the final state held when the controller stops.">PushT: Replay recorded actions. Replay of recorded physical states, with the final state held when the controller stops.</video>
         </figure><figure class="video-side ap">
-          <figcaption><span class="method-dot" aria-hidden="true"></span>Aiming short</figcaption>
           <video muted loop playsinline preload="none" width="360" height="360"
             data-src="assets/comparisons/rank-pusht-002-ap.mp4" data-poster="assets/comparisons/rank-pusht-002-ap.jpg"
             aria-label="PushT: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.">PushT: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.</video>
         </figure>
       </div>
-      <div class="demo-footer">
-        <a class="goal-link" href="assets/demos/rank-pusht-002-goal.jpg" aria-label="Open the goal image for PushT">
-          <img src="assets/demos/rank-pusht-002-goal.jpg" width="48" height="48" loading="lazy" alt="Shared goal for PushT"><span>Goal</span>
-        </a>
-        <button class="pair-restart" type="button" aria-label="Replay the PushT comparison" title="Replay"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9a8 8 0 1 1-.5 5M4 3v6h6"/></svg></button>
-      </div>
-    </article>
-<article class="demo" id="rank-cube-088" aria-label="Cube comparison">
-      <h3>Cube</h3>
-      <div class="video-pair" tabindex="0" role="group" aria-label="Cube comparison; activate a video or press Space to pause or play">
+    </article><article class="demo" id="rank-cube-088" aria-label="Cube comparison">
+      <h3>Cube</h3><a class="task-goal-link" href="assets/demos/rank-cube-088-goal.jpg">Goal image</a>
+      <div class="video-pair" tabindex="0" role="group" aria-label="Cube comparison; activate a video or press Space to pause or play this grid">
         <figure class="video-side baseline">
-          <figcaption><span class="method-dot" aria-hidden="true"></span>Replay recorded actions</figcaption>
           <video muted loop playsinline preload="none" width="360" height="360"
             data-src="assets/comparisons/rank-cube-088-baseline.mp4" data-poster="assets/comparisons/rank-cube-088-baseline.jpg"
             aria-label="Cube: Replay recorded actions. Replay of recorded physical states, with the final state held when the controller stops.">Cube: Replay recorded actions. Replay of recorded physical states, with the final state held when the controller stops.</video>
         </figure><figure class="video-side ap">
-          <figcaption><span class="method-dot" aria-hidden="true"></span>Aiming short</figcaption>
           <video muted loop playsinline preload="none" width="360" height="360"
             data-src="assets/comparisons/rank-cube-088-ap.mp4" data-poster="assets/comparisons/rank-cube-088-ap.jpg"
             aria-label="Cube: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.">Cube: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.</video>
         </figure>
       </div>
-      <div class="demo-footer">
-        <a class="goal-link" href="assets/demos/rank-cube-088-goal.jpg" aria-label="Open the goal image for Cube">
-          <img src="assets/demos/rank-cube-088-goal.jpg" width="48" height="48" loading="lazy" alt="Shared goal for Cube"><span>Goal</span>
-        </a>
-        <button class="pair-restart" type="button" aria-label="Replay the Cube comparison" title="Replay"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9a8 8 0 1 1-.5 5M4 3v6h6"/></svg></button>
-      </div>
     </article></div>
-    </details>
-  </section>
+      <div class="grid-controls"><button class="group-replay" type="button" aria-label="Replay all comparisons in this grid">Replay</button></div>
+    </div>
+  </details>
   <section class="reading-section" id="meaning">
     <h2>What this means</h2>
     <p>Planning success with goal distance is how world models are usually compared. Our results show that this number reflects the planning objective, not just the model.</p>

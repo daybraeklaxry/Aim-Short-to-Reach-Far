@@ -4,6 +4,7 @@ from statistics import mean
 from html import escape
 import csv
 import json
+from math import log
 
 DOCS = Path(__file__).resolve().parent
 DATA = DOCS.parent / "data"
@@ -42,13 +43,14 @@ assert all(search["series"]["cem_observed"]["points"][1]["tasks"][task] >
            search["series"]["cem_final"]["points"][-1]["tasks"][task] for task in TASKS)
 
 
-def svg_chart(data, xlabel, mobile=False):
+def svg_chart(data, xlabel, mobile=False, logarithmic=False):
     width, height = (350, 354) if mobile else (1000, 442)
     left, right, top, bottom = (43, 322, 51, 292) if mobile else (70, 720, 52, 368)
     font = 17 if mobile else 23
     xs = data["x"]
-    # Linear axes: distances and iteration counts preserve their actual spacing.
-    x = lambda value: left + (value - xs[0]) / (xs[-1] - xs[0]) * (right - left)
+    # Only the search-budget axis is logarithmic; no measured value changes.
+    transform = log if logarithmic else lambda value: value
+    x = lambda value: left + (transform(value) - transform(xs[0])) / (transform(xs[-1]) - transform(xs[0])) * (right - left)
     y = lambda value: bottom - value / 100 * (bottom - top)
     parts = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">',
              f'<title id="title">Average success by {escape(xlabel.lower())}</title>',
@@ -64,11 +66,7 @@ def svg_chart(data, xlabel, mobile=False):
         text(left - 10, y(v) + 5, str(v), anchor="end")
     for v in xs:
         parts.append(f'<path d="M {x(v):g} {bottom} v 5" stroke="{GRAY}"/>')
-        # Align labels away from adjacent ticks without changing the linear scale.
-        tight = mobile and len(xs) == 5 and v in (1, 2)
-        anchor = ("end" if v == 1 else "start") if tight else "middle"
-        offset = (-2 if v == 1 else 2) if tight else 0
-        text(x(v) + offset, bottom + 26, str(v), anchor=anchor)
+        text(x(v), bottom + 26, str(v), anchor="middle")
     text((left + right) / 2, height - 7, xlabel, anchor="middle")
     for arm, color in [("cem_final", GRAY), ("cem_observed", BLUE)]:
         series = data["series"][arm]
@@ -78,19 +76,25 @@ def svg_chart(data, xlabel, mobile=False):
         for xp, yp in coords:
             parts.append(f'<circle cx="{xp:g}" cy="{yp:g}" r="{3.7 if mobile else 5}" fill="{color}"/>')
         xp, yp = coords[-1]
-        text(xp if mobile else xp + 23, yp - 14 if mobile else yp + 6,
-             series["label"], "#62625e" if arm == "cem_final" else color,
-             anchor="end" if mobile else "start", weight=500)
+        if not (logarithmic and arm == "cem_final"):
+            text(xp if mobile else xp + 23, yp - 14 if mobile else yp + 6,
+                 series["label"], "#62625e" if arm == "cem_final" else color,
+                 anchor="end" if mobile else "start", weight=500)
+    if logarithmic:
+        reference = data["series"]["cem_final"]["points"][-1]["mean"]
+        parts.append(f'<path class="reference-line" d="M {left} {y(reference):g} H {right}" fill="none" stroke="{GRAY}" stroke-width="1" stroke-dasharray="4 5"/>')
+        text(right, y(reference)-17, "30 iterations, aiming at the goal", "#62625e", anchor="end",
+             extra=f'font-size="{17 if mobile else 16}"')
     parts.append('</g></svg>')
     return "\n".join(parts) + "\n"
 
 
 OUTPUT.mkdir(exist_ok=True)
-for name, data, xlabel in [("distance", distance, "Goal distance (actions)"), ("search", search, "Search iterations")]:
+for name, data, xlabel in [("distance", distance, "Goal distance (actions)"), ("search", search, "Search iterations (log scale)")]:
     for mobile in [False, True]:
-        (OUTPUT / f'{name}{"-mobile" if mobile else ""}.svg').write_text(svg_chart(data, xlabel, mobile), encoding="utf-8")
+        (OUTPUT / f'{name}{"-mobile" if mobile else ""}.svg').write_text(svg_chart(data, xlabel, mobile, logarithmic=name=="search"), encoding="utf-8")
 verification = {"source": "data/interventions.csv", "aggregation": "Equal-weight mean over the four tasks; Standard starts; unrounded success_percent.",
                 "distance": distance, "search": search, "checks": {"distance_gaps_25_100": [gaps[0], gaps[2]],
                 "search_at_30": [search["series"][a]["points"][-1]["mean"] for a in ARMS], "two_beats_thirty_on_each_task": True}}
 (OUTPUT / "data.json").write_text(json.dumps(verification, indent=2) + "\n", encoding="utf-8")
-print(json.dumps(verification["checks"]))
+print(json.dumps({"assertions":"passed", "search_x_scale":"log", **verification["checks"]}))
