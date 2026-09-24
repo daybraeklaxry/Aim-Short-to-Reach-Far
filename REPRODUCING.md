@@ -9,6 +9,7 @@ new evaluations.
 
 - [Recompute Table 1](#reproduce-table-1)
 - [Find code and data](#code-and-data-layout)
+- [Implementation settings and result-file index](IMPLEMENTATION.md)
 - [Render the demonstrations](#replay-the-project-page-demonstrations)
 - [Run simulator experiments](#running-simulator-experiments)
 
