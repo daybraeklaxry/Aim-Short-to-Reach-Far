@@ -1,0 +1,67 @@
+{
+  "selected_utc": "2026-09-22T19:42:45.108993+00:00",
+  "criterion": "lowest raw-latent validation MSE on the same 4096 held-out-memory transitions",
+  "candidates": [
+    {
+      "complete": true,
+      "task": "reacher",
+      "width": 512,
+      "residual": 0,
+      "updates": 16500,
+      "best_step": 11500,
+      "validation_mse": 0.3918396830558777,
+      "checkpoint": "runtime/ap/evidence_strengthening_20260923/results_v2/training/reacher/w512_absolute/best.pt",
+      "elapsed_seconds": 100.31792397797108,
+      "peak_reserved_bytes": 3355443200
+    },
+    {
+      "complete": true,
+      "task": "reacher",
+      "width": 512,
+      "residual": 1,
+      "updates": 26500,
+      "best_step": 21500,
+      "validation_mse": 0.38918817043304443,
+      "checkpoint": "runtime/ap/evidence_strengthening_20260923/results_v2/training/reacher/w512_residual/best.pt",
+      "elapsed_seconds": 154.9729511383921,
+      "peak_reserved_bytes": 3355443200
+    },
+    {
+      "complete": true,
+      "task": "reacher",
+      "width": 1024,
+      "residual": 0,
+      "updates": 16500,
+      "best_step": 11500,
+      "validation_mse": 0.3912547528743744,
+      "checkpoint": "runtime/ap/evidence_strengthening_20260923/results_v2/training/reacher/w1024_absolute/best.pt",
+      "elapsed_seconds": 102.29555739834905,
+      "peak_reserved_bytes": 3426746368
+    },
+    {
+      "complete": true,
+      "task": "reacher",
+      "width": 1024,
+      "residual": 1,
+      "updates": 26500,
+      "best_step": 21500,
+      "validation_mse": 0.3893962800502777,
+      "checkpoint": "runtime/ap/evidence_strengthening_20260923/results_v2/training/reacher/w1024_residual/best.pt",
+      "elapsed_seconds": 153.46420137956738,
+      "peak_reserved_bytes": 3426746368
+    }
+  ],
+  "selected": {
+    "complete": true,
+    "task": "reacher",
+    "width": 512,
+    "residual": 1,
+    "updates": 26500,
+    "best_step": 21500,
+    "validation_mse": 0.38918817043304443,
+    "checkpoint": "runtime/ap/evidence_strengthening_20260923/results_v2/training/reacher/w512_residual/best.pt",
+    "elapsed_seconds": 154.9729511383921,
+    "peak_reserved_bytes": 3355443200
+  },
+  "control_results_used": false
+}

@@ -1,0 +1,9 @@
+task,target,successor_error_mean,successor_error_median,nearest_memory_distance_mean,nearest_memory_distance_median,samples,units,precision
+Cube,Learned,19.70803451538086,4.98419713973999,4.805853843688965,1.92279052734375,4096,squared latent distance,saved full precision
+Cube,Observed,63.055625915527344,31.144039154052734,0,0,4096,squared latent distance,saved full precision
+PushT,Learned,3.7744274139404297,0.852758526802063,1.2381268739700317,0.4339141845703125,4096,squared latent distance,saved full precision
+PushT,Observed,10.668302536010742,0.747378945350647,0,0,4096,squared latent distance,saved full precision
+Reacher,Learned,74.72413635253906,59.69991683959961,14.756094932556152,14.8486328125,4096,squared latent distance,saved full precision
+Reacher,Observed,154.35128784179688,131.36068725585938,0,0,4096,squared latent distance,saved full precision
+TwoRoom,Learned,133.85696411132812,134.70904541015625,67.3594741821289,77.50389099121094,4096,squared latent distance,saved full precision
+TwoRoom,Observed,266.6763610839844,288.158203125,0,0,4096,squared latent distance,saved full precision

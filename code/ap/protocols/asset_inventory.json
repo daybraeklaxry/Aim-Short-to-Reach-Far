@@ -1,0 +1,22 @@
+{
+  "cube": {
+    "checkpoint_name": "weights.pt",
+    "dataset_name": "cube_single_expert.h5",
+    "latent_cache_name": "cube_official_latents.pt"
+  },
+  "pusht": {
+    "checkpoint_name": "official_weights_compat.pt",
+    "dataset_name": "pusht_expert_train.h5",
+    "latent_cache_name": "pusht_official_latents.pt"
+  },
+  "reacher": {
+    "checkpoint_name": "weights.pt",
+    "dataset_name": "reacher.h5",
+    "latent_cache_name": "reacher_official_latents.pt"
+  },
+  "tworoom": {
+    "checkpoint_name": "weights.pt",
+    "dataset_name": "tworoom.h5",
+    "latent_cache_name": "tworoom_official_latents.pt"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "python": "3.11.14",
+  "released_source_commit": "83f97d72ad067855bc89a1b74b4aff11d4dfdf0c",
+  "task_gpu_type": "NVIDIA H20",
+  "reference_seeds": [
+    42,
+    43,
+    44
+  ],
+  "reference_count_per_seed": 50,
+  "main_queries_per_task": 128,
+  "rendering_note": "See runtime_check.md and individual run metadata; each reference/wrapper pair uses the same renderer.",
+  "task_launchers": {
+    "cube": {
+      "python": "3.11.14",
+      "packages": {
+        "torch": "2.7.1+cu126",
+        "torchvision": "0.22.1+cu126",
+        "stable-worldmodel": "0.0.6",
+        "stable-pretraining": "0.1.6",
+        "mujoco": "3.12.0",
+        "dm-control": "1.0.44",
+        "gymnasium": "1.3.0",
+        "numpy": "2.4.2",
+        "h5py": "3.16.0",
+        "hydra-core": "1.3.2",
+        "PyOpenGL": "3.1.10",
+        "pymunk": "7.3.0"
+      }
+    },
+    "pusht": {
+      "python": "3.11.14",
+      "packages": {
+        "torch": "2.7.1+cu126",
+        "torchvision": "0.22.1+cu126",
+        "stable-worldmodel": "0.0.6",
+        "stable-pretraining": "0.1.6",
+        "mujoco": "3.12.0",
+        "dm-control": "1.0.44",
+        "gymnasium": "1.3.0",
+        "numpy": "2.4.2",
+        "h5py": "3.16.0",
+        "hydra-core": "1.3.2",
+        "PyOpenGL": "3.1.10",
+        "pymunk": "7.3.0"
+      }
+    },
+    "reacher": {
+      "python": "3.11.14",
+      "packages": {
+        "torch": "2.7.1+cu126",
+        "torchvision": "0.22.1+cu126",
+        "stable-worldmodel": "0.0.6",
+        "stable-pretraining": "0.1.6",
+        "mujoco": "3.10.0",
+        "dm-control": "1.0.43",
+        "gymnasium": "1.3.0",
+        "numpy": "2.4.2",
+        "h5py": "3.16.0",
+        "hydra-core": "1.3.2",
+        "PyOpenGL": "3.1.10",
+        "pymunk": "7.3.0"
+      }
+    },
+    "tworoom": {
+      "python": "3.11.14",
+      "packages": {
+        "torch": "2.7.1+cu126",
+        "torchvision": "0.22.1+cu126",
+        "stable-worldmodel": "0.0.6",
+        "stable-pretraining": "0.1.6",
+        "mujoco": "3.12.0",
+        "dm-control": "1.0.44",
+        "gymnasium": "1.3.0",
+        "numpy": "2.4.2",
+        "h5py": "3.16.0",
+        "hydra-core": "1.3.2",
+        "PyOpenGL": "3.1.10",
+        "pymunk": "7.3.0"
+      }
+    }
+  }
+}

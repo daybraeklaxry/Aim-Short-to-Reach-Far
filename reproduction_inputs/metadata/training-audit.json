@@ -1,0 +1,70 @@
+{
+  "checked_utc": "2026-09-23T06:24:20.385674+00:00",
+  "complete": true,
+  "checks": [
+    {
+      "task": "cube",
+      "complete": true,
+      "configurations": 4,
+      "training_episodes": 7600,
+      "validation_episodes": 400,
+      "query_episodes": 128,
+      "overlapping_query_episodes": 0,
+      "identical_validation_split": true,
+      "selected_by_validation_mse": true,
+      "selected_before_main_evaluation": true,
+      "width": 1024,
+      "residual": 1,
+      "best_step": 48500,
+      "validation_mse": 0.10264599323272705
+    },
+    {
+      "task": "pusht",
+      "complete": true,
+      "configurations": 4,
+      "training_episodes": 15854,
+      "validation_episodes": 834,
+      "query_episodes": 128,
+      "overlapping_query_episodes": 0,
+      "identical_validation_split": true,
+      "selected_by_validation_mse": true,
+      "selected_before_main_evaluation": true,
+      "width": 1024,
+      "residual": 1,
+      "best_step": 45500,
+      "validation_mse": 0.01965847611427307
+    },
+    {
+      "task": "reacher",
+      "complete": true,
+      "configurations": 4,
+      "training_episodes": 7600,
+      "validation_episodes": 400,
+      "query_episodes": 128,
+      "overlapping_query_episodes": 0,
+      "identical_validation_split": true,
+      "selected_by_validation_mse": true,
+      "selected_before_main_evaluation": true,
+      "width": 512,
+      "residual": 1,
+      "best_step": 21500,
+      "validation_mse": 0.38918817043304443
+    },
+    {
+      "task": "tworoom",
+      "complete": true,
+      "configurations": 4,
+      "training_episodes": 7600,
+      "validation_episodes": 400,
+      "query_episodes": 128,
+      "overlapping_query_episodes": 0,
+      "identical_validation_split": true,
+      "selected_by_validation_mse": true,
+      "selected_before_main_evaluation": true,
+      "width": 512,
+      "residual": 0,
+      "best_step": 14500,
+      "validation_mse": 0.697171688079834
+    }
+  ]
+}

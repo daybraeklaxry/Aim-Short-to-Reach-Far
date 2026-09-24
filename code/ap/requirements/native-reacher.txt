@@ -1,0 +1,4 @@
+# Reacher's released replay observations require this simulator pair.
+-r native-common.txt
+mujoco==3.10.0
+dm-control==1.0.43

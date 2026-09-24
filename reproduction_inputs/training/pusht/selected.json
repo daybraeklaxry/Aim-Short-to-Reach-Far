@@ -1,0 +1,67 @@
+{
+  "selected_utc": "2026-09-22T20:04:41.627410+00:00",
+  "criterion": "lowest raw-latent validation MSE on the same 4096 held-out-memory transitions",
+  "candidates": [
+    {
+      "complete": true,
+      "task": "pusht",
+      "width": 512,
+      "residual": 0,
+      "updates": 50000,
+      "best_step": 48000,
+      "validation_mse": 0.023949911817908287,
+      "checkpoint": "runtime/ap/evidence_strengthening_20260923/results_v2/training/pusht/w512_absolute/best.pt",
+      "elapsed_seconds": 463.58665093407035,
+      "peak_reserved_bytes": 3854565376
+    },
+    {
+      "complete": true,
+      "task": "pusht",
+      "width": 512,
+      "residual": 1,
+      "updates": 50000,
+      "best_step": 48000,
+      "validation_mse": 0.02400718256831169,
+      "checkpoint": "runtime/ap/evidence_strengthening_20260923/results_v2/training/pusht/w512_residual/best.pt",
+      "elapsed_seconds": 278.98772466927767,
+      "peak_reserved_bytes": 3854565376
+    },
+    {
+      "complete": true,
+      "task": "pusht",
+      "width": 1024,
+      "residual": 0,
+      "updates": 50000,
+      "best_step": 47500,
+      "validation_mse": 0.02021012455224991,
+      "checkpoint": "runtime/ap/evidence_strengthening_20260923/results_v2/training/pusht/w1024_absolute/best.pt",
+      "elapsed_seconds": 648.7354386337101,
+      "peak_reserved_bytes": 3925868544
+    },
+    {
+      "complete": true,
+      "task": "pusht",
+      "width": 1024,
+      "residual": 1,
+      "updates": 50000,
+      "best_step": 45500,
+      "validation_mse": 0.01965847611427307,
+      "checkpoint": "runtime/ap/evidence_strengthening_20260923/results_v2/training/pusht/w1024_residual/best.pt",
+      "elapsed_seconds": 650.56168519333,
+      "peak_reserved_bytes": 3925868544
+    }
+  ],
+  "selected": {
+    "complete": true,
+    "task": "pusht",
+    "width": 1024,
+    "residual": 1,
+    "updates": 50000,
+    "best_step": 45500,
+    "validation_mse": 0.01965847611427307,
+    "checkpoint": "runtime/ap/evidence_strengthening_20260923/results_v2/training/pusht/w1024_residual/best.pt",
+    "elapsed_seconds": 650.56168519333,
+    "peak_reserved_bytes": 3925868544
+  },
+  "control_results_used": false
+}

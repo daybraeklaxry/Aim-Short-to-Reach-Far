@@ -1,0 +1,11 @@
+task,start,anchor_percent,transport_percent,anchor_minus_transport_pp
+cube,standard,50.0,47.65625,2.34375
+cube,perturbed,34.375,28.515625,5.859375
+pusht,standard,72.65625,63.28125,9.375
+pusht,perturbed,67.96875,45.703125,22.265625
+reacher,standard,76.5625,78.90625,-2.34375
+reacher,perturbed,71.875,76.171875,-4.296875
+tworoom,standard,38.28125,28.125,10.15625
+tworoom,perturbed,36.71875,26.171875,10.546875
+macro,standard,59.375,54.4921875,4.8828125
+macro,perturbed,52.734375,44.140625,8.59375

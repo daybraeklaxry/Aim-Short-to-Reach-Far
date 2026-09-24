@@ -1,0 +1,12 @@
+{
+  "complete": true,
+  "task": "cube",
+  "width": 512,
+  "residual": 1,
+  "updates": 50000,
+  "best_step": 48500,
+  "validation_mse": 0.10457925498485565,
+  "checkpoint": "runtime/ap/evidence_strengthening_20260923/results_v2/training/cube/w512_residual/best.pt",
+  "elapsed_seconds": 939.3789308723062,
+  "peak_reserved_bytes": 3355443200
+}

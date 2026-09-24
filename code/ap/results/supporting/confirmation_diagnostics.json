@@ -1,0 +1,315 @@
+{
+  "estimand": "Mean over eligible query-condition pairs within each task",
+  "eligibility": "All eight exact candidates execute five actions",
+  "interpretation": "Endpoint and local-score fidelity; not physical-success values",
+  "endpoint_metric": "Mean over eight candidates of summed squared native-latent error",
+  "regret_metric": "Selected exact local cost minus minimum exact local cost",
+  "bootstrap": {
+    "unit": "episode within task, conditions jointly",
+    "samples": 10000,
+    "seed": 26091204,
+    "interval": "marginal paired percentile 95%"
+  },
+  "tasks": {
+    "cube": {
+      "queries": 128,
+      "eligible_states": 373,
+      "eligible_episodes": 126,
+      "eligible_by_condition": {
+        "clean": 126,
+        "prefix_a": 124,
+        "prefix_b": 123
+      },
+      "metrics": {
+        "learned_endpoint_mse": {
+          "estimate": 34.01594594432586,
+          "ci95": [
+            23.759397377964692,
+            45.100392588351056
+          ]
+        },
+        "delta_endpoint_mse": {
+          "estimate": 61.585548560676884,
+          "ci95": [
+            48.26912282811124,
+            76.26602708004876
+          ]
+        },
+        "learned_local_regret": {
+          "estimate": 5.1057671976473,
+          "ci95": [
+            3.27996671765515,
+            7.274801395585255
+          ]
+        },
+        "delta_local_regret": {
+          "estimate": 10.098230909006844,
+          "ci95": [
+            7.891425354590032,
+            12.64819769044444
+          ]
+        },
+        "direct_local_regret": {
+          "estimate": 13.228080849784948,
+          "ci95": [
+            10.71170777633005,
+            15.978156824676994
+          ]
+        },
+        "learned_exact_argmin": {
+          "estimate": 0.5683646112600537,
+          "ci95": [
+            0.5132275132275133,
+            0.6253299931014373
+          ]
+        },
+        "delta_exact_argmin": {
+          "estimate": 0.32707774798927614,
+          "ci95": [
+            0.271275502768872,
+            0.38544474393531
+          ]
+        },
+        "learned_minus_delta_endpoint_mse": {
+          "estimate": -27.569602616351027,
+          "ci95": [
+            -33.420822501019124,
+            -22.441712358477155
+          ]
+        },
+        "learned_minus_delta_local_regret": {
+          "estimate": -4.992463711359545,
+          "ci95": [
+            -7.024465981606287,
+            -3.130177435950438
+          ]
+        }
+      }
+    },
+    "pusht": {
+      "queries": 128,
+      "eligible_states": 384,
+      "eligible_episodes": 128,
+      "eligible_by_condition": {
+        "clean": 128,
+        "prefix_a": 128,
+        "prefix_b": 128
+      },
+      "metrics": {
+        "learned_endpoint_mse": {
+          "estimate": 1.423299372351418,
+          "ci95": [
+            1.1715527166010966,
+            1.726048986140328
+          ]
+        },
+        "delta_endpoint_mse": {
+          "estimate": 3.617651260457933,
+          "ci95": [
+            2.6216576020759628,
+            4.791060810649408
+          ]
+        },
+        "learned_local_regret": {
+          "estimate": 0.2283631357131526,
+          "ci95": [
+            0.17112068680968756,
+            0.29072158032116324
+          ]
+        },
+        "delta_local_regret": {
+          "estimate": 0.8048725445599606,
+          "ci95": [
+            0.516923683177447,
+            1.15701325746971
+          ]
+        },
+        "direct_local_regret": {
+          "estimate": 1.7439667730165336,
+          "ci95": [
+            1.0316486739063597,
+            2.710431686527347
+          ]
+        },
+        "learned_exact_argmin": {
+          "estimate": 0.5833333333333334,
+          "ci95": [
+            0.5286458333333334,
+            0.6380208333333334
+          ]
+        },
+        "delta_exact_argmin": {
+          "estimate": 0.4557291666666667,
+          "ci95": [
+            0.4009765625000001,
+            0.5130208333333334
+          ]
+        },
+        "learned_minus_delta_endpoint_mse": {
+          "estimate": -2.194351888106515,
+          "ci95": [
+            -3.142138744821083,
+            -1.3938906690995887
+          ]
+        },
+        "learned_minus_delta_local_regret": {
+          "estimate": -0.576509408846808,
+          "ci95": [
+            -0.9281681901969326,
+            -0.2841234631613285
+          ]
+        }
+      }
+    },
+    "reacher": {
+      "queries": 128,
+      "eligible_states": 383,
+      "eligible_episodes": 128,
+      "eligible_by_condition": {
+        "clean": 127,
+        "prefix_a": 128,
+        "prefix_b": 128
+      },
+      "metrics": {
+        "learned_endpoint_mse": {
+          "estimate": 27.105422488080613,
+          "ci95": [
+            25.47454212138114,
+            28.864781689768034
+          ]
+        },
+        "delta_endpoint_mse": {
+          "estimate": 53.37123157710381,
+          "ci95": [
+            49.5120833206863,
+            57.41648838152773
+          ]
+        },
+        "learned_local_regret": {
+          "estimate": 8.429241723242379,
+          "ci95": [
+            6.727243414837656,
+            10.29772891314154
+          ]
+        },
+        "delta_local_regret": {
+          "estimate": 13.865750521966122,
+          "ci95": [
+            11.485548687048354,
+            16.3646143479832
+          ]
+        },
+        "direct_local_regret": {
+          "estimate": 19.108039763826614,
+          "ci95": [
+            15.98073579665878,
+            22.45108549688011
+          ]
+        },
+        "learned_exact_argmin": {
+          "estimate": 0.5587467362924282,
+          "ci95": [
+            0.5078125,
+            0.6099476439790575
+          ]
+        },
+        "delta_exact_argmin": {
+          "estimate": 0.4516971279373368,
+          "ci95": [
+            0.4004974163739013,
+            0.5026178010471204
+          ]
+        },
+        "learned_minus_delta_endpoint_mse": {
+          "estimate": -26.2658090890232,
+          "ci95": [
+            -29.805744246700804,
+            -23.018552382015354
+          ]
+        },
+        "learned_minus_delta_local_regret": {
+          "estimate": -5.436508798723744,
+          "ci95": [
+            -7.796002501661029,
+            -3.0532638305236244
+          ]
+        }
+      }
+    },
+    "tworoom": {
+      "queries": 128,
+      "eligible_states": 383,
+      "eligible_episodes": 128,
+      "eligible_by_condition": {
+        "clean": 128,
+        "prefix_a": 127,
+        "prefix_b": 128
+      },
+      "metrics": {
+        "learned_endpoint_mse": {
+          "estimate": 12.719277729253545,
+          "ci95": [
+            12.350297086108137,
+            13.098628822879443
+          ]
+        },
+        "delta_endpoint_mse": {
+          "estimate": 175.71232898303796,
+          "ci95": [
+            156.9130156590684,
+            194.68913647844073
+          ]
+        },
+        "learned_local_regret": {
+          "estimate": 1.979024636994454,
+          "ci95": [
+            1.0706656118947284,
+            3.0620110472973043
+          ]
+        },
+        "delta_local_regret": {
+          "estimate": 31.169967120722443,
+          "ci95": [
+            25.755262354816132,
+            37.08187726460417
+          ]
+        },
+        "direct_local_regret": {
+          "estimate": 48.7415465305197,
+          "ci95": [
+            41.179046605529045,
+            56.85453339210813
+          ]
+        },
+        "learned_exact_argmin": {
+          "estimate": 0.8642297650130548,
+          "ci95": [
+            0.8224543080939948,
+            0.9033942558746736
+          ]
+        },
+        "delta_exact_argmin": {
+          "estimate": 0.5248041775456919,
+          "ci95": [
+            0.46875,
+            0.5807291666666666
+          ]
+        },
+        "learned_minus_delta_endpoint_mse": {
+          "estimate": -162.99305125378442,
+          "ci95": [
+            -181.83679379315276,
+            -144.23302479861303
+          ]
+        },
+        "learned_minus_delta_local_regret": {
+          "estimate": -29.190942483727987,
+          "ci95": [
+            -35.14908380028099,
+            -23.70576029994797
+          ]
+        }
+      }
+    }
+  }
+}

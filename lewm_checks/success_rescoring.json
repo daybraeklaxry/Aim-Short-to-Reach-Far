@@ -1,0 +1,46 @@
+[
+  {
+    "task": "cube",
+    "episodes": 128,
+    "states_checked": 2613,
+    "stored_successes": 41,
+    "rescored_successes": 41,
+    "released_predicate_successes": 41,
+    "record_disagreements": 0,
+    "per_state_predicate_disagreements": 0,
+    "initial_successes": 25
+  },
+  {
+    "task": "pusht",
+    "episodes": 128,
+    "states_checked": 4869,
+    "stored_successes": 78,
+    "rescored_successes": 78,
+    "released_predicate_successes": 78,
+    "record_disagreements": 0,
+    "per_state_predicate_disagreements": 0,
+    "initial_successes": 0
+  },
+  {
+    "task": "reacher",
+    "episodes": 128,
+    "states_checked": 4394,
+    "stored_successes": 88,
+    "rescored_successes": 88,
+    "released_predicate_successes": 88,
+    "record_disagreements": 0,
+    "per_state_predicate_disagreements": 0,
+    "initial_successes": 0
+  },
+  {
+    "task": "tworoom",
+    "episodes": 128,
+    "states_checked": 3389,
+    "stored_successes": 99,
+    "rescored_successes": 99,
+    "released_predicate_successes": 99,
+    "record_disagreements": 0,
+    "per_state_predicate_disagreements": 0,
+    "initial_successes": 8
+  }
+]

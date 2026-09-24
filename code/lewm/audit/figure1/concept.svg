@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="190pt" height="150pt" viewBox="0 0 190 150">
+<title>Same predictions, different targets</title>
+<desc>Schematic shared live state and candidate predictions. Gray final-goal scoring selects u1; teal observed-target scoring selects u2. The observed target is a recorded successor and is distinct from every predicted endpoint.</desc>
+<text id="panel-title" x="0" y="9" font-family="Times New Roman" font-size="8" fill="#26343C" font-weight="bold">(a) Same predictions, different targets</text>
+<text id="recorded-label" x="4" y="23" font-family="Times New Roman" font-size="8" fill="#26343C">Recorded</text>
+<rect id="past-frame" x="4" y="28" width="19" height="19" fill="#FFFFFF" stroke="#C5CCCF" stroke-width="0.5"/>
+<rect id="past-bar" x="8" y="34" width="10" height="3" fill="#789CAC" stroke="#C5CCCF" stroke-width="0"/>
+<rect id="past-stem" x="12" y="37" width="3" height="7" fill="#789CAC" stroke="#C5CCCF" stroke-width="0"/>
+<circle id="past-agent" cx="8" cy="43" r="1.35" fill="#B99872" stroke="#B99872" stroke-width="0.65"/>
+<rect id="successor-frame" x="62" y="28" width="19" height="19" fill="#FFFFFF" stroke="#C5CCCF" stroke-width="0.5"/>
+<rect id="successor-bar" x="67" y="32" width="10" height="3" fill="#789CAC" stroke="#C5CCCF" stroke-width="0"/>
+<rect id="successor-stem" x="71" y="35" width="3" height="7" fill="#789CAC" stroke="#C5CCCF" stroke-width="0"/>
+<circle id="successor-agent" cx="67" cy="41" r="1.35" fill="#B99872" stroke="#B99872" stroke-width="0.65"/>
+<polyline id="recorded-transition" points="26,37.5 58,37.5" fill="none" stroke="#26343C" stroke-width="0.6"/>
+<polyline id="recorded-transition-head" points="55.339015231662145,36.11466247337555 58,37.5 55.339015231662145,38.88533752662445" fill="none" stroke="#26343C" stroke-width="0.6"/>
+<text id="recorded-span" x="29" y="30" font-family="Times New Roman" font-size="8" fill="#26343C">5 steps</text>
+<polyline id="successor-target" points="84,37.5 100,37.5 100,43 120,43" fill="none" stroke="#1B8A8A" stroke-width="0.6"/>
+<polyline id="successor-target-head" points="117.33901523166215,41.61466247337555 120,43 117.33901523166215,44.38533752662445" fill="none" stroke="#1B8A8A" stroke-width="0.6"/>
+<path id="candidate-u3" d="M 14 123 C 42 135 85 127 124 131" fill="none" stroke="#C5CCCF" stroke-width="0.75"/>
+<path id="candidate-u1" d="M 14 123 C 47 111 77 91 127 98" fill="none" stroke="#8C8C8C" stroke-width="1.25"/>
+<path id="candidate-u2" d="M 14 123 C 44 85 73 73 109 72" fill="none" stroke="#1B8A8A" stroke-width="1.25"/>
+<polyline id="final-scoring-distance" points="127,98 178,98" fill="none" stroke="#8C8C8C" stroke-width="0.85" stroke-dasharray="2,2"/>
+<polyline id="observed-scoring-distance" points="109,72 123,43" fill="none" stroke="#1B8A8A" stroke-width="0.85" stroke-dasharray="2,2"/>
+<circle id="live" cx="14" cy="123" r="2.1" fill="#26343C" stroke="#26343C" stroke-width="0.65"/>
+<circle id="p1" cx="127" cy="98" r="1.9" fill="#8C8C8C" stroke="#8C8C8C" stroke-width="0.65"/>
+<circle id="p2" cx="109" cy="72" r="1.9" fill="#1B8A8A" stroke="#1B8A8A" stroke-width="0.65"/>
+<circle id="p3" cx="124" cy="131" r="1.9" fill="#FFFFFF" stroke="#C5CCCF" stroke-width="0.65"/>
+<circle id="observed-target" cx="123" cy="43" r="2.1" fill="#1B8A8A" stroke="#1B8A8A" stroke-width="0.65"/>
+<polyline id="final-target" points="178,95 181,98 178,101 175,98 178,95" fill="none" stroke="#8C8C8C" stroke-width="0.8"/>
+<text id="live-label" x="1" y="142" font-family="Times New Roman" font-size="8" fill="#26343C">Live</text>
+<text id="zt" x="19" y="142" font-family="Times New Roman" font-size="9" fill="#26343C" font-style="italic">z</text>
+<text id="zt-subscript" x="22.50244140625" y="144" font-family="Times New Roman" font-size="6.57" fill="#26343C">t</text>
+<text id="p1-label" x="130" y="111" font-family="Times New Roman" font-size="9" fill="#26343C" font-style="italic">p</text>
+<text id="p1-label-subscript" x="134.5" y="113" font-family="Times New Roman" font-size="6.57" fill="#26343C">1</text>
+<text id="p2-label" x="109" y="85" font-family="Times New Roman" font-size="9" fill="#26343C" font-style="italic">p</text>
+<text id="p2-label-subscript" x="113.5" y="87" font-family="Times New Roman" font-size="6.57" fill="#26343C">2</text>
+<text id="p3-label" x="132" y="133" font-family="Times New Roman" font-size="9" fill="#26343C" font-style="italic">p</text>
+<text id="p3-label-subscript" x="136.5" y="135" font-family="Times New Roman" font-size="6.57" fill="#26343C">3</text>
+<text id="qobs" x="128" y="46" font-family="Times New Roman" font-size="9" fill="#1B8A8A" font-style="italic">q</text>
+<text id="qobs-subscript" x="132.5" y="48" font-family="Times New Roman" font-size="6.57" fill="#1B8A8A">obs</text>
+<text id="zg" x="174" y="87" font-family="Times New Roman" font-size="9" fill="#8C8C8C" font-style="italic">z</text>
+<text id="zg-subscript" x="177.50244140625" y="89" font-family="Times New Roman" font-size="6.57" fill="#8C8C8C">g</text>
+<text id="selected-u1-label" x="59" y="116" font-family="Times New Roman" font-size="8" fill="#8C8C8C">Select</text>
+<text id="selected-u1" x="80" y="116" font-family="Times New Roman" font-size="8" fill="#8C8C8C" font-style="italic">u</text>
+<text id="selected-u1-subscript" x="84.0" y="118" font-family="Times New Roman" font-size="5.84" fill="#8C8C8C">1</text>
+<text id="selected-u2-label" x="34" y="75" font-family="Times New Roman" font-size="8" fill="#1B8A8A">Select</text>
+<text id="selected-u2" x="55" y="75" font-family="Times New Roman" font-size="8" fill="#1B8A8A" font-style="italic">u</text>
+<text id="selected-u2-subscript" x="59.0" y="77" font-family="Times New Roman" font-size="5.84" fill="#1B8A8A">2</text>
+</svg>

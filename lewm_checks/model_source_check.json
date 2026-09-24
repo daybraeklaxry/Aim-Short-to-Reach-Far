@@ -1,0 +1,154 @@
+[
+  {
+    "task": "cube",
+    "model_class": "<class 'jepa.JEPA'>",
+    "state_tensors": 303,
+    "serialization_exact": true,
+    "jepa_file_equal": true,
+    "identical_inference_module_methods": [
+      "ARPredictor.__init__",
+      "ARPredictor.forward",
+      "Attention.__init__",
+      "Attention.forward",
+      "Block.__init__",
+      "Block.forward",
+      "ConditionalBlock.__init__",
+      "ConditionalBlock.forward",
+      "Embedder.__init__",
+      "Embedder.forward",
+      "FeedForward.__init__",
+      "FeedForward.forward",
+      "MLP.__init__",
+      "MLP.forward",
+      "SIGReg.__init__",
+      "Transformer.__init__",
+      "Transformer.forward",
+      "modulate"
+    ],
+    "image_preprocessor_function_equal": true,
+    "nonidentical_source_files": [
+      "module.py",
+      "utils.py"
+    ],
+    "differences": [
+      "SIGReg.forward chooses proj.device instead of cuda when sampling training regularizer projections; it is not called by JEPA.get_cost.",
+      "utils.py replaces the training-column normalizer closure by an equivalent callable class and changes checkpoint-saving callbacks. Evaluation uses the unchanged image preprocessor and the pretrained action StandardScaler."
+    ],
+    "dataset_name": "ogbench/cube_single_expert",
+    "dataset_bytes": 101942558720
+  },
+  {
+    "task": "pusht",
+    "model_class": "<class 'jepa.JEPA'>",
+    "state_tensors": 303,
+    "serialization_exact": true,
+    "jepa_file_equal": true,
+    "identical_inference_module_methods": [
+      "ARPredictor.__init__",
+      "ARPredictor.forward",
+      "Attention.__init__",
+      "Attention.forward",
+      "Block.__init__",
+      "Block.forward",
+      "ConditionalBlock.__init__",
+      "ConditionalBlock.forward",
+      "Embedder.__init__",
+      "Embedder.forward",
+      "FeedForward.__init__",
+      "FeedForward.forward",
+      "MLP.__init__",
+      "MLP.forward",
+      "SIGReg.__init__",
+      "Transformer.__init__",
+      "Transformer.forward",
+      "modulate"
+    ],
+    "image_preprocessor_function_equal": true,
+    "nonidentical_source_files": [
+      "module.py",
+      "utils.py"
+    ],
+    "differences": [
+      "SIGReg.forward chooses proj.device instead of cuda when sampling training regularizer projections; it is not called by JEPA.get_cost.",
+      "utils.py replaces the training-column normalizer closure by an equivalent callable class and changes checkpoint-saving callbacks. Evaluation uses the unchanged image preprocessor and the pretrained action StandardScaler."
+    ],
+    "dataset_name": "pusht_expert_train",
+    "dataset_bytes": 46300921856
+  },
+  {
+    "task": "reacher",
+    "model_class": "<class 'jepa.JEPA'>",
+    "state_tensors": 303,
+    "serialization_exact": true,
+    "jepa_file_equal": true,
+    "identical_inference_module_methods": [
+      "ARPredictor.__init__",
+      "ARPredictor.forward",
+      "Attention.__init__",
+      "Attention.forward",
+      "Block.__init__",
+      "Block.forward",
+      "ConditionalBlock.__init__",
+      "ConditionalBlock.forward",
+      "Embedder.__init__",
+      "Embedder.forward",
+      "FeedForward.__init__",
+      "FeedForward.forward",
+      "MLP.__init__",
+      "MLP.forward",
+      "SIGReg.__init__",
+      "Transformer.__init__",
+      "Transformer.forward",
+      "modulate"
+    ],
+    "image_preprocessor_function_equal": true,
+    "nonidentical_source_files": [
+      "module.py",
+      "utils.py"
+    ],
+    "differences": [
+      "SIGReg.forward chooses proj.device instead of cuda when sampling training regularizer projections; it is not called by JEPA.get_cost.",
+      "utils.py replaces the training-column normalizer closure by an equivalent callable class and changes checkpoint-saving callbacks. Evaluation uses the unchanged image preprocessor and the pretrained action StandardScaler."
+    ],
+    "dataset_name": "reacher",
+    "dataset_bytes": 98905882624
+  },
+  {
+    "task": "tworoom",
+    "model_class": "<class 'jepa.JEPA'>",
+    "state_tensors": 303,
+    "serialization_exact": true,
+    "jepa_file_equal": true,
+    "identical_inference_module_methods": [
+      "ARPredictor.__init__",
+      "ARPredictor.forward",
+      "Attention.__init__",
+      "Attention.forward",
+      "Block.__init__",
+      "Block.forward",
+      "ConditionalBlock.__init__",
+      "ConditionalBlock.forward",
+      "Embedder.__init__",
+      "Embedder.forward",
+      "FeedForward.__init__",
+      "FeedForward.forward",
+      "MLP.__init__",
+      "MLP.forward",
+      "SIGReg.__init__",
+      "Transformer.__init__",
+      "Transformer.forward",
+      "modulate"
+    ],
+    "image_preprocessor_function_equal": true,
+    "nonidentical_source_files": [
+      "module.py",
+      "utils.py"
+    ],
+    "differences": [
+      "SIGReg.forward chooses proj.device instead of cuda when sampling training regularizer projections; it is not called by JEPA.get_cost.",
+      "utils.py replaces the training-column normalizer closure by an equivalent callable class and changes checkpoint-saving callbacks. Evaluation uses the unchanged image preprocessor and the pretrained action StandardScaler."
+    ],
+    "dataset_name": "tworoom",
+    "dataset_bytes": 12775849984
+  }
+]

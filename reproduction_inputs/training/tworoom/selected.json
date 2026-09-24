@@ -1,0 +1,67 @@
+{
+  "selected_utc": "2026-09-22T19:39:43.898220+00:00",
+  "criterion": "lowest raw-latent validation MSE on the same 4096 held-out-memory transitions",
+  "candidates": [
+    {
+      "complete": true,
+      "task": "tworoom",
+      "width": 512,
+      "residual": 0,
+      "updates": 19500,
+      "best_step": 14500,
+      "validation_mse": 0.697171688079834,
+      "checkpoint": "runtime/ap/evidence_strengthening_20260923/results_v2/training/tworoom/w512_absolute/best.pt",
+      "elapsed_seconds": 153.91880781203508,
+      "peak_reserved_bytes": 1681915904
+    },
+    {
+      "complete": true,
+      "task": "tworoom",
+      "width": 512,
+      "residual": 1,
+      "updates": 20500,
+      "best_step": 15500,
+      "validation_mse": 0.7029775977134705,
+      "checkpoint": "runtime/ap/evidence_strengthening_20260923/results_v2/training/tworoom/w512_residual/best.pt",
+      "elapsed_seconds": 163.10492985881865,
+      "peak_reserved_bytes": 1681915904
+    },
+    {
+      "complete": true,
+      "task": "tworoom",
+      "width": 1024,
+      "residual": 0,
+      "updates": 13000,
+      "best_step": 8000,
+      "validation_mse": 0.6972392797470093,
+      "checkpoint": "runtime/ap/evidence_strengthening_20260923/results_v2/training/tworoom/w1024_absolute/best.pt",
+      "elapsed_seconds": 148.32147169671953,
+      "peak_reserved_bytes": 1753219072
+    },
+    {
+      "complete": true,
+      "task": "tworoom",
+      "width": 1024,
+      "residual": 1,
+      "updates": 12500,
+      "best_step": 7500,
+      "validation_mse": 0.704443633556366,
+      "checkpoint": "runtime/ap/evidence_strengthening_20260923/results_v2/training/tworoom/w1024_residual/best.pt",
+      "elapsed_seconds": 145.7760685607791,
+      "peak_reserved_bytes": 1753219072
+    }
+  ],
+  "selected": {
+    "complete": true,
+    "task": "tworoom",
+    "width": 512,
+    "residual": 0,
+    "updates": 19500,
+    "best_step": 14500,
+    "validation_mse": 0.697171688079834,
+    "checkpoint": "runtime/ap/evidence_strengthening_20260923/results_v2/training/tworoom/w512_absolute/best.pt",
+    "elapsed_seconds": 153.91880781203508,
+    "peak_reserved_bytes": 1681915904
+  },
+  "control_results_used": false
+}

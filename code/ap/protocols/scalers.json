@@ -1,0 +1,111 @@
+{
+  "cube": {
+    "mean": [
+      0.0108846967805138,
+      -0.0031414329928013945,
+      0.0026465825646189004,
+      0.0004239286647865428,
+      0.15925256653030173
+    ],
+    "std": [
+      0.2894198325506555,
+      0.39371697495490987,
+      0.6431365217957304,
+      0.3928016202283424,
+      0.2503073640045173
+    ],
+    "var": [
+      0.08376383947364949,
+      0.15501305636764512,
+      0.41362458566751004,
+      0.15429311285401096,
+      0.06265377647488993
+    ],
+    "count": 2000000,
+    "total_rows": 2010000,
+    "excluded_nan_rows": 10000,
+    "action_dtype": "float32",
+    "source": "released training artifact: original full-dataset action statistics",
+    "operation": "sklearn StandardScaler.fit on all non-NaN action rows from official evaluation dataset",
+    "scope": "full original dataset",
+    "ddof": 0,
+    "statistics_dtype": "float64",
+    "reference": "lucas-maes/le-wm 8edfeb336732b5f3ce7b8b210d0ba370a09e2cac eval.py:66-79",
+    "frozen_utc": "2026-09-10T19:58:08.656016+00:00"
+  },
+  "pusht": {
+    "mean": [
+      -0.007812564379916172,
+      0.006860687229453032
+    ],
+    "std": [
+      0.20846744284501714,
+      0.20674862637362224
+    ],
+    "var": [
+      0.043458674726340484,
+      0.04274499450737964
+    ],
+    "count": 2336736,
+    "total_rows": 2336736,
+    "excluded_nan_rows": 0,
+    "action_dtype": "float32",
+    "source": "released training artifact: original full-dataset action statistics",
+    "operation": "sklearn StandardScaler.fit on all non-NaN action rows from official evaluation dataset",
+    "scope": "full original dataset",
+    "ddof": 0,
+    "statistics_dtype": "float64",
+    "reference": "lucas-maes/le-wm 8edfeb336732b5f3ce7b8b210d0ba370a09e2cac eval.py:66-79",
+    "frozen_utc": "2026-09-10T19:58:08.904789+00:00"
+  },
+  "reacher": {
+    "mean": [
+      3.5727661713243504e-05,
+      -0.0005056222437278677
+    ],
+    "std": [
+      0.5774140806845414,
+      0.577182679325366
+    ],
+    "var": [
+      0.33340702057277405,
+      0.3331398453132083
+    ],
+    "count": 2000000,
+    "total_rows": 2010000,
+    "excluded_nan_rows": 10000,
+    "action_dtype": "float64",
+    "source": "released training artifact: original full-dataset action statistics",
+    "operation": "sklearn StandardScaler.fit on all non-NaN action rows from official evaluation dataset",
+    "scope": "full original dataset",
+    "ddof": 0,
+    "statistics_dtype": "float64",
+    "reference": "lucas-maes/le-wm 8edfeb336732b5f3ce7b8b210d0ba370a09e2cac eval.py:66-79",
+    "frozen_utc": "2026-09-10T19:58:09.124509+00:00"
+  },
+  "tworoom": {
+    "mean": [
+      0.0030934159554243212,
+      -0.05298253984909538
+    ],
+    "std": [
+      0.867547357428919,
+      0.8686383074906906
+    ],
+    "var": [
+      0.7526384173819004,
+      0.7545325092402916
+    ],
+    "count": 910809,
+    "total_rows": 920809,
+    "excluded_nan_rows": 10000,
+    "action_dtype": "float32",
+    "source": "released training artifact: original full-dataset action statistics",
+    "operation": "sklearn StandardScaler.fit on all non-NaN action rows from official evaluation dataset",
+    "scope": "full original dataset",
+    "ddof": 0,
+    "statistics_dtype": "float64",
+    "reference": "lucas-maes/le-wm 8edfeb336732b5f3ce7b8b210d0ba370a09e2cac eval.py:66-79",
+    "frozen_utc": "2026-09-10T19:58:09.221895+00:00"
+  }
+}

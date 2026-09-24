@@ -1,0 +1,19 @@
+\begingroup
+\normalsize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lrrrrrr@{}}
+\toprule
+Task & Iter. & \shortstack{Blocks per\\decision} & \multicolumn{2}{c}{Success (\%)} & \multicolumn{2}{c}{Mean blocks per episode} \\
+\cmidrule(lr){4-5}\cmidrule(lr){6-7}
+ & & & Observed & Final & Observed & Final \\
+\midrule
+Cube & 1 & 302 & \textbf{18.0} & 8.6 & 8,342.8 & 8,529.1 \\
+ & 5 & 1,502 & \textbf{36.7} & 7.0 & 33,513.4 & 42,091.2 \\
+ & 30 & 9,002 & \textbf{39.1} & 8.6 & 184,259.7 & 247,906.6 \\
+\midrule
+PushT & 1 & 302 & \textbf{2.3} & 1.6 & 16,834.1 & 16,751.6 \\
+ & 5 & 1,502 & \textbf{60.9} & 1.6 & 59,857.0 & 82,926.8 \\
+ & 30 & 9,002 & \textbf{81.3} & 1.6 & 298,331.9 & 496,516.6 \\
+\bottomrule
+\end{tabular}
+\endgroup

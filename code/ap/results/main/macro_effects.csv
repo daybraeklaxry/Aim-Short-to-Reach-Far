@@ -1,0 +1,13 @@
+condition,left,right,prespecified_role,difference_pp,ci95_lower_pp,ci95_upper_pp
+clean,ap_observed,ap_final,primary,16.796875,13.4765625,20.3125
+clean,gaussian_observed,gaussian_final,primary,50.5859375,46.2890625,54.8828125
+clean,ap_observed,direct,secondary,0.78125,-2.1484375,3.7109375
+prefix_a,ap_observed,ap_final,descriptive_prefix,15.234375,11.9140625,18.5546875
+prefix_a,gaussian_observed,gaussian_final,descriptive_prefix,48.2421875,44.140625,52.5390625
+prefix_a,ap_observed,direct,descriptive_prefix,6.640625,4.296875,8.984375
+prefix_b,ap_observed,ap_final,descriptive_prefix,13.8671875,10.546875,17.1875
+prefix_b,gaussian_observed,gaussian_final,descriptive_prefix,47.0703125,42.7734375,51.3671875
+prefix_b,ap_observed,direct,descriptive_prefix,6.640625,3.90625,9.1796875
+prefix_mean,ap_observed,ap_final,primary,14.55078125,12.01171875,17.08984375
+prefix_mean,gaussian_observed,gaussian_final,primary,47.65625,44.04296875,51.3671875
+prefix_mean,ap_observed,direct,secondary,6.640625,4.6875,8.59375

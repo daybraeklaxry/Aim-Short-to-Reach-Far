@@ -1,0 +1,49 @@
+[
+  {
+    "name": "upstream_jepa.py",
+    "url": "https://raw.githubusercontent.com/lucas-maes/le-wm/main/jepa.py",
+    "bytes": 5398,
+    "saved": true
+  },
+  {
+    "name": "upstream_cem.py",
+    "url": "https://raw.githubusercontent.com/galilai-group/stable-worldmodel/main/stable_worldmodel/solver/cem.py",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "name": "upstream_policy.py",
+    "url": "https://raw.githubusercontent.com/galilai-group/stable-worldmodel/main/stable_worldmodel/policy.py",
+    "bytes": 19570,
+    "saved": true
+  },
+  {
+    "name": "upstream_pusht.yaml",
+    "url": "https://raw.githubusercontent.com/lucas-maes/le-wm/main/config/eval/pusht.yaml",
+    "bytes": 837,
+    "saved": true
+  },
+  {
+    "name": "upstream_cube.yaml",
+    "url": "https://raw.githubusercontent.com/lucas-maes/le-wm/main/config/eval/cube.yaml",
+    "bytes": 1129,
+    "saved": true
+  },
+  {
+    "name": "upstream_reacher.yaml",
+    "url": "https://raw.githubusercontent.com/lucas-maes/le-wm/main/config/eval/reacher.yaml",
+    "bytes": 841,
+    "saved": true
+  },
+  {
+    "name": "upstream_tworoom.yaml",
+    "url": "https://raw.githubusercontent.com/lucas-maes/le-wm/main/config/eval/tworoom.yaml",
+    "bytes": 812,
+    "saved": true
+  },
+  {
+    "name": "upstream_package_listing.json",
+    "url": "https://api.github.com/repos/galilai-group/stable-worldmodel/contents/stable_worldmodel?ref=main",
+    "bytes": 12228,
+    "saved": true
+  }
+]

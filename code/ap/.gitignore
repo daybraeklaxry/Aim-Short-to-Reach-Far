@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv*/
+build/
+dist/
+outputs/
+assets/
+*.pt
+*.ckpt
+*.h5
+*.hdf5
+*.npy
+*.npz
+assets.local.json

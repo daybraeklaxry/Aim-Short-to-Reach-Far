@@ -1,0 +1,534 @@
+{
+  "verified": true,
+  "checks": [
+    {
+      "destination": {
+        "config": {
+          "B": 150,
+          "H": 150,
+          "arm": "cem_final",
+          "iterations": 30
+        },
+        "kind": "horizon",
+        "task": "cube"
+      },
+      "source_arm": "gaussian_final",
+      "episodes": 384,
+      "same_episode_records": true
+    },
+    {
+      "destination": {
+        "config": {
+          "H": 150,
+          "arm": "cem_final",
+          "iterations": 30
+        },
+        "kind": "budget",
+        "task": "cube"
+      },
+      "source_arm": "gaussian_final",
+      "episodes": 384,
+      "same_episode_records": true
+    },
+    {
+      "destination": {
+        "config": {
+          "B": 150,
+          "H": 150,
+          "arm": "cem_observed",
+          "iterations": 30
+        },
+        "kind": "horizon",
+        "task": "cube"
+      },
+      "source_arm": "gaussian_observed",
+      "episodes": 384,
+      "same_episode_records": true
+    },
+    {
+      "destination": {
+        "config": {
+          "H": 150,
+          "arm": "cem_observed",
+          "iterations": 30
+        },
+        "kind": "budget",
+        "task": "cube"
+      },
+      "source_arm": "gaussian_observed",
+      "episodes": 384,
+      "same_episode_records": true
+    },
+    {
+      "destination": {
+        "config": {
+          "H": 150,
+          "arm": "cem_observed",
+          "default": true,
+          "iterations": 30
+        },
+        "kind": "ablation",
+        "task": "cube"
+      },
+      "source_arm": "gaussian_observed",
+      "episodes": 384,
+      "same_episode_records": true
+    },
+    {
+      "destination": {
+        "config": {
+          "B": 150,
+          "H": 150,
+          "arm": "rank_final",
+          "iterations": 30
+        },
+        "kind": "horizon",
+        "task": "cube"
+      },
+      "source_arm": "ap_final",
+      "episodes": 384,
+      "same_episode_records": true
+    },
+    {
+      "destination": {
+        "config": {
+          "B": 150,
+          "H": 150,
+          "arm": "rank_observed",
+          "iterations": 30
+        },
+        "kind": "horizon",
+        "task": "cube"
+      },
+      "source_arm": "ap_observed",
+      "episodes": 384,
+      "same_episode_records": true
+    },
+    {
+      "destination": {
+        "config": {
+          "H": 150,
+          "arm": "rank_observed",
+          "default": true,
+          "iterations": 30
+        },
+        "kind": "ablation",
+        "task": "cube"
+      },
+      "source_arm": "ap_observed",
+      "episodes": 384,
+      "same_episode_records": true
+    },
+    {
+      "destination": {
+        "config": {
+          "H": 150,
+          "arm": "cem_observed",
+          "iterations": 30
+        },
+        "kind": "transport",
+        "task": "cube"
+      },
+      "source_arm": "gaussian_observed",
+      "episodes": 384,
+      "same_episode_records": true
+    },
+    {
+      "destination": {
+        "config": {
+          "B": 280,
+          "H": 140,
+          "arm": "cem_final",
+          "iterations": 30
+        },
+        "kind": "horizon",
+        "task": "pusht"
+      },
+      "source_arm": "gaussian_final",
+      "episodes": 384,
+      "same_episode_records": true
+    },
+    {
+      "destination": {
+        "config": {
+          "H": 140,
+          "arm": "cem_final",
+          "iterations": 30
+        },
+        "kind": "budget",
+        "task": "pusht"
+      },
+      "source_arm": "gaussian_final",
+      "episodes": 384,
+      "same_episode_records": true
+    },
+    {
+      "destination": {
+        "config": {
+          "B": 280,
+          "H": 140,
+          "arm": "cem_observed",
+          "iterations": 30
+        },
+        "kind": "horizon",
+        "task": "pusht"
+      },
+      "source_arm": "gaussian_observed",
+      "episodes": 384,
+      "same_episode_records": true
+    },
+    {
+      "destination": {
+        "config": {
+          "H": 140,
+          "arm": "cem_observed",
+          "iterations": 30
+        },
+        "kind": "budget",
+        "task": "pusht"
+      },
+      "source_arm": "gaussian_observed",
+      "episodes": 384,
+      "same_episode_records": true
+    },
+    {
+      "destination": {
+        "config": {
+          "H": 140,
+          "arm": "cem_observed",
+          "default": true,
+          "iterations": 30
+        },
+        "kind": "ablation",
+        "task": "pusht"
+      },
+      "source_arm": "gaussian_observed",
+      "episodes": 384,
+      "same_episode_records": true
+    },
+    {
+      "destination": {
+        "config": {
+          "B": 280,
+          "H": 140,
+          "arm": "rank_final",
+          "iterations": 30
+        },
+        "kind": "horizon",
+        "task": "pusht"
+      },
+      "source_arm": "ap_final",
+      "episodes": 384,
+      "same_episode_records": true
+    },
+    {
+      "destination": {
+        "config": {
+          "B": 280,
+          "H": 140,
+          "arm": "rank_observed",
+          "iterations": 30
+        },
+        "kind": "horizon",
+        "task": "pusht"
+      },
+      "source_arm": "ap_observed",
+      "episodes": 384,
+      "same_episode_records": true
+    },
+    {
+      "destination": {
+        "config": {
+          "H": 140,
+          "arm": "rank_observed",
+          "default": true,
+          "iterations": 30
+        },
+        "kind": "ablation",
+        "task": "pusht"
+      },
+      "source_arm": "ap_observed",
+      "episodes": 384,
+      "same_episode_records": true
+    },
+    {
+      "destination": {
+        "config": {
+          "H": 140,
+          "arm": "cem_observed",
+          "iterations": 30
+        },
+        "kind": "transport",
+        "task": "pusht"
+      },
+      "source_arm": "gaussian_observed",
+      "episodes": 384,
+      "same_episode_records": true
+    },
+    {
+      "destination": {
+        "config": {
+          "B": 300,
+          "H": 150,
+          "arm": "cem_final",
+          "iterations": 30
+        },
+        "kind": "horizon",
+        "task": "reacher"
+      },
+      "source_arm": "gaussian_final",
+      "episodes": 384,
+      "same_episode_records": true
+    },
+    {
+      "destination": {
+        "config": {
+          "H": 150,
+          "arm": "cem_final",
+          "iterations": 30
+        },
+        "kind": "budget",
+        "task": "reacher"
+      },
+      "source_arm": "gaussian_final",
+      "episodes": 384,
+      "same_episode_records": true
+    },
+    {
+      "destination": {
+        "config": {
+          "B": 300,
+          "H": 150,
+          "arm": "cem_observed",
+          "iterations": 30
+        },
+        "kind": "horizon",
+        "task": "reacher"
+      },
+      "source_arm": "gaussian_observed",
+      "episodes": 384,
+      "same_episode_records": true
+    },
+    {
+      "destination": {
+        "config": {
+          "H": 150,
+          "arm": "cem_observed",
+          "iterations": 30
+        },
+        "kind": "budget",
+        "task": "reacher"
+      },
+      "source_arm": "gaussian_observed",
+      "episodes": 384,
+      "same_episode_records": true
+    },
+    {
+      "destination": {
+        "config": {
+          "H": 150,
+          "arm": "cem_observed",
+          "default": true,
+          "iterations": 30
+        },
+        "kind": "ablation",
+        "task": "reacher"
+      },
+      "source_arm": "gaussian_observed",
+      "episodes": 384,
+      "same_episode_records": true
+    },
+    {
+      "destination": {
+        "config": {
+          "B": 300,
+          "H": 150,
+          "arm": "rank_final",
+          "iterations": 30
+        },
+        "kind": "horizon",
+        "task": "reacher"
+      },
+      "source_arm": "ap_final",
+      "episodes": 384,
+      "same_episode_records": true
+    },
+    {
+      "destination": {
+        "config": {
+          "B": 300,
+          "H": 150,
+          "arm": "rank_observed",
+          "iterations": 30
+        },
+        "kind": "horizon",
+        "task": "reacher"
+      },
+      "source_arm": "ap_observed",
+      "episodes": 384,
+      "same_episode_records": true
+    },
+    {
+      "destination": {
+        "config": {
+          "H": 150,
+          "arm": "rank_observed",
+          "default": true,
+          "iterations": 30
+        },
+        "kind": "ablation",
+        "task": "reacher"
+      },
+      "source_arm": "ap_observed",
+      "episodes": 384,
+      "same_episode_records": true
+    },
+    {
+      "destination": {
+        "config": {
+          "H": 150,
+          "arm": "cem_observed",
+          "iterations": 30
+        },
+        "kind": "transport",
+        "task": "reacher"
+      },
+      "source_arm": "gaussian_observed",
+      "episodes": 384,
+      "same_episode_records": true
+    },
+    {
+      "destination": {
+        "config": {
+          "B": 200,
+          "H": 100,
+          "arm": "cem_final",
+          "iterations": 30
+        },
+        "kind": "horizon",
+        "task": "tworoom"
+      },
+      "source_arm": "gaussian_final",
+      "episodes": 384,
+      "same_episode_records": true
+    },
+    {
+      "destination": {
+        "config": {
+          "H": 100,
+          "arm": "cem_final",
+          "iterations": 30
+        },
+        "kind": "budget",
+        "task": "tworoom"
+      },
+      "source_arm": "gaussian_final",
+      "episodes": 384,
+      "same_episode_records": true
+    },
+    {
+      "destination": {
+        "config": {
+          "B": 200,
+          "H": 100,
+          "arm": "cem_observed",
+          "iterations": 30
+        },
+        "kind": "horizon",
+        "task": "tworoom"
+      },
+      "source_arm": "gaussian_observed",
+      "episodes": 384,
+      "same_episode_records": true
+    },
+    {
+      "destination": {
+        "config": {
+          "H": 100,
+          "arm": "cem_observed",
+          "iterations": 30
+        },
+        "kind": "budget",
+        "task": "tworoom"
+      },
+      "source_arm": "gaussian_observed",
+      "episodes": 384,
+      "same_episode_records": true
+    },
+    {
+      "destination": {
+        "config": {
+          "H": 100,
+          "arm": "cem_observed",
+          "default": true,
+          "iterations": 30
+        },
+        "kind": "ablation",
+        "task": "tworoom"
+      },
+      "source_arm": "gaussian_observed",
+      "episodes": 384,
+      "same_episode_records": true
+    },
+    {
+      "destination": {
+        "config": {
+          "B": 200,
+          "H": 100,
+          "arm": "rank_final",
+          "iterations": 30
+        },
+        "kind": "horizon",
+        "task": "tworoom"
+      },
+      "source_arm": "ap_final",
+      "episodes": 384,
+      "same_episode_records": true
+    },
+    {
+      "destination": {
+        "config": {
+          "B": 200,
+          "H": 100,
+          "arm": "rank_observed",
+          "iterations": 30
+        },
+        "kind": "horizon",
+        "task": "tworoom"
+      },
+      "source_arm": "ap_observed",
+      "episodes": 384,
+      "same_episode_records": true
+    },
+    {
+      "destination": {
+        "config": {
+          "H": 100,
+          "arm": "rank_observed",
+          "default": true,
+          "iterations": 30
+        },
+        "kind": "ablation",
+        "task": "tworoom"
+      },
+      "source_arm": "ap_observed",
+      "episodes": 384,
+      "same_episode_records": true
+    },
+    {
+      "destination": {
+        "config": {
+          "H": 100,
+          "arm": "cem_observed",
+          "iterations": 30
+        },
+        "kind": "transport",
+        "task": "tworoom"
+      },
+      "source_arm": "gaussian_observed",
+      "episodes": 384,
+      "same_episode_records": true
+    }
+  ],
+  "criterion": "Source episode dictionaries are reused directly; no reconstructed rounded percentages or independent default reruns."
+}

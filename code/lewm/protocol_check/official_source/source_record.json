@@ -1,0 +1,56 @@
+{
+  "ref": "83f97d72ad067855bc89a1b74b4aff11d4dfdf0c",
+  "reason": "Initial official release, whose AutoCostModel loader and evaluate_from_dataset API both match stable-worldmodel 0.0.6. May revisions require newer loader/evaluation APIs.",
+  "files": [
+    {
+      "path": "eval.py",
+      "bytes": 5781,
+      "url": "https://raw.githubusercontent.com/lucas-maes/le-wm/83f97d72ad067855bc89a1b74b4aff11d4dfdf0c/eval.py"
+    },
+    {
+      "path": "jepa.py",
+      "bytes": 5398,
+      "url": "https://raw.githubusercontent.com/lucas-maes/le-wm/83f97d72ad067855bc89a1b74b4aff11d4dfdf0c/jepa.py"
+    },
+    {
+      "path": "module.py",
+      "bytes": 8428,
+      "url": "https://raw.githubusercontent.com/lucas-maes/le-wm/83f97d72ad067855bc89a1b74b4aff11d4dfdf0c/module.py"
+    },
+    {
+      "path": "utils.py",
+      "bytes": 2087,
+      "url": "https://raw.githubusercontent.com/lucas-maes/le-wm/83f97d72ad067855bc89a1b74b4aff11d4dfdf0c/utils.py"
+    },
+    {
+      "path": "config/eval/pusht.yaml",
+      "bytes": 871,
+      "url": "https://raw.githubusercontent.com/lucas-maes/le-wm/83f97d72ad067855bc89a1b74b4aff11d4dfdf0c/config/eval/pusht.yaml"
+    },
+    {
+      "path": "config/eval/cube.yaml",
+      "bytes": 1163,
+      "url": "https://raw.githubusercontent.com/lucas-maes/le-wm/83f97d72ad067855bc89a1b74b4aff11d4dfdf0c/config/eval/cube.yaml"
+    },
+    {
+      "path": "config/eval/reacher.yaml",
+      "bytes": 875,
+      "url": "https://raw.githubusercontent.com/lucas-maes/le-wm/83f97d72ad067855bc89a1b74b4aff11d4dfdf0c/config/eval/reacher.yaml"
+    },
+    {
+      "path": "config/eval/tworoom.yaml",
+      "bytes": 846,
+      "url": "https://raw.githubusercontent.com/lucas-maes/le-wm/83f97d72ad067855bc89a1b74b4aff11d4dfdf0c/config/eval/tworoom.yaml"
+    },
+    {
+      "path": "config/eval/solver/cem.yaml",
+      "bytes": 152,
+      "url": "https://raw.githubusercontent.com/lucas-maes/le-wm/83f97d72ad067855bc89a1b74b4aff11d4dfdf0c/config/eval/solver/cem.yaml"
+    },
+    {
+      "path": "config/eval/launcher/local.yaml",
+      "bytes": 164,
+      "url": "https://raw.githubusercontent.com/lucas-maes/le-wm/83f97d72ad067855bc89a1b74b4aff11d4dfdf0c/config/eval/launcher/local.yaml"
+    }
+  ]
+}

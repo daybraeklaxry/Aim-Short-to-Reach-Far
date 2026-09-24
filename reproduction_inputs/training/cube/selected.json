@@ -1,0 +1,67 @@
+{
+  "selected_utc": "2026-09-22T19:00:30.547821+00:00",
+  "criterion": "lowest raw-latent validation MSE on the same 4096 held-out-memory transitions",
+  "candidates": [
+    {
+      "complete": true,
+      "task": "cube",
+      "width": 512,
+      "residual": 0,
+      "updates": 50000,
+      "best_step": 48500,
+      "validation_mse": 0.1049262285232544,
+      "checkpoint": "runtime/ap/evidence_strengthening_20260923/results_v2/training/cube/w512_absolute/best.pt",
+      "elapsed_seconds": 896.5204973481596,
+      "peak_reserved_bytes": 3355443200
+    },
+    {
+      "complete": true,
+      "task": "cube",
+      "width": 512,
+      "residual": 1,
+      "updates": 50000,
+      "best_step": 48500,
+      "validation_mse": 0.10457925498485565,
+      "checkpoint": "runtime/ap/evidence_strengthening_20260923/results_v2/training/cube/w512_residual/best.pt",
+      "elapsed_seconds": 939.3789308723062,
+      "peak_reserved_bytes": 3355443200
+    },
+    {
+      "complete": true,
+      "task": "cube",
+      "width": 1024,
+      "residual": 0,
+      "updates": 46000,
+      "best_step": 41000,
+      "validation_mse": 0.10442221164703369,
+      "checkpoint": "runtime/ap/evidence_strengthening_20260923/results_v2/training/cube/w1024_absolute/best.pt",
+      "elapsed_seconds": 864.1371846850961,
+      "peak_reserved_bytes": 3426746368
+    },
+    {
+      "complete": true,
+      "task": "cube",
+      "width": 1024,
+      "residual": 1,
+      "updates": 50000,
+      "best_step": 48500,
+      "validation_mse": 0.10264599323272705,
+      "checkpoint": "runtime/ap/evidence_strengthening_20260923/results_v2/training/cube/w1024_residual/best.pt",
+      "elapsed_seconds": 1062.935146804899,
+      "peak_reserved_bytes": 3426746368
+    }
+  ],
+  "selected": {
+    "complete": true,
+    "task": "cube",
+    "width": 1024,
+    "residual": 1,
+    "updates": 50000,
+    "best_step": 48500,
+    "validation_mse": 0.10264599323272705,
+    "checkpoint": "runtime/ap/evidence_strengthening_20260923/results_v2/training/cube/w1024_residual/best.pt",
+    "elapsed_seconds": 1062.935146804899,
+    "peak_reserved_bytes": 3426746368
+  },
+  "control_results_used": false
+}

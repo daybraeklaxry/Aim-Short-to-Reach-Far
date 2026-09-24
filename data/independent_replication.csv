@@ -1,0 +1,41 @@
+task,rule,target,start,successes,episodes,success_percent,query_set,action_mapping,precision
+Cube,CEM,final goal,Standard,11,128,8.59375,supporting,inverse scaler; no external Box projection,integer count uniquely recovered from published rate and n=128
+Cube,CEM,observed,Standard,50,128,39.0625,supporting,inverse scaler; no external Box projection,integer count uniquely recovered from published rate and n=128
+PushT,CEM,final goal,Standard,2,128,1.5625,supporting,inverse scaler; no external Box projection,integer count uniquely recovered from published rate and n=128
+PushT,CEM,observed,Standard,104,128,81.25,supporting,inverse scaler; no external Box projection,integer count uniquely recovered from published rate and n=128
+Reacher,CEM,final goal,Standard,32,128,25,supporting,inverse scaler; no external Box projection,integer count uniquely recovered from published rate and n=128
+Reacher,CEM,observed,Standard,97,128,75.78125,supporting,inverse scaler; no external Box projection,integer count uniquely recovered from published rate and n=128
+TwoRoom,CEM,final goal,Standard,1,128,0.78125,supporting,inverse scaler; no external Box projection,integer count uniquely recovered from published rate and n=128
+TwoRoom,CEM,observed,Standard,50,128,39.0625,supporting,inverse scaler; no external Box projection,integer count uniquely recovered from published rate and n=128
+Cube,ranking,final goal,Standard,83,128,64.84375,supporting,inverse scaler; no external Box projection,integer count uniquely recovered from published rate and n=128
+Cube,ranking,observed,Standard,91,128,71.09375,supporting,inverse scaler; no external Box projection,integer count uniquely recovered from published rate and n=128
+Cube,ranking,final goal,Perturbed 1,55,128,42.96875,supporting,inverse scaler; no external Box projection,integer count uniquely recovered from published rate and n=128
+Cube,ranking,observed,Perturbed 1,52,128,40.625,supporting,inverse scaler; no external Box projection,integer count uniquely recovered from published rate and n=128
+Cube,ranking,final goal,Perturbed 2,51,128,39.84375,supporting,inverse scaler; no external Box projection,integer count uniquely recovered from published rate and n=128
+Cube,ranking,observed,Perturbed 2,59,128,46.09375,supporting,inverse scaler; no external Box projection,integer count uniquely recovered from published rate and n=128
+PushT,ranking,final goal,Standard,33,128,25.78125,supporting,inverse scaler; no external Box projection,integer count uniquely recovered from published rate and n=128
+PushT,ranking,observed,Standard,100,128,78.125,supporting,inverse scaler; no external Box projection,integer count uniquely recovered from published rate and n=128
+PushT,ranking,final goal,Perturbed 1,11,128,8.59375,supporting,inverse scaler; no external Box projection,integer count uniquely recovered from published rate and n=128
+PushT,ranking,observed,Perturbed 1,69,128,53.90625,supporting,inverse scaler; no external Box projection,integer count uniquely recovered from published rate and n=128
+PushT,ranking,final goal,Perturbed 2,12,128,9.375,supporting,inverse scaler; no external Box projection,integer count uniquely recovered from published rate and n=128
+PushT,ranking,observed,Perturbed 2,57,128,44.53125,supporting,inverse scaler; no external Box projection,integer count uniquely recovered from published rate and n=128
+Reacher,ranking,final goal,Standard,118,128,92.1875,supporting,inverse scaler; no external Box projection,integer count uniquely recovered from published rate and n=128
+Reacher,ranking,observed,Standard,122,128,95.3125,supporting,inverse scaler; no external Box projection,integer count uniquely recovered from published rate and n=128
+Reacher,ranking,final goal,Perturbed 1,115,128,89.84375,supporting,inverse scaler; no external Box projection,integer count uniquely recovered from published rate and n=128
+Reacher,ranking,observed,Perturbed 1,126,128,98.4375,supporting,inverse scaler; no external Box projection,integer count uniquely recovered from published rate and n=128
+Reacher,ranking,final goal,Perturbed 2,112,128,87.5,supporting,inverse scaler; no external Box projection,integer count uniquely recovered from published rate and n=128
+Reacher,ranking,observed,Perturbed 2,119,128,92.96875,supporting,inverse scaler; no external Box projection,integer count uniquely recovered from published rate and n=128
+TwoRoom,ranking,final goal,Standard,109,128,85.15625,supporting,inverse scaler; no external Box projection,integer count uniquely recovered from published rate and n=128
+TwoRoom,ranking,observed,Standard,128,128,100,supporting,inverse scaler; no external Box projection,integer count uniquely recovered from published rate and n=128
+TwoRoom,ranking,final goal,Perturbed 1,113,128,88.28125,supporting,inverse scaler; no external Box projection,integer count uniquely recovered from published rate and n=128
+TwoRoom,ranking,observed,Perturbed 1,128,128,100,supporting,inverse scaler; no external Box projection,integer count uniquely recovered from published rate and n=128
+TwoRoom,ranking,final goal,Perturbed 2,113,128,88.28125,supporting,inverse scaler; no external Box projection,integer count uniquely recovered from published rate and n=128
+TwoRoom,ranking,observed,Perturbed 2,127,128,99.21875,supporting,inverse scaler; no external Box projection,integer count uniquely recovered from published rate and n=128
+Cube,ranking,final goal,Perturbed,106,256,41.40625,supporting,inverse scaler; no external Box projection,exact pooled count; two equally weighted starts per query
+Cube,ranking,observed,Perturbed,111,256,43.359375,supporting,inverse scaler; no external Box projection,exact pooled count; two equally weighted starts per query
+PushT,ranking,final goal,Perturbed,23,256,8.984375,supporting,inverse scaler; no external Box projection,exact pooled count; two equally weighted starts per query
+PushT,ranking,observed,Perturbed,126,256,49.21875,supporting,inverse scaler; no external Box projection,exact pooled count; two equally weighted starts per query
+Reacher,ranking,final goal,Perturbed,227,256,88.671875,supporting,inverse scaler; no external Box projection,exact pooled count; two equally weighted starts per query
+Reacher,ranking,observed,Perturbed,245,256,95.703125,supporting,inverse scaler; no external Box projection,exact pooled count; two equally weighted starts per query
+TwoRoom,ranking,final goal,Perturbed,226,256,88.28125,supporting,inverse scaler; no external Box projection,exact pooled count; two equally weighted starts per query
+TwoRoom,ranking,observed,Perturbed,255,256,99.609375,supporting,inverse scaler; no external Box projection,exact pooled count; two equally weighted starts per query

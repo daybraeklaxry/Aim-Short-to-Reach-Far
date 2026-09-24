@@ -1,0 +1,19 @@
+task,factor,episodes,main_H25_successes,factor_successes,main_success_percent,factor_success_percent,gain_percentage_points,same_query_sources,action_budget,actual_goal_frame_offset,mean_prediction_blocks,interpretation
+cube,budget50,128,41,47,32.03125,36.71875,4.6875,True,50,25,66796.875,one factor changed; effects are not an additive decomposition
+cube,cube_full_state,128,41,42,32.03125,32.8125,0.78125,True,25,25,36210.9375,one factor changed; effects are not an additive decomposition
+cube,dataset_initial_image,128,41,41,32.03125,32.03125,0.0,True,25,25,36210.9375,one factor changed; effects are not an additive decomposition
+pusht,dataset_initial_image,128,78,81,60.9375,63.28125,2.34375,True,50,25,64335.9375,one factor changed; effects are not an additive decomposition
+reacher,dataset_initial_image,128,88,102,68.75,79.6875,10.9375,True,50,25,66796.875,one factor changed; effects are not an additive decomposition
+tworoom,dataset_initial_image,128,99,99,77.34375,77.34375,0.0,True,50,25,54843.75,one factor changed; effects are not an additive decomposition
+cube,goal_frame24,128,41,43,32.03125,33.59375,1.5625,True,25,24,35859.375,one factor changed; effects are not an additive decomposition
+pusht,goal_frame24,128,78,84,60.9375,65.625,4.6875,True,50,24,69257.8125,one factor changed; effects are not an additive decomposition
+reacher,goal_frame24,128,88,98,68.75,76.5625,7.8125,True,50,24,71015.625,one factor changed; effects are not an additive decomposition
+tworoom,goal_frame24,128,99,101,77.34375,78.90625,1.5625,True,50,24,53085.9375,one factor changed; effects are not an additive decomposition
+cube,official_queries,128,41,92,32.03125,71.875,39.84375,False,25,25,23906.25,one factor changed; effects are not an additive decomposition
+pusht,official_queries,128,78,106,60.9375,82.8125,21.875,False,50,25,59765.625,one factor changed; effects are not an additive decomposition
+reacher,official_queries,128,88,94,68.75,73.4375,4.6875,False,50,25,75234.375,one factor changed; effects are not an additive decomposition
+tworoom,official_queries,128,99,105,77.34375,82.03125,4.6875,False,50,25,54140.625,one factor changed; effects are not an additive decomposition
+cube,success_predicate_rescore,128,41,41,32.03125,32.03125,0.0,True,25,25,36210.9375,saved main trajectories rescored; no new rollout or prediction work
+pusht,success_predicate_rescore,128,78,78,60.9375,60.9375,0.0,True,50,25,70312.5,saved main trajectories rescored; no new rollout or prediction work
+reacher,success_predicate_rescore,128,88,88,68.75,68.75,0.0,True,50,25,70664.0625,saved main trajectories rescored; no new rollout or prediction work
+tworoom,success_predicate_rescore,128,99,99,77.34375,77.34375,0.0,True,50,25,54843.75,saved main trajectories rescored; no new rollout or prediction work

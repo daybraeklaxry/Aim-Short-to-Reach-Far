@@ -1,0 +1,12 @@
+{
+  "complete": true,
+  "task": "reacher",
+  "width": 512,
+  "residual": 0,
+  "updates": 16500,
+  "best_step": 11500,
+  "validation_mse": 0.3918396830558777,
+  "checkpoint": "runtime/ap/evidence_strengthening_20260923/results_v2/training/reacher/w512_absolute/best.pt",
+  "elapsed_seconds": 100.31792397797108,
+  "peak_reserved_bytes": 3355443200
+}

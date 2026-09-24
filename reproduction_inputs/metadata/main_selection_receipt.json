@@ -1,0 +1,78 @@
+{
+  "status": "prepared and fixed; final controller/protocol not frozen",
+  "recorded_utc": "2026-09-13T16:21:50.392512+00:00",
+  "cohort_created_utc": "2026-09-13T16:19:37.040082+00:00",
+  "prefix_created_utc": "2026-09-13T16:19:49.684575+00:00",
+  "remote_directory": "external/le-wm/research/ap_rank_oral_revision_20260913/fresh_query_preparation_20260914",
+  "query_seed": 26091391,
+  "prefix_seeds": {
+    "prefix_a": 26091392,
+    "prefix_b": 26091393
+  },
+  "sampler": "reviewed existing PCG64/SeedSequence sampler unchanged; no resampling",
+  "table": {
+    "cube": {
+      "query_count": 128,
+      "eligible_count": 422,
+      "original_bank_episodes": 8000,
+      "active_bank_episodes": 8000,
+      "removed_bank_episodes": 0,
+      "prefix_population_starts": 1568000,
+      "condition_rows": 384,
+      "nonclean_prefixes": 256
+    },
+    "pusht": {
+      "query_count": 128,
+      "eligible_count": 5627,
+      "original_bank_episodes": 16816,
+      "active_bank_episodes": 16688,
+      "removed_bank_episodes": 128,
+      "prefix_population_starts": 1997788,
+      "condition_rows": 384,
+      "nonclean_prefixes": 256
+    },
+    "reacher": {
+      "query_count": 128,
+      "eligible_count": 774,
+      "original_bank_episodes": 8000,
+      "active_bank_episodes": 8000,
+      "removed_bank_episodes": 0,
+      "prefix_population_starts": 1568000,
+      "condition_rows": 384,
+      "nonclean_prefixes": 256
+    },
+    "tworoom": {
+      "query_count": 128,
+      "eligible_count": 366,
+      "original_bank_episodes": 8000,
+      "active_bank_episodes": 8000,
+      "removed_bank_episodes": 0,
+      "prefix_population_starts": 696960,
+      "condition_rows": 384,
+      "nonclean_prefixes": 256
+    }
+  },
+  "query_episodes": 512,
+  "query_conditions": 1536,
+  "nonclean_five_action_prefixes": 1024,
+  "all_identity_condition_pairings": "PASS",
+  "all_query_memory_disjointness": "PASS",
+  "all_prefix_membership_and_seed_checks": "PASS",
+  "files_bytes": {
+    "cohort.json": 921545,
+    "source_manifest.json": 1349028,
+    "source_inventory.json": 160094,
+    "pusht_removed_episodes.json": 1500,
+    "query_manifest.csv": 43814,
+    "code/input_spec.json": 1043
+  },
+  "errors_or_sampler_changes": [],
+  "final_dependency_filled": false,
+  "freeze_protocol_run": false,
+  "policy_outcomes_written": 0,
+  "model_calls": 0,
+  "environment_steps": 0,
+  "new_success_rates_read": false,
+  "future_action_protocol": "P(actual Box) of these same preassigned prefixes, shared by all three policies; no resampling; effective values created only at reviewed construction",
+  "scope": "New control query episodes relative to memory; not proof of predictor-pretraining holdout."
+}

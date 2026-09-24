@@ -1,0 +1,25 @@
+{
+  "total_pages": 24,
+  "main_pages": 9,
+  "appendix_pages": 12,
+  "total_tables": 16,
+  "source_files": 53,
+  "csv_rows": {
+    "main_results": 128,
+    "interventions": 996,
+    "first_block": 128,
+    "diagnostics": 16,
+    "behavior": 840,
+    "target_models": 16,
+    "target_quality": 8,
+    "independent_replication": 40,
+    "legacy_tables": 394
+  },
+  "main_results_unchanged": true,
+  "figures_unchanged": true,
+  "full_proof_unchanged": true,
+  "unresolved_references": [],
+  "latex_issues": [],
+  "baseline": "released LeWM plan25/execute25; current 7296-episode rerun",
+  "new_experiments": 0
+}

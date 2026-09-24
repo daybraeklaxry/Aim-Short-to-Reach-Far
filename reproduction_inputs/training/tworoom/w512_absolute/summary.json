@@ -1,0 +1,12 @@
+{
+  "complete": true,
+  "task": "tworoom",
+  "width": 512,
+  "residual": 0,
+  "updates": 19500,
+  "best_step": 14500,
+  "validation_mse": 0.697171688079834,
+  "checkpoint": "runtime/ap/evidence_strengthening_20260923/results_v2/training/tworoom/w512_absolute/best.pt",
+  "elapsed_seconds": 153.91880781203508,
+  "peak_reserved_bytes": 1681915904
+}

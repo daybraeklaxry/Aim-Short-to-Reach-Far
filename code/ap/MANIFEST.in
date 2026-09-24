@@ -1,0 +1,6 @@
+include README.md LICENSE NOTICE.md
+recursive-include requirements *.txt
+recursive-include protocols *.json
+recursive-include results *.json *.csv *.md
+recursive-include examples *.json *.py
+recursive-include tests *.py

@@ -1,0 +1,247 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="504" viewBox="0 0 960 504">
+<title>Anchored Planning: observed targets, live predictions</title>
+<desc>Three panels separate observed target construction, alternative action proposals, and frozen live-state prediction. The observed successor is a historical outcome, not a guaranteed reachable live outcome. Glyphs are schematic.</desc>
+<rect id="background" x="0" y="0" width="960" height="504" rx="0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0"/>
+<g id="panel-target">
+<rect id="panel-target-background" x="7" y="7" width="405" height="490" rx="8" fill="#FFFFFF" stroke="#A5B3BE" stroke-width="1.35" stroke-dasharray="6,5"/>
+<text id="panel-target-title" x="25" y="38" font-family="Arial" font-size="22" fill="#293B48" text-anchor="start" font-weight="bold">(a) Observed target</text>
+<text id="current-label" x="111" y="70" font-family="Arial" font-size="21" fill="#293B48" text-anchor="middle">Current</text>
+<text id="goal-label" x="303" y="70" font-family="Arial" font-size="21" fill="#293B48" text-anchor="middle">Goal</text>
+<g id="current-observation">
+<rect id="current-observation-frame" x="75" y="80" width="72" height="72" rx="3" fill="#FFFFFF" stroke="#668AA5" stroke-width="1.6"/>
+<path id="current-observation-goal" d="M107.625,98.000 L136.875,98.000 L136.875,105.875 L126.750,105.875 L126.750,126.125 L117.750,126.125 L117.750,105.875 L107.625,105.875 L107.625,98.000" fill="none" stroke="#C6D5DA" stroke-width="1.2375" stroke-linejoin="round" stroke-dasharray="2.25,2.25"/>
+<path id="current-observation-object" d="M84.979,117.102 L111.700,105.205 L114.903,112.399 L105.653,116.517 L113.890,135.016 L105.668,138.677 L97.431,120.178 L88.182,124.296 L84.979,117.102 Z" fill="#668AA5" stroke="#668AA5" stroke-width="0.9" stroke-linejoin="round"/>
+<circle id="current-observation-agent" cx="90.75" cy="135.125" r="3.375" fill="#BE8756" stroke="#BE8756" stroke-width="1.2"/>
+</g>
+<g id="goal-observation">
+<rect id="goal-observation-frame" x="267" y="80" width="72" height="72" rx="3" fill="#FFFFFF" stroke="#BE8756" stroke-width="1.6"/>
+<path id="goal-observation-goal" d="M299.625,98.000 L328.875,98.000 L328.875,105.875 L318.750,105.875 L318.750,126.125 L309.750,126.125 L309.750,105.875 L299.625,105.875 L299.625,98.000" fill="none" stroke="#C6D5DA" stroke-width="1.2375" stroke-linejoin="round" stroke-dasharray="2.25,2.25"/>
+<path id="goal-observation-object" d="M299.625,98.000 L328.875,98.000 L328.875,105.875 L318.750,105.875 L318.750,126.125 L309.750,126.125 L309.750,105.875 L299.625,105.875 L299.625,98.000 Z" fill="#BE8756" stroke="#BE8756" stroke-width="0.9" stroke-linejoin="round"/>
+<circle id="goal-observation-agent" cx="308.625" cy="127.25" r="3.375" fill="#BE8756" stroke="#BE8756" stroke-width="1.2"/>
+</g>
+<path id="current-input" d="M111.000,152.000 L111.000,165.000 L207.000,165.000" fill="none" stroke="#668AA5" stroke-width="1.6" stroke-linejoin="round"/>
+<path id="goal-input" d="M303.000,152.000 L303.000,165.000 L207.000,165.000" fill="none" stroke="#BE8756" stroke-width="1.6" stroke-linejoin="round"/>
+<circle id="observation-input-merge" cx="207" cy="165" r="2.6" fill="#293B48" stroke="#293B48" stroke-width="1.2"/>
+<path id="observations-to-encoder" d="M207.000,165.000 L207.000,178.000" fill="none" stroke="#293B48" stroke-width="1.6" stroke-linejoin="round"/>
+<path id="observations-to-encoder-head" d="M207.000,178.000 L203.976,171.576 L210.024,171.576 Z" fill="#293B48" stroke="#293B48" stroke-width="0" stroke-linejoin="round"/>
+<rect id="encoder" x="77" y="178" width="260" height="36" rx="7" fill="#C7DFEF" stroke="#293B48" stroke-width="1.4"/>
+<g id="encoder-label-lock">
+<path id="encoder-label-lock-shackle" d="M146.63623046875,193.9375 C146.63623046875,186.4375 155.63623046875,186.4375 155.63623046875,193.9375" fill="none" stroke="#293B48" stroke-width="1.2000000000000002"/>
+<rect id="encoder-label-lock-body" x="144.38623046875" y="193.1875" width="13.5" height="10.5" rx="1.5" fill="#FFFFFF" stroke="#293B48" stroke-width="1.125"/>
+<circle id="encoder-label-lock-key" cx="151.13623046875" cy="198.4375" r="1.125" fill="#293B48" stroke="#293B48" stroke-width="1.2"/>
+</g>
+<text id="encoder-label-text" x="166.88623046875" y="203.87939453125" font-family="Arial" font-size="22" fill="#293B48" text-anchor="start">Encoder E</text>
+<path id="encoding-to-retrieval" d="M207.000,214.000 L207.000,234.000" fill="none" stroke="#293B48" stroke-width="1.6" stroke-linejoin="round"/>
+<path id="encoding-to-retrieval-head" d="M207.000,234.000 L203.976,227.576 L210.024,227.576 Z" fill="#293B48" stroke="#293B48" stroke-width="0" stroke-linejoin="round"/>
+<rect id="retrieval" x="67" y="234" width="280" height="43" rx="7" fill="#F8F0DC" stroke="#293B48" stroke-width="1.4"/>
+<text id="retrieval-label" x="207" y="264" font-family="Arial" font-size="23" fill="#293B48" text-anchor="middle">Retrieve experience</text>
+<path id="retrieval-to-record" d="M207.000,277.000 L207.000,291.000" fill="none" stroke="#293B48" stroke-width="1.6" stroke-linejoin="round"/>
+<path id="retrieval-to-record-head" d="M207.000,291.000 L203.976,284.576 L210.024,284.576 Z" fill="#293B48" stroke="#293B48" stroke-width="0" stroke-linejoin="round"/>
+<text id="leading-record-label" x="207" y="313" font-family="Arial" font-size="20" fill="#293B48" text-anchor="middle">Retrieved record</text>
+<text id="record-source-label" x="74" y="337" font-family="Arial" font-size="19" fill="#293B48" text-anchor="middle">Source</text>
+<text id="record-successor-label" x="207" y="337" font-family="Arial" font-size="19" fill="#293B48" text-anchor="middle">+5 steps</text>
+<text id="record-distant-label-0" x="305.0" y="336.59375" font-family="Arial" font-size="19.0" fill="#293B48" text-anchor="start">+</text>
+<text id="record-distant-label-1" x="316.095703125" y="336.59375" font-family="Arial" font-size="19.0" fill="#293B48" text-anchor="start" font-style="italic">h</text>
+<text id="record-distant-label-2" x="329.3005084863281" y="336.59375" font-family="Arial" font-size="19.0" fill="#293B48" text-anchor="start">s</text>
+<text id="record-distant-label-3" x="338.8005084863281" y="336.59375" font-family="Arial" font-size="19.0" fill="#293B48" text-anchor="start">t</text>
+<text id="record-distant-label-4" x="344.0793170800781" y="336.59375" font-family="Arial" font-size="19.0" fill="#293B48" text-anchor="start">e</text>
+<text id="record-distant-label-5" x="354.6462116113281" y="336.59375" font-family="Arial" font-size="19.0" fill="#293B48" text-anchor="start">p</text>
+<text id="record-distant-label-6" x="365.2131061425781" y="336.59375" font-family="Arial" font-size="19.0" fill="#293B48" text-anchor="start">s</text>
+<g id="record-source">
+<rect id="record-source-frame" x="37" y="348" width="74" height="74" rx="3" fill="#FFFFFF" stroke="#A5B3BE" stroke-width="1.6"/>
+<path id="record-source-goal" d="M70.531,366.500 L100.594,366.500 L100.594,374.594 L90.188,374.594 L90.188,395.406 L80.938,395.406 L80.938,374.594 L70.531,374.594 L70.531,366.500" fill="none" stroke="#C6D5DA" stroke-width="1.271875" stroke-linejoin="round" stroke-dasharray="2.3125,2.3125"/>
+<path id="record-source-object" d="M45.214,386.929 L73.638,377.142 L76.273,384.794 L66.434,388.182 L73.210,407.861 L64.464,410.872 L57.688,391.194 L47.849,394.582 L45.214,386.929 Z" fill="#668AA5" stroke="#668AA5" stroke-width="0.925" stroke-linejoin="round"/>
+<circle id="record-source-agent" cx="52.03125" cy="405.8125" r="3.46875" fill="#BE8756" stroke="#BE8756" stroke-width="1.2"/>
+</g>
+<g id="record-successor">
+<rect id="record-successor-frame" x="170" y="348" width="74" height="74" rx="3" fill="#FFFFFF" stroke="#0F4D92" stroke-width="1.6"/>
+<path id="record-successor-goal" d="M203.531,366.500 L233.594,366.500 L233.594,374.594 L223.188,374.594 L223.188,395.406 L213.938,395.406 L213.938,374.594 L203.531,374.594 L203.531,366.500" fill="none" stroke="#C6D5DA" stroke-width="1.271875" stroke-linejoin="round" stroke-dasharray="2.3125,2.3125"/>
+<path id="record-successor-object" d="M192.903,372.719 L222.509,367.499 L223.915,375.470 L213.666,377.277 L217.281,397.773 L208.171,399.380 L204.557,378.883 L194.309,380.690 L192.903,372.719 Z" fill="#668AA5" stroke="#668AA5" stroke-width="0.925" stroke-linejoin="round"/>
+<circle id="record-successor-agent" cx="201.21875" cy="398.875" r="3.46875" fill="#BE8756" stroke="#BE8756" stroke-width="1.2"/>
+</g>
+<g id="record-distant">
+<rect id="record-distant-frame" x="303" y="348" width="74" height="74" rx="3" fill="#FFFFFF" stroke="#BE8756" stroke-width="1.6"/>
+<path id="record-distant-goal" d="M336.531,366.500 L366.594,366.500 L366.594,374.594 L356.188,374.594 L356.188,395.406 L346.938,395.406 L346.938,374.594 L336.531,374.594 L336.531,366.500" fill="none" stroke="#C6D5DA" stroke-width="1.271875" stroke-linejoin="round" stroke-dasharray="2.3125,2.3125"/>
+<path id="record-distant-object" d="M336.695,365.083 L366.753,365.607 L366.612,373.700 L356.207,373.518 L355.844,394.328 L346.595,394.166 L346.958,373.357 L336.554,373.175 L336.695,365.083 Z" fill="#668AA5" stroke="#668AA5" stroke-width="0.925" stroke-linejoin="round"/>
+<circle id="record-distant-agent" cx="345.78125" cy="396.5625" r="3.46875" fill="#BE8756" stroke="#BE8756" stroke-width="1.2"/>
+</g>
+<path id="current-source-match" d="M75.000,116.000 L21.000,116.000 L21.000,385.000 L37.000,385.000" fill="none" stroke="#668AA5" stroke-width="1.15" stroke-linejoin="round" stroke-dasharray="3,4"/>
+<path id="goal-distant-match" d="M339.000,116.000 L396.000,116.000 L396.000,385.000 L377.000,385.000" fill="none" stroke="#BE8756" stroke-width="1.15" stroke-linejoin="round" stroke-dasharray="3,4"/>
+<text id="current-match-label" x="28" y="228" font-family="Arial" font-size="16" fill="#668AA5" text-anchor="start">match</text>
+<text id="goal-match-label" x="351" y="228" font-family="Arial" font-size="16" fill="#BE8756" text-anchor="start">match</text>
+<path id="source-to-successor" d="M111.000,385.000 L170.000,385.000" fill="none" stroke="#293B48" stroke-width="1.6" stroke-linejoin="round"/>
+<path id="source-to-successor-head" d="M170.000,385.000 L163.576,388.024 L163.576,381.976 Z" fill="#293B48" stroke="#293B48" stroke-width="0" stroke-linejoin="round"/>
+<path id="successor-to-distant" d="M244.000,385.000 L303.000,385.000" fill="none" stroke="#293B48" stroke-width="1.6" stroke-linejoin="round" stroke-dasharray="3,4"/>
+<path id="successor-to-distant-head" d="M303.000,385.000 L296.576,388.024 L296.576,381.976 Z" fill="#293B48" stroke="#293B48" stroke-width="0" stroke-linejoin="round"/>
+<path id="successor-to-target" d="M207.000,422.000 L207.000,445.000" fill="none" stroke="#0F4D92" stroke-width="1.9" stroke-linejoin="round"/>
+<path id="successor-to-target-head" d="M207.000,445.000 L203.976,438.576 L210.024,438.576 Z" fill="#0F4D92" stroke="#0F4D92" stroke-width="0" stroke-linejoin="round"/>
+<rect id="shared-target" x="145" y="445" width="124" height="34" rx="6" fill="#DFEBF6" stroke="#0F4D92" stroke-width="1.5"/>
+<text id="shared-target-label-0" x="184.5" y="466.78125" font-family="Arial" font-size="26.0" fill="#293B48" text-anchor="start" font-style="italic">q</text>
+<text id="shared-target-label-1" x="198.9599609375" y="470.8265625" font-family="Arial" font-size="18.2" fill="#293B48" text-anchor="start">o</text>
+<text id="shared-target-label-2" x="209.08193359375" y="470.8265625" font-family="Arial" font-size="18.2" fill="#293B48" text-anchor="start">b</text>
+<text id="shared-target-label-3" x="219.20390625" y="470.8265625" font-family="Arial" font-size="18.2" fill="#293B48" text-anchor="start">s</text>
+</g>
+<g id="panel-proposals">
+<rect id="panel-proposals-background" x="433" y="7" width="520" height="193" rx="8" fill="#FFFFFF" stroke="#A5B3BE" stroke-width="1.35" stroke-dasharray="6,5"/>
+<text id="panel-proposals-title" x="451" y="38" font-family="Arial" font-size="22" fill="#293B48" text-anchor="start" font-weight="bold">(b) Action candidates</text>
+<rect id="cem-module" x="458" y="55" width="220" height="123" rx="9" fill="#EAE7F7" stroke="#293B48" stroke-width="1.4"/>
+<rect id="rank-module" x="715" y="55" width="220" height="123" rx="9" fill="#EDF1F5" stroke="#293B48" stroke-width="1.4"/>
+<text id="cem-title" x="568" y="82" font-family="Arial" font-size="23" fill="#293B48" text-anchor="middle">Gaussian CEM</text>
+<text id="rank-title" x="825" y="82" font-family="Arial" font-size="23" fill="#293B48" text-anchor="middle">AP-rank</text>
+<text id="proposal-or" x="696.5" y="122" font-family="Arial" font-size="18" fill="#293B48" text-anchor="middle">or</text>
+<path id="cem-distribution-axis" d="M475.000,119.000 L531.000,119.000" fill="none" stroke="#A5B3BE" stroke-width="1" stroke-linejoin="round"/>
+<path id="cem-prior-left" d="M477,118 C487,118 490,99 503,99" fill="none" stroke="#A4B4C4" stroke-width="1.6"/>
+<path id="cem-prior-right" d="M503,99 C516,99 519,118 529,118" fill="none" stroke="#A4B4C4" stroke-width="1.6"/>
+<path id="cem-refit-left" d="M485,118 C496,118 495,93 503,93" fill="none" stroke="#668AA5" stroke-width="1.8"/>
+<path id="cem-refit-right" d="M503,93 C511,93 510,118 521,118" fill="none" stroke="#668AA5" stroke-width="1.8"/>
+<text id="cem-source-label" x="599" y="113" font-family="Arial" font-size="18" fill="#293B48" text-anchor="middle">Sample &amp; refit</text>
+<rect id="rank-record-1" x="737" y="94" width="43" height="13" rx="1" fill="#FFFFFF" stroke="#668AA5" stroke-width="0.9"/>
+<path id="rank-record-1-cell-1" d="M745.600,94.000 L745.600,107.000" fill="none" stroke="#668AA5" stroke-width="0.7" stroke-linejoin="round"/>
+<path id="rank-record-1-cell-2" d="M754.200,94.000 L754.200,107.000" fill="none" stroke="#668AA5" stroke-width="0.7" stroke-linejoin="round"/>
+<path id="rank-record-1-cell-3" d="M762.800,94.000 L762.800,107.000" fill="none" stroke="#668AA5" stroke-width="0.7" stroke-linejoin="round"/>
+<path id="rank-record-1-cell-4" d="M771.400,94.000 L771.400,107.000" fill="none" stroke="#668AA5" stroke-width="0.7" stroke-linejoin="round"/>
+<rect id="rank-record-2" x="741" y="99" width="43" height="13" rx="1" fill="#FFFFFF" stroke="#668AA5" stroke-width="0.9"/>
+<path id="rank-record-2-cell-1" d="M749.600,99.000 L749.600,112.000" fill="none" stroke="#668AA5" stroke-width="0.7" stroke-linejoin="round"/>
+<path id="rank-record-2-cell-2" d="M758.200,99.000 L758.200,112.000" fill="none" stroke="#668AA5" stroke-width="0.7" stroke-linejoin="round"/>
+<path id="rank-record-2-cell-3" d="M766.800,99.000 L766.800,112.000" fill="none" stroke="#668AA5" stroke-width="0.7" stroke-linejoin="round"/>
+<path id="rank-record-2-cell-4" d="M775.400,99.000 L775.400,112.000" fill="none" stroke="#668AA5" stroke-width="0.7" stroke-linejoin="round"/>
+<rect id="rank-record-3" x="745" y="104" width="43" height="13" rx="1" fill="#FFFFFF" stroke="#668AA5" stroke-width="0.9"/>
+<path id="rank-record-3-cell-1" d="M753.600,104.000 L753.600,117.000" fill="none" stroke="#668AA5" stroke-width="0.7" stroke-linejoin="round"/>
+<path id="rank-record-3-cell-2" d="M762.200,104.000 L762.200,117.000" fill="none" stroke="#668AA5" stroke-width="0.7" stroke-linejoin="round"/>
+<path id="rank-record-3-cell-3" d="M770.800,104.000 L770.800,117.000" fill="none" stroke="#668AA5" stroke-width="0.7" stroke-linejoin="round"/>
+<path id="rank-record-3-cell-4" d="M779.400,104.000 L779.400,117.000" fill="none" stroke="#668AA5" stroke-width="0.7" stroke-linejoin="round"/>
+<text id="rank-source-label" x="853" y="113" font-family="Arial" font-size="18" fill="#293B48" text-anchor="middle">Retrieve 8</text>
+<path id="cem-source-to-sequence" d="M568.000,122.000 L568.000,133.000" fill="none" stroke="#293B48" stroke-width="1.3" stroke-linejoin="round"/>
+<path id="cem-source-to-sequence-head" d="M568.000,133.000 L564.976,126.576 L571.024,126.576 Z" fill="#293B48" stroke="#293B48" stroke-width="0" stroke-linejoin="round"/>
+<path id="rank-source-to-sequence" d="M825.000,122.000 L825.000,133.000" fill="none" stroke="#293B48" stroke-width="1.3" stroke-linejoin="round"/>
+<path id="rank-source-to-sequence-head" d="M825.000,133.000 L821.976,126.576 L828.024,126.576 Z" fill="#293B48" stroke="#293B48" stroke-width="0" stroke-linejoin="round"/>
+<g id="cem-sequence">
+<text id="cem-sequence-label-0" x="463.0" y="155.40625" font-family="Arial" font-size="22.0" fill="#293B48" text-anchor="start" font-style="italic">u</text>
+<text id="cem-sequence-label-1" x="475.2353515625" y="158.828125" font-family="Arial" font-size="15.399999999999999" fill="#293B48" text-anchor="start" font-style="italic">i</text>
+<rect id="cem-sequence-cell-1" x="488" y="133" width="32" height="32" rx="0" fill="#FFFFFF" stroke="#668AA5" stroke-width="0.85"/>
+<text id="cem-sequence-action-1-0" x="493.5" y="154.140625" font-family="Arial" font-size="21.0" fill="#293B48" text-anchor="start" font-style="italic">a</text>
+<text id="cem-sequence-action-1-1" x="505.17919921875" y="157.4078125" font-family="Arial" font-size="14.7" fill="#293B48" text-anchor="start">1</text>
+<rect id="cem-sequence-cell-2" x="520" y="133" width="32" height="32" rx="0" fill="#FFFFFF" stroke="#668AA5" stroke-width="0.85"/>
+<text id="cem-sequence-action-2-0" x="525.5" y="154.140625" font-family="Arial" font-size="21.0" fill="#293B48" text-anchor="start" font-style="italic">a</text>
+<text id="cem-sequence-action-2-1" x="537.17919921875" y="157.4078125" font-family="Arial" font-size="14.7" fill="#293B48" text-anchor="start">2</text>
+<rect id="cem-sequence-cell-3" x="552" y="133" width="32" height="32" rx="0" fill="#FFFFFF" stroke="#668AA5" stroke-width="0.85"/>
+<text id="cem-sequence-action-3-0" x="557.5" y="154.140625" font-family="Arial" font-size="21.0" fill="#293B48" text-anchor="start" font-style="italic">a</text>
+<text id="cem-sequence-action-3-1" x="569.17919921875" y="157.4078125" font-family="Arial" font-size="14.7" fill="#293B48" text-anchor="start">3</text>
+<rect id="cem-sequence-cell-4" x="584" y="133" width="32" height="32" rx="0" fill="#FFFFFF" stroke="#668AA5" stroke-width="0.85"/>
+<text id="cem-sequence-action-4-0" x="589.5" y="154.140625" font-family="Arial" font-size="21.0" fill="#293B48" text-anchor="start" font-style="italic">a</text>
+<text id="cem-sequence-action-4-1" x="601.17919921875" y="157.4078125" font-family="Arial" font-size="14.7" fill="#293B48" text-anchor="start">4</text>
+<rect id="cem-sequence-cell-5" x="616" y="133" width="32" height="32" rx="0" fill="#FFFFFF" stroke="#668AA5" stroke-width="0.85"/>
+<text id="cem-sequence-action-5-0" x="621.5" y="154.140625" font-family="Arial" font-size="21.0" fill="#293B48" text-anchor="start" font-style="italic">a</text>
+<text id="cem-sequence-action-5-1" x="633.17919921875" y="157.4078125" font-family="Arial" font-size="14.7" fill="#293B48" text-anchor="start">5</text>
+</g>
+<g id="rank-sequence">
+<text id="rank-sequence-label-0" x="720.0" y="155.40625" font-family="Arial" font-size="22.0" fill="#293B48" text-anchor="start" font-style="italic">u</text>
+<text id="rank-sequence-label-1" x="732.2353515625" y="158.828125" font-family="Arial" font-size="15.399999999999999" fill="#293B48" text-anchor="start" font-style="italic">i</text>
+<rect id="rank-sequence-cell-1" x="745" y="133" width="32" height="32" rx="0" fill="#FFFFFF" stroke="#668AA5" stroke-width="0.85"/>
+<text id="rank-sequence-action-1-0" x="750.5" y="154.140625" font-family="Arial" font-size="21.0" fill="#293B48" text-anchor="start" font-style="italic">a</text>
+<text id="rank-sequence-action-1-1" x="762.17919921875" y="157.4078125" font-family="Arial" font-size="14.7" fill="#293B48" text-anchor="start">1</text>
+<rect id="rank-sequence-cell-2" x="777" y="133" width="32" height="32" rx="0" fill="#FFFFFF" stroke="#668AA5" stroke-width="0.85"/>
+<text id="rank-sequence-action-2-0" x="782.5" y="154.140625" font-family="Arial" font-size="21.0" fill="#293B48" text-anchor="start" font-style="italic">a</text>
+<text id="rank-sequence-action-2-1" x="794.17919921875" y="157.4078125" font-family="Arial" font-size="14.7" fill="#293B48" text-anchor="start">2</text>
+<rect id="rank-sequence-cell-3" x="809" y="133" width="32" height="32" rx="0" fill="#FFFFFF" stroke="#668AA5" stroke-width="0.85"/>
+<text id="rank-sequence-action-3-0" x="814.5" y="154.140625" font-family="Arial" font-size="21.0" fill="#293B48" text-anchor="start" font-style="italic">a</text>
+<text id="rank-sequence-action-3-1" x="826.17919921875" y="157.4078125" font-family="Arial" font-size="14.7" fill="#293B48" text-anchor="start">3</text>
+<rect id="rank-sequence-cell-4" x="841" y="133" width="32" height="32" rx="0" fill="#FFFFFF" stroke="#668AA5" stroke-width="0.85"/>
+<text id="rank-sequence-action-4-0" x="846.5" y="154.140625" font-family="Arial" font-size="21.0" fill="#293B48" text-anchor="start" font-style="italic">a</text>
+<text id="rank-sequence-action-4-1" x="858.17919921875" y="157.4078125" font-family="Arial" font-size="14.7" fill="#293B48" text-anchor="start">4</text>
+<rect id="rank-sequence-cell-5" x="873" y="133" width="32" height="32" rx="0" fill="#FFFFFF" stroke="#668AA5" stroke-width="0.85"/>
+<text id="rank-sequence-action-5-0" x="878.5" y="154.140625" font-family="Arial" font-size="21.0" fill="#293B48" text-anchor="start" font-style="italic">a</text>
+<text id="rank-sequence-action-5-1" x="890.17919921875" y="157.4078125" font-family="Arial" font-size="14.7" fill="#293B48" text-anchor="start">5</text>
+</g>
+<path id="cem-proposal-output" d="M568.000,178.000 L568.000,192.000 L696.500,192.000" fill="none" stroke="#293B48" stroke-width="1.6" stroke-linejoin="round"/>
+<path id="rank-proposal-output" d="M825.000,178.000 L825.000,192.000 L696.500,192.000" fill="none" stroke="#293B48" stroke-width="1.6" stroke-linejoin="round"/>
+<circle id="proposal-merge" cx="696.5" cy="192" r="2.6" fill="#668AA5" stroke="#668AA5" stroke-width="1.2"/>
+</g>
+<g id="panel-predict">
+<rect id="panel-predict-background" x="433" y="221" width="520" height="276" rx="8" fill="#FFFFFF" stroke="#A5B3BE" stroke-width="1.35" stroke-dasharray="6,5"/>
+<text id="panel-predict-title" x="451" y="252" font-family="Arial" font-size="22" fill="#293B48" text-anchor="start" font-weight="bold">(c) Action selection</text>
+<g id="live-prediction-observation">
+<rect id="live-prediction-observation-frame" x="451" y="318" width="72" height="72" rx="3" fill="#FFFFFF" stroke="#668AA5" stroke-width="1.6"/>
+<path id="live-prediction-observation-goal" d="M483.625,336.000 L512.875,336.000 L512.875,343.875 L502.750,343.875 L502.750,364.125 L493.750,364.125 L493.750,343.875 L483.625,343.875 L483.625,336.000" fill="none" stroke="#C6D5DA" stroke-width="1.2375" stroke-linejoin="round" stroke-dasharray="2.25,2.25"/>
+<path id="live-prediction-observation-object" d="M460.979,355.102 L487.700,343.205 L490.903,350.399 L481.653,354.517 L489.890,373.016 L481.668,376.677 L473.431,358.178 L464.182,362.296 L460.979,355.102 Z" fill="#668AA5" stroke="#668AA5" stroke-width="0.9" stroke-linejoin="round"/>
+<circle id="live-prediction-observation-agent" cx="466.75" cy="373.125" r="3.375" fill="#BE8756" stroke="#BE8756" stroke-width="1.2"/>
+</g>
+<rect id="predictor" x="558" y="318" width="160" height="72" rx="9" fill="#C7DFEF" stroke="#293B48" stroke-width="1.5"/>
+<g id="predictor-lock">
+<path id="predictor-lock-shackle" d="M589.0,351.9375 C589.0,344.4375 598.0,344.4375 598.0,351.9375" fill="none" stroke="#293B48" stroke-width="1.2000000000000002"/>
+<rect id="predictor-lock-body" x="586.75" y="351.1875" width="13.5" height="10.5" rx="1.5" fill="#FFFFFF" stroke="#293B48" stroke-width="1.125"/>
+<circle id="predictor-lock-key" cx="593.5" cy="356.4375" r="1.125" fill="#293B48" stroke="#293B48" stroke-width="1.2"/>
+</g>
+<text id="predictor-formula-0" x="609.25" y="360.656982421875" font-family="Arial" font-size="25.0" fill="#293B48" text-anchor="start" font-style="italic">F</text>
+<text id="predictor-formula-1" x="624.52099609375" y="360.656982421875" font-family="Arial" font-size="25.0" fill="#293B48" text-anchor="start">(</text>
+<text id="predictor-formula-2" x="632.84619140625" y="360.656982421875" font-family="Arial" font-size="25.0" fill="#293B48" text-anchor="start" font-style="italic">z</text>
+<text id="predictor-formula-3" x="645.34619140625" y="364.547607421875" font-family="Arial" font-size="17.5" fill="#293B48" text-anchor="start" font-style="italic">t</text>
+<text id="predictor-formula-4" x="650.856689453125" y="360.656982421875" font-family="Arial" font-size="25.0" fill="#293B48" text-anchor="start">,</text>
+<text id="predictor-formula-5" x="661.967529296875" y="360.656982421875" font-family="Arial" font-size="25.0" fill="#293B48" text-anchor="start" font-style="italic">u</text>
+<text id="predictor-formula-6" x="675.871337890625" y="364.547607421875" font-family="Arial" font-size="17.5" fill="#293B48" text-anchor="start" font-style="italic">i</text>
+<text id="predictor-formula-7" x="680.40771484375" y="360.656982421875" font-family="Arial" font-size="25.0" fill="#293B48" text-anchor="start">)</text>
+<path id="live-state-to-predictor" d="M523.000,354.000 L558.000,354.000" fill="none" stroke="#293B48" stroke-width="1.7" stroke-linejoin="round"/>
+<path id="live-state-to-predictor-head" d="M558.000,354.000 L551.576,357.024 L551.576,350.976 Z" fill="#293B48" stroke="#293B48" stroke-width="0" stroke-linejoin="round"/>
+<text id="live-state-symbol-0" x="532.5" y="337.40625" font-family="Arial" font-size="22.0" fill="#293B48" text-anchor="start" font-style="italic">z</text>
+<text id="live-state-symbol-1" x="543.5" y="340.828125" font-family="Arial" font-size="15.399999999999999" fill="#293B48" text-anchor="start" font-style="italic">t</text>
+<path id="candidate-input" d="M696.500,192.000 L696.500,278.000 L638.000,278.000 L638.000,318.000" fill="none" stroke="#293B48" stroke-width="1.6" stroke-linejoin="round"/>
+<path id="candidate-input-head" d="M638.000,318.000 L634.976,311.576 L641.024,311.576 Z" fill="#293B48" stroke="#293B48" stroke-width="0" stroke-linejoin="round"/>
+<text id="candidate-label-0" x="650.0" y="302.453125" font-family="Arial" font-size="24.0" fill="#293B48" text-anchor="start" font-style="italic">u</text>
+<text id="candidate-label-1" x="663.34765625" y="306.1890625" font-family="Arial" font-size="16.799999999999997" fill="#293B48" text-anchor="start" font-style="italic">i</text>
+<text id="predicted-label" x="837" y="278" font-family="Arial" font-size="19" fill="#293B48" text-anchor="middle">5-step predictions</text>
+<path id="predictions-output" d="M718.000,354.000 L736.000,354.000" fill="none" stroke="#668AA5" stroke-width="1.6" stroke-linejoin="round"/>
+<path id="prediction-1" d="M736,354 C752,331 763,306 789,302" fill="none" stroke="#668AA5" stroke-width="1.6"/>
+<path id="prediction-2" d="M736,354 C775,337 825,327 865,335" fill="none" stroke="#668AA5" stroke-width="1.6"/>
+<path id="prediction-3" d="M736,354 C758,379 771,389 799,385" fill="none" stroke="#668AA5" stroke-width="1.6"/>
+<circle id="prediction-endpoint-1" cx="789" cy="302" r="4" fill="#FFFFFF" stroke="#668AA5" stroke-width="1.6"/>
+<text id="predicted-symbol-1-0" x="790.0" y="322.671875" font-family="Arial" font-size="22.0" fill="#293B48" text-anchor="start" font-style="italic">p</text>
+<text id="predicted-symbol-1-1" x="802.2353515625" y="326.09375" font-family="Arial" font-size="15.399999999999999" fill="#293B48" text-anchor="start">1</text>
+<circle id="prediction-endpoint-2" cx="865" cy="335" r="4" fill="#FFFFFF" stroke="#668AA5" stroke-width="1.6"/>
+<text id="predicted-symbol-2-0" x="875.0" y="357.671875" font-family="Arial" font-size="22.0" fill="#293B48" text-anchor="start" font-style="italic">p</text>
+<text id="predicted-symbol-2-1" x="887.2353515625" y="361.09375" font-family="Arial" font-size="15.399999999999999" fill="#293B48" text-anchor="start">2</text>
+<circle id="prediction-endpoint-3" cx="799" cy="385" r="4" fill="#FFFFFF" stroke="#668AA5" stroke-width="1.6"/>
+<text id="predicted-symbol-3-0" x="811.0" y="389.671875" font-family="Arial" font-size="22.0" fill="#293B48" text-anchor="start" font-style="italic">p</text>
+<text id="predicted-symbol-3-1" x="823.2353515625" y="393.09375" font-family="Arial" font-size="15.399999999999999" fill="#293B48" text-anchor="start">3</text>
+<circle id="scoring-target" cx="921" cy="300" r="4.5" fill="#0F4D92" stroke="#0F4D92" stroke-width="1.2"/>
+<text id="scoring-target-label-0" x="905.0" y="323.609375" font-family="Arial" font-size="20.0" fill="#0F4D92" text-anchor="start" font-style="italic">q</text>
+<text id="scoring-target-label-1" x="916.123046875" y="326.721875" font-family="Arial" font-size="14.0" fill="#0F4D92" text-anchor="start">o</text>
+<text id="scoring-target-label-2" x="923.9091796875" y="326.721875" font-family="Arial" font-size="14.0" fill="#0F4D92" text-anchor="start">b</text>
+<text id="scoring-target-label-3" x="931.6953125" y="326.721875" font-family="Arial" font-size="14.0" fill="#0F4D92" text-anchor="start">s</text>
+<path id="endpoint-target-distance" d="M869.000,332.500 L917.000,302.500" fill="none" stroke="#0F4D92" stroke-width="1.5" stroke-linejoin="round" stroke-dasharray="3,3"/>
+<path id="predictions-bracket" d="M758.000,396.000 L758.000,402.000 L916.000,402.000 L916.000,396.000" fill="none" stroke="#668AA5" stroke-width="1.4" stroke-linejoin="round"/>
+<path id="predictions-to-score" d="M837.000,402.000 L837.000,414.000" fill="none" stroke="#668AA5" stroke-width="1.5" stroke-linejoin="round"/>
+<path id="predictions-to-score-head" d="M837.000,414.000 L833.976,407.576 L840.024,407.576 Z" fill="#668AA5" stroke="#668AA5" stroke-width="0" stroke-linejoin="round"/>
+<rect id="scorer" x="738" y="414" width="198" height="43" rx="7" fill="#DFEBF6" stroke="#0F4D92" stroke-width="1.5"/>
+<text id="score-title" x="837" y="432" font-family="Arial" font-size="20" fill="#293B48" text-anchor="middle">Select</text>
+<text id="score-equation-0" x="767.0" y="449.603125" font-family="Arial" font-size="17.0" fill="#293B48" text-anchor="start">a</text>
+<text id="score-equation-1" x="776.45458984375" y="449.603125" font-family="Arial" font-size="17.0" fill="#293B48" text-anchor="start">r</text>
+<text id="score-equation-2" x="782.11572265625" y="449.603125" font-family="Arial" font-size="17.0" fill="#293B48" text-anchor="start">g</text>
+<text id="score-equation-3" x="793.9305485058594" y="449.603125" font-family="Arial" font-size="17.0" fill="#293B48" text-anchor="start">m</text>
+<text id="score-equation-4" x="808.0916813183594" y="449.603125" font-family="Arial" font-size="17.0" fill="#293B48" text-anchor="start">i</text>
+<text id="score-equation-5" x="811.8685367871094" y="449.603125" font-family="Arial" font-size="17.0" fill="#293B48" text-anchor="start">n</text>
+<text id="score-equation-6" x="821.4773453808593" y="452.246875" font-family="Arial" font-size="11.899999999999999" fill="#293B48" text-anchor="start" font-style="italic">i</text>
+<text id="score-equation-7" x="828.4954486816406" y="449.603125" font-family="Arial" font-size="17.0" fill="#293B48" text-anchor="start">‖</text>
+<text id="score-equation-8" x="835.5179096191406" y="449.603125" font-family="Arial" font-size="17.0" fill="#293B48" text-anchor="start" font-style="italic">p</text>
+<text id="score-equation-9" x="844.9724994628906" y="452.246875" font-family="Arial" font-size="11.899999999999999" fill="#293B48" text-anchor="start" font-style="italic">i</text>
+<text id="score-equation-10" x="850.8891498535156" y="449.603125" font-family="Arial" font-size="17.0" fill="#293B48" text-anchor="start">−</text>
+<text id="score-equation-11" x="863.6491107910156" y="449.603125" font-family="Arial" font-size="17.0" fill="#293B48" text-anchor="start" font-style="italic">q</text>
+<text id="score-equation-12" x="873.1037006347656" y="452.246875" font-family="Arial" font-size="11.899999999999999" fill="#293B48" text-anchor="start">o</text>
+<text id="score-equation-13" x="879.7219135253906" y="452.246875" font-family="Arial" font-size="11.899999999999999" fill="#293B48" text-anchor="start">b</text>
+<text id="score-equation-14" x="886.3401264160157" y="452.246875" font-family="Arial" font-size="11.899999999999999" fill="#293B48" text-anchor="start">s</text>
+<text id="score-equation-15" x="892.7307514160157" y="449.603125" font-family="Arial" font-size="17.0" fill="#293B48" text-anchor="start">‖</text>
+<text id="score-equation-16" x="899.9074311035156" y="442.553125" font-family="Arial" font-size="11.899999999999999" fill="#293B48" text-anchor="start">2</text>
+<text id="score-equation-17" x="899.9074311035156" y="455.35625" font-family="Arial" font-size="11.899999999999999" fill="#293B48" text-anchor="start">2</text>
+<path id="shared-target-to-score" d="M269.000,462.000 L566.000,462.000 L566.000,435.500 L738.000,435.500" fill="none" stroke="#0F4D92" stroke-width="2" stroke-linejoin="round"/>
+<path id="shared-target-to-score-head" d="M738.000,435.500 L731.576,438.524 L731.576,432.476 Z" fill="#0F4D92" stroke="#0F4D92" stroke-width="0" stroke-linejoin="round"/>
+<path id="selected-block-to-execution" d="M837.000,457.000 L837.000,477.000" fill="none" stroke="#0F4D92" stroke-width="1.8" stroke-linejoin="round"/>
+<path id="selected-block-to-execution-head" d="M837.000,477.000 L833.976,470.576 L840.024,470.576 Z" fill="#0F4D92" stroke="#0F4D92" stroke-width="0" stroke-linejoin="round"/>
+<g id="executed-block">
+<rect id="executed-block-action-1" x="787.0" y="477" width="20.0" height="15" rx="0" fill="#DFEBF6" stroke="#0F4D92" stroke-width="0.85"/>
+<rect id="executed-block-action-2" x="807.0" y="477" width="20.0" height="15" rx="0" fill="#DFEBF6" stroke="#0F4D92" stroke-width="0.85"/>
+<rect id="executed-block-action-3" x="827.0" y="477" width="20.0" height="15" rx="0" fill="#DFEBF6" stroke="#0F4D92" stroke-width="0.85"/>
+<rect id="executed-block-action-4" x="847.0" y="477" width="20.0" height="15" rx="0" fill="#DFEBF6" stroke="#0F4D92" stroke-width="0.85"/>
+<rect id="executed-block-action-5" x="867.0" y="477" width="20.0" height="15" rx="0" fill="#DFEBF6" stroke="#0F4D92" stroke-width="0.85"/>
+</g>
+<text id="execution-label" x="767" y="490" font-family="Arial" font-size="19" fill="#293B48" text-anchor="end">Execute</text>
+</g>
+</svg>

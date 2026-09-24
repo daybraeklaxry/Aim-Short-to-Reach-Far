@@ -1,0 +1,28 @@
+{
+  "complete": true,
+  "task": "pusht",
+  "validation_samples": 4096,
+  "query_episodes_used": false,
+  "checkpoint": "runtime/ap/evidence_strengthening_20260923/results_v2/training/pusht/w1024_residual/best.pt",
+  "retrieval": "MAIN cached pair-feature normalization; candidate source episode differs from each held-out validation query episode",
+  "target_coordinates": "same frozen FP32 LeWM scoring encoder for network inputs, true successors, and retrieved target observations",
+  "mlp_successor_squared_l2": {
+    "mean": 3.7744274139404297,
+    "median": 0.852758526802063
+  },
+  "retrieved_successor_squared_l2": {
+    "mean": 10.668302536010742,
+    "median": 0.747378945350647
+  },
+  "mlp_nearest_memory_squared_l2": {
+    "mean": 1.2381268739700317,
+    "median": 0.4339141845703125
+  },
+  "retrieved_nearest_memory_squared_l2": {
+    "mean": 0.0,
+    "median": 0.0
+  },
+  "nearest_memory": "All allowable MAIN memory observations, including validation memory; no control-query observations. Observed targets have an exact zero-distance member.",
+  "peak_reserved_bytes": 9632219136,
+  "elapsed_seconds": 23.75603405199945
+}

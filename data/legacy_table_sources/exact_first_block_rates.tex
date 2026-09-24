@@ -1,0 +1,29 @@
+\begingroup
+\normalsize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}llrrrrrr@{}}
+\toprule
+ & & \multicolumn{6}{c}{Success (\%)} \\
+\cmidrule(l){3-8}
+Task & Start & Direct & \multicolumn{2}{c}{Predictor} & \multicolumn{2}{c}{Simulator} & Displacement \\
+\cmidrule(lr){4-5}\cmidrule(lr){6-7}
+ & & & Observed & Final & Observed & Final & Observed \\
+\midrule
+Cube & Standard & 78.1 & \textbf{75.0} & 72.7 & \textbf{74.2} & 70.3 & 76.6 \\
+ & Perturbed 1 & 45.3 & \textbf{44.5} & 43.0 & \textbf{44.5} & 43.0 & 45.3 \\
+ & Perturbed 2 & 47.7 & \textbf{46.9} & 42.2 & \textbf{48.4} & 44.5 & 49.2 \\
+\midrule
+PushT & Standard & 70.3 & \textbf{68.0} & 51.6 & \textbf{74.2} & 53.9 & 68.0 \\
+ & Perturbed 1 & 23.4 & \textbf{26.6} & \textbf{26.6} & 23.4 & \textbf{25.0} & 30.5 \\
+ & Perturbed 2 & 21.9 & \textbf{23.4} & 18.8 & \textbf{25.8} & 20.3 & 24.2 \\
+\midrule
+Reacher & Standard & 96.1 & \textbf{96.1} & 95.3 & \textbf{96.1} & 94.5 & 95.3 \\
+ & Perturbed 1 & 98.4 & 96.1 & \textbf{96.9} & 96.9 & \textbf{97.7} & 97.7 \\
+ & Perturbed 2 & 96.1 & 95.3 & \textbf{96.9} & \textbf{96.9} & 96.1 & 95.3 \\
+\midrule
+TwoRoom & Standard & 100.0 & 99.2 & \textbf{100.0} & 99.2 & \textbf{100.0} & 100.0 \\
+ & Perturbed 1 & 99.2 & 99.2 & \textbf{100.0} & 99.2 & \textbf{100.0} & 99.2 \\
+ & Perturbed 2 & 100.0 & 99.2 & \textbf{100.0} & \textbf{100.0} & 99.2 & 100.0 \\
+\bottomrule
+\end{tabular}
+\endgroup

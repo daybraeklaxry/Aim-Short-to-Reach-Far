@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+outputs/
+external/
+runtime/
+.env
+*.pt
+*.h5
+*.hdf5
+*.npy

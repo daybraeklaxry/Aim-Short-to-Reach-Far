@@ -1,0 +1,649 @@
+{
+  "complete": true,
+  "episodes": 1536,
+  "rows": [
+    {
+      "task": "cube",
+      "start": "Standard",
+      "complete": true,
+      "stall_W5": {
+        "numerator": 95,
+        "denominator": 108,
+        "percent": 87.96296296296296
+      },
+      "stall_W10": {
+        "numerator": 43,
+        "denominator": 108,
+        "percent": 39.81481481481482
+      },
+      "stall_W20": {
+        "numerator": 43,
+        "denominator": 108,
+        "percent": 39.81481481481482
+      },
+      "physical_detour_0.25": {
+        "numerator": 3,
+        "denominator": 19,
+        "percent": 15.789473684210526
+      },
+      "physical_detour_0.5": {
+        "numerator": 2,
+        "denominator": 19,
+        "percent": 10.526315789473685
+      },
+      "physical_detour_1.0": {
+        "numerator": 2,
+        "denominator": 19,
+        "percent": 10.526315789473685
+      },
+      "latent_detour": {
+        "numerator": 0,
+        "denominator": 19,
+        "percent": 0.0
+      }
+    },
+    {
+      "task": "cube",
+      "start": "Perturbed 1",
+      "complete": true,
+      "stall_W5": {
+        "numerator": 98,
+        "denominator": 113,
+        "percent": 86.72566371681415
+      },
+      "stall_W10": {
+        "numerator": 53,
+        "denominator": 113,
+        "percent": 46.902654867256636
+      },
+      "stall_W20": {
+        "numerator": 53,
+        "denominator": 113,
+        "percent": 46.902654867256636
+      },
+      "physical_detour_0.25": {
+        "numerator": 2,
+        "denominator": 14,
+        "percent": 14.285714285714286
+      },
+      "physical_detour_0.5": {
+        "numerator": 0,
+        "denominator": 14,
+        "percent": 0.0
+      },
+      "physical_detour_1.0": {
+        "numerator": 0,
+        "denominator": 14,
+        "percent": 0.0
+      },
+      "latent_detour": {
+        "numerator": 0,
+        "denominator": 14,
+        "percent": 0.0
+      }
+    },
+    {
+      "task": "cube",
+      "start": "Perturbed 2",
+      "complete": true,
+      "stall_W5": {
+        "numerator": 100,
+        "denominator": 111,
+        "percent": 90.09009009009009
+      },
+      "stall_W10": {
+        "numerator": 55,
+        "denominator": 111,
+        "percent": 49.549549549549546
+      },
+      "stall_W20": {
+        "numerator": 55,
+        "denominator": 111,
+        "percent": 49.549549549549546
+      },
+      "physical_detour_0.25": {
+        "numerator": 5,
+        "denominator": 16,
+        "percent": 31.25
+      },
+      "physical_detour_0.5": {
+        "numerator": 2,
+        "denominator": 16,
+        "percent": 12.5
+      },
+      "physical_detour_1.0": {
+        "numerator": 1,
+        "denominator": 16,
+        "percent": 6.25
+      },
+      "latent_detour": {
+        "numerator": 0,
+        "denominator": 16,
+        "percent": 0.0
+      }
+    },
+    {
+      "task": "cube",
+      "start": "Perturbed",
+      "complete": true,
+      "stall_W5": {
+        "numerator": 198,
+        "denominator": 224,
+        "percent": 88.39285714285714
+      },
+      "stall_W10": {
+        "numerator": 108,
+        "denominator": 224,
+        "percent": 48.214285714285715
+      },
+      "stall_W20": {
+        "numerator": 108,
+        "denominator": 224,
+        "percent": 48.214285714285715
+      },
+      "physical_detour_0.25": {
+        "numerator": 7,
+        "denominator": 30,
+        "percent": 23.333333333333332
+      },
+      "physical_detour_0.5": {
+        "numerator": 2,
+        "denominator": 30,
+        "percent": 6.666666666666667
+      },
+      "physical_detour_1.0": {
+        "numerator": 1,
+        "denominator": 30,
+        "percent": 3.3333333333333335
+      },
+      "latent_detour": {
+        "numerator": 0,
+        "denominator": 30,
+        "percent": 0.0
+      }
+    },
+    {
+      "task": "pusht",
+      "start": "Standard",
+      "complete": true,
+      "stall_W5": {
+        "numerator": 67,
+        "denominator": 119,
+        "percent": 56.30252100840336
+      },
+      "stall_W10": {
+        "numerator": 34,
+        "denominator": 119,
+        "percent": 28.571428571428573
+      },
+      "stall_W20": {
+        "numerator": 23,
+        "denominator": 119,
+        "percent": 19.327731092436974
+      },
+      "physical_detour_0.25": {
+        "numerator": 8,
+        "denominator": 9,
+        "percent": 88.88888888888889
+      },
+      "physical_detour_0.5": {
+        "numerator": 8,
+        "denominator": 9,
+        "percent": 88.88888888888889
+      },
+      "physical_detour_1.0": {
+        "numerator": 8,
+        "denominator": 9,
+        "percent": 88.88888888888889
+      },
+      "latent_detour": {
+        "numerator": 0,
+        "denominator": 9,
+        "percent": 0.0
+      }
+    },
+    {
+      "task": "pusht",
+      "start": "Perturbed 1",
+      "complete": true,
+      "stall_W5": {
+        "numerator": 62,
+        "denominator": 117,
+        "percent": 52.99145299145299
+      },
+      "stall_W10": {
+        "numerator": 34,
+        "denominator": 117,
+        "percent": 29.05982905982906
+      },
+      "stall_W20": {
+        "numerator": 24,
+        "denominator": 117,
+        "percent": 20.512820512820515
+      },
+      "physical_detour_0.25": {
+        "numerator": 9,
+        "denominator": 11,
+        "percent": 81.81818181818181
+      },
+      "physical_detour_0.5": {
+        "numerator": 8,
+        "denominator": 11,
+        "percent": 72.72727272727273
+      },
+      "physical_detour_1.0": {
+        "numerator": 6,
+        "denominator": 11,
+        "percent": 54.54545454545455
+      },
+      "latent_detour": {
+        "numerator": 2,
+        "denominator": 11,
+        "percent": 18.181818181818183
+      }
+    },
+    {
+      "task": "pusht",
+      "start": "Perturbed 2",
+      "complete": true,
+      "stall_W5": {
+        "numerator": 60,
+        "denominator": 115,
+        "percent": 52.17391304347826
+      },
+      "stall_W10": {
+        "numerator": 31,
+        "denominator": 115,
+        "percent": 26.956521739130434
+      },
+      "stall_W20": {
+        "numerator": 19,
+        "denominator": 115,
+        "percent": 16.52173913043478
+      },
+      "physical_detour_0.25": {
+        "numerator": 13,
+        "denominator": 13,
+        "percent": 100.0
+      },
+      "physical_detour_0.5": {
+        "numerator": 12,
+        "denominator": 13,
+        "percent": 92.3076923076923
+      },
+      "physical_detour_1.0": {
+        "numerator": 12,
+        "denominator": 13,
+        "percent": 92.3076923076923
+      },
+      "latent_detour": {
+        "numerator": 1,
+        "denominator": 13,
+        "percent": 7.6923076923076925
+      }
+    },
+    {
+      "task": "pusht",
+      "start": "Perturbed",
+      "complete": true,
+      "stall_W5": {
+        "numerator": 122,
+        "denominator": 232,
+        "percent": 52.58620689655172
+      },
+      "stall_W10": {
+        "numerator": 65,
+        "denominator": 232,
+        "percent": 28.017241379310345
+      },
+      "stall_W20": {
+        "numerator": 43,
+        "denominator": 232,
+        "percent": 18.53448275862069
+      },
+      "physical_detour_0.25": {
+        "numerator": 22,
+        "denominator": 24,
+        "percent": 91.66666666666667
+      },
+      "physical_detour_0.5": {
+        "numerator": 20,
+        "denominator": 24,
+        "percent": 83.33333333333333
+      },
+      "physical_detour_1.0": {
+        "numerator": 18,
+        "denominator": 24,
+        "percent": 75.0
+      },
+      "latent_detour": {
+        "numerator": 3,
+        "denominator": 24,
+        "percent": 12.5
+      }
+    },
+    {
+      "task": "reacher",
+      "start": "Standard",
+      "complete": true,
+      "stall_W5": {
+        "numerator": 0,
+        "denominator": 43,
+        "percent": 0.0
+      },
+      "stall_W10": {
+        "numerator": 0,
+        "denominator": 43,
+        "percent": 0.0
+      },
+      "stall_W20": {
+        "numerator": 0,
+        "denominator": 43,
+        "percent": 0.0
+      },
+      "physical_detour_0.25": {
+        "numerator": 75,
+        "denominator": 85,
+        "percent": 88.23529411764706
+      },
+      "physical_detour_0.5": {
+        "numerator": 74,
+        "denominator": 85,
+        "percent": 87.05882352941177
+      },
+      "physical_detour_1.0": {
+        "numerator": 72,
+        "denominator": 85,
+        "percent": 84.70588235294117
+      },
+      "latent_detour": {
+        "numerator": 6,
+        "denominator": 85,
+        "percent": 7.0588235294117645
+      }
+    },
+    {
+      "task": "reacher",
+      "start": "Perturbed 1",
+      "complete": true,
+      "stall_W5": {
+        "numerator": 0,
+        "denominator": 39,
+        "percent": 0.0
+      },
+      "stall_W10": {
+        "numerator": 0,
+        "denominator": 39,
+        "percent": 0.0
+      },
+      "stall_W20": {
+        "numerator": 0,
+        "denominator": 39,
+        "percent": 0.0
+      },
+      "physical_detour_0.25": {
+        "numerator": 82,
+        "denominator": 88,
+        "percent": 93.18181818181819
+      },
+      "physical_detour_0.5": {
+        "numerator": 81,
+        "denominator": 88,
+        "percent": 92.04545454545455
+      },
+      "physical_detour_1.0": {
+        "numerator": 77,
+        "denominator": 88,
+        "percent": 87.5
+      },
+      "latent_detour": {
+        "numerator": 5,
+        "denominator": 88,
+        "percent": 5.681818181818182
+      }
+    },
+    {
+      "task": "reacher",
+      "start": "Perturbed 2",
+      "complete": true,
+      "stall_W5": {
+        "numerator": 0,
+        "denominator": 41,
+        "percent": 0.0
+      },
+      "stall_W10": {
+        "numerator": 0,
+        "denominator": 41,
+        "percent": 0.0
+      },
+      "stall_W20": {
+        "numerator": 0,
+        "denominator": 41,
+        "percent": 0.0
+      },
+      "physical_detour_0.25": {
+        "numerator": 81,
+        "denominator": 85,
+        "percent": 95.29411764705883
+      },
+      "physical_detour_0.5": {
+        "numerator": 76,
+        "denominator": 85,
+        "percent": 89.41176470588235
+      },
+      "physical_detour_1.0": {
+        "numerator": 71,
+        "denominator": 85,
+        "percent": 83.52941176470588
+      },
+      "latent_detour": {
+        "numerator": 8,
+        "denominator": 85,
+        "percent": 9.411764705882353
+      }
+    },
+    {
+      "task": "reacher",
+      "start": "Perturbed",
+      "complete": true,
+      "stall_W5": {
+        "numerator": 0,
+        "denominator": 80,
+        "percent": 0.0
+      },
+      "stall_W10": {
+        "numerator": 0,
+        "denominator": 80,
+        "percent": 0.0
+      },
+      "stall_W20": {
+        "numerator": 0,
+        "denominator": 80,
+        "percent": 0.0
+      },
+      "physical_detour_0.25": {
+        "numerator": 163,
+        "denominator": 173,
+        "percent": 94.21965317919076
+      },
+      "physical_detour_0.5": {
+        "numerator": 157,
+        "denominator": 173,
+        "percent": 90.7514450867052
+      },
+      "physical_detour_1.0": {
+        "numerator": 148,
+        "denominator": 173,
+        "percent": 85.54913294797687
+      },
+      "latent_detour": {
+        "numerator": 13,
+        "denominator": 173,
+        "percent": 7.514450867052023
+      }
+    },
+    {
+      "task": "tworoom",
+      "start": "Standard",
+      "complete": true,
+      "stall_W5": {
+        "numerator": 0,
+        "denominator": 106,
+        "percent": 0.0
+      },
+      "stall_W10": {
+        "numerator": 0,
+        "denominator": 106,
+        "percent": 0.0
+      },
+      "stall_W20": {
+        "numerator": 0,
+        "denominator": 106,
+        "percent": 0.0
+      },
+      "physical_detour_0.25": {
+        "numerator": 17,
+        "denominator": 22,
+        "percent": 77.27272727272727
+      },
+      "physical_detour_0.5": {
+        "numerator": 15,
+        "denominator": 22,
+        "percent": 68.18181818181819
+      },
+      "physical_detour_1.0": {
+        "numerator": 7,
+        "denominator": 22,
+        "percent": 31.818181818181817
+      },
+      "latent_detour": {
+        "numerator": 5,
+        "denominator": 22,
+        "percent": 22.727272727272727
+      }
+    },
+    {
+      "task": "tworoom",
+      "start": "Perturbed 1",
+      "complete": true,
+      "stall_W5": {
+        "numerator": 0,
+        "denominator": 110,
+        "percent": 0.0
+      },
+      "stall_W10": {
+        "numerator": 0,
+        "denominator": 110,
+        "percent": 0.0
+      },
+      "stall_W20": {
+        "numerator": 0,
+        "denominator": 110,
+        "percent": 0.0
+      },
+      "physical_detour_0.25": {
+        "numerator": 12,
+        "denominator": 18,
+        "percent": 66.66666666666667
+      },
+      "physical_detour_0.5": {
+        "numerator": 10,
+        "denominator": 18,
+        "percent": 55.55555555555556
+      },
+      "physical_detour_1.0": {
+        "numerator": 7,
+        "denominator": 18,
+        "percent": 38.888888888888886
+      },
+      "latent_detour": {
+        "numerator": 5,
+        "denominator": 18,
+        "percent": 27.77777777777778
+      }
+    },
+    {
+      "task": "tworoom",
+      "start": "Perturbed 2",
+      "complete": true,
+      "stall_W5": {
+        "numerator": 0,
+        "denominator": 103,
+        "percent": 0.0
+      },
+      "stall_W10": {
+        "numerator": 0,
+        "denominator": 103,
+        "percent": 0.0
+      },
+      "stall_W20": {
+        "numerator": 0,
+        "denominator": 103,
+        "percent": 0.0
+      },
+      "physical_detour_0.25": {
+        "numerator": 19,
+        "denominator": 25,
+        "percent": 76.0
+      },
+      "physical_detour_0.5": {
+        "numerator": 12,
+        "denominator": 25,
+        "percent": 48.0
+      },
+      "physical_detour_1.0": {
+        "numerator": 7,
+        "denominator": 25,
+        "percent": 28.0
+      },
+      "latent_detour": {
+        "numerator": 4,
+        "denominator": 25,
+        "percent": 16.0
+      }
+    },
+    {
+      "task": "tworoom",
+      "start": "Perturbed",
+      "complete": true,
+      "stall_W5": {
+        "numerator": 0,
+        "denominator": 213,
+        "percent": 0.0
+      },
+      "stall_W10": {
+        "numerator": 0,
+        "denominator": 213,
+        "percent": 0.0
+      },
+      "stall_W20": {
+        "numerator": 0,
+        "denominator": 213,
+        "percent": 0.0
+      },
+      "physical_detour_0.25": {
+        "numerator": 31,
+        "denominator": 43,
+        "percent": 72.09302325581395
+      },
+      "physical_detour_0.5": {
+        "numerator": 22,
+        "denominator": 43,
+        "percent": 51.16279069767442
+      },
+      "physical_detour_1.0": {
+        "numerator": 14,
+        "denominator": 43,
+        "percent": 32.55813953488372
+      },
+      "latent_detour": {
+        "numerator": 9,
+        "denominator": 43,
+        "percent": 20.930232558139537
+      }
+    }
+  ],
+  "physical_metric_functions": "Unchanged functions from analyze_physical.py",
+  "cube_object_qpos_index": 14,
+  "integration_layout_checked": true
+}

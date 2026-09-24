@@ -1,0 +1,28 @@
+{
+  "complete": true,
+  "task": "reacher",
+  "validation_samples": 4096,
+  "query_episodes_used": false,
+  "checkpoint": "runtime/ap/evidence_strengthening_20260923/results_v2/training/reacher/w512_residual/best.pt",
+  "retrieval": "MAIN cached pair-feature normalization; candidate source episode differs from each held-out validation query episode",
+  "target_coordinates": "same frozen FP32 LeWM scoring encoder for network inputs, true successors, and retrieved target observations",
+  "mlp_successor_squared_l2": {
+    "mean": 74.72413635253906,
+    "median": 59.69991683959961
+  },
+  "retrieved_successor_squared_l2": {
+    "mean": 154.35128784179688,
+    "median": 131.36068725585938
+  },
+  "mlp_nearest_memory_squared_l2": {
+    "mean": 14.756094932556152,
+    "median": 14.8486328125
+  },
+  "retrieved_nearest_memory_squared_l2": {
+    "mean": 0.0,
+    "median": 0.0
+  },
+  "nearest_memory": "All allowable MAIN memory observations, including validation memory; no control-query observations. Observed targets have an exact zero-distance member.",
+  "peak_reserved_bytes": 7702839296,
+  "elapsed_seconds": 16.21298904903233
+}

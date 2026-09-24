@@ -1,0 +1,2 @@
+# Recorded main-study bootstrap environment. Native libraries are unnecessary.
+numpy==2.4.2

@@ -1,0 +1,19 @@
+{
+  "name": "stable-worldmodel",
+  "version": "0.0.6",
+  "project_urls": {
+    "Homepage": "http://github.com/galilai-group/stable-worldmodel"
+  },
+  "files": [
+    {
+      "filename": "stable_worldmodel-0.0.6-py3-none-any.whl",
+      "size": 208095,
+      "url": "https://files.pythonhosted.org/packages/77/ac/9618ee77bf0ed0180c67a0645dfb42215f54197de347235c831f65ea6363/stable_worldmodel-0.0.6-py3-none-any.whl"
+    },
+    {
+      "filename": "stable_worldmodel-0.0.6.tar.gz",
+      "size": 152466,
+      "url": "https://files.pythonhosted.org/packages/7f/6f/39a1bd034e75e6797a610ad1775907fbb0b7f76949cd805bc9bfaba9690f/stable_worldmodel-0.0.6.tar.gz"
+    }
+  ]
+}

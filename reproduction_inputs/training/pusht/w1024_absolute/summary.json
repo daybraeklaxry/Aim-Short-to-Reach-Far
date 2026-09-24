@@ -1,0 +1,12 @@
+{
+  "complete": true,
+  "task": "pusht",
+  "width": 1024,
+  "residual": 0,
+  "updates": 50000,
+  "best_step": 47500,
+  "validation_mse": 0.02021012455224991,
+  "checkpoint": "runtime/ap/evidence_strengthening_20260923/results_v2/training/pusht/w1024_absolute/best.pt",
+  "elapsed_seconds": 648.7354386337101,
+  "peak_reserved_bytes": 3925868544
+}

@@ -1,0 +1,28 @@
+{
+  "tasks": {
+    "cube": {
+      "checkpoint": "../assets/checkpoints/cube/weights.pt",
+      "dataset": "../assets/data/cube_single_expert.h5",
+      "latent_cache": "../assets/cache/cube_official_latents.npy",
+      "state_key": "observation"
+    },
+    "pusht": {
+      "checkpoint": "../assets/checkpoints/pusht/weights.pt",
+      "dataset": "../assets/data/pusht_expert_train.h5",
+      "latent_cache": "../assets/cache/pusht_official_latents.npy",
+      "state_key": "state"
+    },
+    "reacher": {
+      "checkpoint": "../assets/checkpoints/reacher/weights.pt",
+      "dataset": "../assets/data/reacher.h5",
+      "latent_cache": "../assets/cache/reacher_official_latents.npy",
+      "state_key": "observation"
+    },
+    "tworoom": {
+      "checkpoint": "../assets/checkpoints/tworoom/weights.pt",
+      "dataset": "../assets/data/tworoom.h5",
+      "latent_cache": "../assets/cache/tworoom_official_latents.npy",
+      "state_key": "observation"
+    }
+  }
+}
