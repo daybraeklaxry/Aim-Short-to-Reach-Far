@@ -2,13 +2,15 @@
 
 **Xvyuan Liu, Jianjie Fang, Chen Gao, Yong Li — Tsinghua University**
 
+![Anchored Planning overview](docs/assets/figure-1.svg)
+
 Code and recorded results for **Anchored Planning**. The method retrieves an
 observed target and uses a frozen world model to synthesize or rank actions toward
 it. The paper compares final, learned, and observed targets while separating
 target choice, search, and live-state prediction.
 
 - [Paper](paper.pdf)
-- [Project page](https://aim-short-to-reach-far.mkhfsvnloyeafgk9875.chatgpt.site)
+- [Project page](https://daybraeklaxry.github.io/Aim-Short-to-Reach-Far/)
 - [Per-episode main results](data/main_episodes.csv)
 - [Data definitions and units](data/README.md)
 - [LeWM protocol checks](lewm_checks/README.md)
@@ -126,7 +128,26 @@ preserved so that the source and recorded configurations remain identifiable.
 `code/expanded/run_long_v2.py` is an older dependency; use
 `official_baseline.py` for the paper's LeWM baseline.
 
-## Attribution and licenses
+## Citation
+
+```bibtex
+@misc{liu2026aimshort,
+  title  = {Aim Short to Reach Far: Goal Distance Underestimates Your Frozen World Model},
+  author = {Xvyuan Liu and Jianjie Fang and Chen Gao and Yong Li},
+  year   = {2026},
+  url    = {https://github.com/daybraeklaxry/Aim-Short-to-Reach-Far}
+}
+```
+
+## License
+
+Original code in this repository is released under the [MIT License](LICENSE).
+Parts derived from LeWM retain their original MIT license and notices in
+[`code/ap/LICENSE`](code/ap/LICENSE) and [`code/ap/NOTICE.md`](code/ap/NOTICE.md).
+External datasets, simulators, and checkpoints remain subject to their original
+terms.
+
+### Third-party attribution
 
 The Anchored Planning package's license and third-party notices are in
 [`code/ap/LICENSE`](code/ap/LICENSE) and [`code/ap/NOTICE.md`](code/ap/NOTICE.md).

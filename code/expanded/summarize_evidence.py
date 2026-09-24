@@ -150,7 +150,7 @@ def render_report():
                     wins.append(dict(task=task, start=start, learned=learned, observed=observed, learned_success=a['success_percent'], observed_success=b['success_percent'], difference_pp=a['success_percent'] - b['success_percent']))
     saved = dict(collected_utc=main['collected_utc'], main_complete=main['complete'], means=means, learned_target_wins=wins)
     save('collected/main-interpretation.json', saved)
-    text = '# Supplementary experiments: completed findings and remaining work\n\n'
+    text = '# Experiment summary\n\n'
     text += datetime.now(timezone.utc).isoformat() + '\n\n'
     text += '## Learned-target results that change the comparison\n\n'
     if main['complete']:
