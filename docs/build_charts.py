@@ -44,9 +44,9 @@ assert all(search["series"]["cem_observed"]["points"][1]["tasks"][task] >
 
 
 def svg_chart(data, xlabel, mobile=False, logarithmic=False):
-    width, height = (350, 354) if mobile else (1000, 442)
-    left, right, top, bottom = (43, 322, 51, 292) if mobile else (70, 720, 52, 368)
-    font = 17 if mobile else 23
+    width, height = (350, 354) if mobile else (700, 380)
+    left, right, top, bottom = (43, 307, 51, 292) if mobile else (56, 644, 50, 316)
+    font = 17 if mobile else 18
     xs = data["x"]
     # Only the search-budget axis is logarithmic; no measured value changes.
     transform = log if logarithmic else lambda value: value
@@ -77,9 +77,9 @@ def svg_chart(data, xlabel, mobile=False, logarithmic=False):
             parts.append(f'<circle cx="{xp:g}" cy="{yp:g}" r="{3.7 if mobile else 5}" fill="{color}"/>')
         xp, yp = coords[-1]
         if not (logarithmic and arm == "cem_final"):
-            text(xp if mobile else xp + 23, yp - 14 if mobile else yp + 6,
+            text(xp, yp - 18,
                  series["label"], "#62625e" if arm == "cem_final" else color,
-                 anchor="end" if mobile else "start", weight=500)
+                 anchor="end", weight=500)
     if logarithmic:
         reference = data["series"]["cem_final"]["points"][-1]["mean"]
         parts.append(f'<path class="reference-line" d="M {left} {y(reference):g} H {right}" fill="none" stroke="{GRAY}" stroke-width="1" stroke-dasharray="4 5"/>')

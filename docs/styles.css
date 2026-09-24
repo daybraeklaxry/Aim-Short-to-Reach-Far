@@ -65,6 +65,7 @@ p { margin: 0 0 24px; }
 .paper-figure, .web-chart { margin-top: 36px; margin-bottom: 0; padding: 0; }
 .paper-figure { background: var(--paper); }
 .paper-figure img { display: block; width: 100%; height: auto; mix-blend-mode: multiply; }
+.web-chart { width: 100%; margin-inline: 0; }
 .web-chart img { display: block; width: 100%; height: auto; }
 .paper-figure figcaption, .web-chart figcaption { margin-top: 22px; font: 17px/1.7 var(--sans); }
 .paper-figure figcaption > p { margin-bottom: 20px; }

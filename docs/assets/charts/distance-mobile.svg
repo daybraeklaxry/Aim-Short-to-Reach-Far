@@ -3,31 +3,31 @@
 <desc id="desc">Each point averages the four tasks with unchanged recorded starts. Aiming short is blue; aiming at the goal is gray.</desc>
 <g font-family="Inter, Arial, sans-serif" font-size="17" fill="#272727">
 <text x="43" y="25" fill="#272727" text-anchor="start" font-weight="400" >Average success (%)</text>
-<path d="M 43 292 H 322" fill="none" stroke="#deded8" stroke-width="1"/>
+<path d="M 43 292 H 307" fill="none" stroke="#deded8" stroke-width="1"/>
 <text x="33" y="297" fill="#272727" text-anchor="end" font-weight="400" >0</text>
-<path d="M 43 231.75 H 322" fill="none" stroke="#deded8" stroke-width="1"/>
+<path d="M 43 231.75 H 307" fill="none" stroke="#deded8" stroke-width="1"/>
 <text x="33" y="236.75" fill="#272727" text-anchor="end" font-weight="400" >25</text>
-<path d="M 43 171.5 H 322" fill="none" stroke="#deded8" stroke-width="1"/>
+<path d="M 43 171.5 H 307" fill="none" stroke="#deded8" stroke-width="1"/>
 <text x="33" y="176.5" fill="#272727" text-anchor="end" font-weight="400" >50</text>
-<path d="M 43 111.25 H 322" fill="none" stroke="#deded8" stroke-width="1"/>
+<path d="M 43 111.25 H 307" fill="none" stroke="#deded8" stroke-width="1"/>
 <text x="33" y="116.25" fill="#272727" text-anchor="end" font-weight="400" >75</text>
-<path d="M 43 51 H 322" fill="none" stroke="#deded8" stroke-width="1"/>
+<path d="M 43 51 H 307" fill="none" stroke="#deded8" stroke-width="1"/>
 <text x="33" y="56" fill="#272727" text-anchor="end" font-weight="400" >100</text>
 <path d="M 43 292 v 5" stroke="#767676"/>
 <text x="43" y="318" fill="#272727" text-anchor="middle" font-weight="400" >25</text>
-<path d="M 136 292 v 5" stroke="#767676"/>
-<text x="136" y="318" fill="#272727" text-anchor="middle" font-weight="400" >50</text>
-<path d="M 322 292 v 5" stroke="#767676"/>
-<text x="322" y="318" fill="#272727" text-anchor="middle" font-weight="400" >100</text>
-<text x="182.5" y="347" fill="#272727" text-anchor="middle" font-weight="400" >Goal distance (actions)</text>
-<polyline points="43,185.15 136,246.342 322,262.346" fill="none" stroke="#767676" stroke-width="2.5" stroke-dasharray="7 5" stroke-linejoin="round"/>
+<path d="M 131 292 v 5" stroke="#767676"/>
+<text x="131" y="318" fill="#272727" text-anchor="middle" font-weight="400" >50</text>
+<path d="M 307 292 v 5" stroke="#767676"/>
+<text x="307" y="318" fill="#272727" text-anchor="middle" font-weight="400" >100</text>
+<text x="175" y="347" fill="#272727" text-anchor="middle" font-weight="400" >Goal distance (actions)</text>
+<polyline points="43,185.15 131,246.342 307,262.346" fill="none" stroke="#767676" stroke-width="2.5" stroke-dasharray="7 5" stroke-linejoin="round"/>
 <circle cx="43" cy="185.15" r="3.7" fill="#767676"/>
-<circle cx="136" cy="246.342" r="3.7" fill="#767676"/>
-<circle cx="322" cy="262.346" r="3.7" fill="#767676"/>
-<text x="322" y="248.346" fill="#62625e" text-anchor="end" font-weight="500" >Aiming at the goal</text>
-<polyline points="43,104.66 136,121.135 322,147.023" fill="none" stroke="#0F4D92" stroke-width="2.5"  stroke-linejoin="round"/>
+<circle cx="131" cy="246.342" r="3.7" fill="#767676"/>
+<circle cx="307" cy="262.346" r="3.7" fill="#767676"/>
+<text x="307" y="244.346" fill="#62625e" text-anchor="end" font-weight="500" >Aiming at the goal</text>
+<polyline points="43,104.66 131,121.135 307,147.023" fill="none" stroke="#0F4D92" stroke-width="2.5"  stroke-linejoin="round"/>
 <circle cx="43" cy="104.66" r="3.7" fill="#0F4D92"/>
-<circle cx="136" cy="121.135" r="3.7" fill="#0F4D92"/>
-<circle cx="322" cy="147.023" r="3.7" fill="#0F4D92"/>
-<text x="322" y="133.023" fill="#0F4D92" text-anchor="end" font-weight="500" >Aiming short</text>
+<circle cx="131" cy="121.135" r="3.7" fill="#0F4D92"/>
+<circle cx="307" cy="147.023" r="3.7" fill="#0F4D92"/>
+<text x="307" y="129.023" fill="#0F4D92" text-anchor="end" font-weight="500" >Aiming short</text>
 </g></svg>
