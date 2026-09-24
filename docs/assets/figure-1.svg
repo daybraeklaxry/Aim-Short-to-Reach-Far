@@ -1,5 +1,7 @@
 <?xml version='1.0' encoding='utf8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="396pt" height="150pt" viewBox="0 0 396 150"><svg width="190" height="150" viewBox="0 0 190 150" x="0" y="0">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="396pt" height="150pt" viewBox="0 0 396 150">
+<rect width="396" height="150" fill="#FFFFFF" />
+<svg width="190" height="150" viewBox="0 0 190 150" x="0" y="0">
 <title>Same predictions, different targets</title>
 <desc>Schematic shared live state and candidate predictions. Gray final-goal scoring selects u1; blue observed-target scoring selects u2. The observed target is a recorded successor and is distinct from every predicted endpoint.</desc>
 <text id="panel-title" x="0" y="9" font-family="Arial" font-size="8" fill="#26343C" font-weight="bold">(a) Same predictions, different targets</text>
