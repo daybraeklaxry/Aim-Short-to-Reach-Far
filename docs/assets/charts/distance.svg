@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 442" role="img" aria-labelledby="title desc">
+<title id="title">Average success by goal distance (actions)</title>
+<desc id="desc">Each point averages the four tasks with unchanged recorded starts. Aiming short is blue; aiming at the goal is gray.</desc>
+<g font-family="Inter, Arial, sans-serif" font-size="23" fill="#272727">
+<text x="70" y="25" fill="#272727" text-anchor="start" font-weight="400" >Average success (%)</text>
+<path d="M 70 368 H 720" fill="none" stroke="#deded8" stroke-width="1"/>
+<text x="60" y="373" fill="#272727" text-anchor="end" font-weight="400" >0</text>
+<path d="M 70 289 H 720" fill="none" stroke="#deded8" stroke-width="1"/>
+<text x="60" y="294" fill="#272727" text-anchor="end" font-weight="400" >25</text>
+<path d="M 70 210 H 720" fill="none" stroke="#deded8" stroke-width="1"/>
+<text x="60" y="215" fill="#272727" text-anchor="end" font-weight="400" >50</text>
+<path d="M 70 131 H 720" fill="none" stroke="#deded8" stroke-width="1"/>
+<text x="60" y="136" fill="#272727" text-anchor="end" font-weight="400" >75</text>
+<path d="M 70 52 H 720" fill="none" stroke="#deded8" stroke-width="1"/>
+<text x="60" y="57" fill="#272727" text-anchor="end" font-weight="400" >100</text>
+<path d="M 70 368 v 5" stroke="#767676"/>
+<text x="70" y="394" fill="#272727" text-anchor="middle" font-weight="400" >25</text>
+<path d="M 286.667 368 v 5" stroke="#767676"/>
+<text x="286.667" y="394" fill="#272727" text-anchor="middle" font-weight="400" >50</text>
+<path d="M 720 368 v 5" stroke="#767676"/>
+<text x="720" y="394" fill="#272727" text-anchor="middle" font-weight="400" >100</text>
+<text x="395" y="435" fill="#272727" text-anchor="middle" font-weight="400" >Goal distance (actions)</text>
+<polyline points="70,227.898 286.667,308.133 720,329.117" fill="none" stroke="#767676" stroke-width="3" stroke-dasharray="7 5" stroke-linejoin="round"/>
+<circle cx="70" cy="227.898" r="5" fill="#767676"/>
+<circle cx="286.667" cy="308.133" r="5" fill="#767676"/>
+<circle cx="720" cy="329.117" r="5" fill="#767676"/>
+<text x="743" y="335.117" fill="#62625e" text-anchor="start" font-weight="500" >Aiming at the goal</text>
+<polyline points="70,122.359 286.667,143.961 720,177.906" fill="none" stroke="#0F4D92" stroke-width="3"  stroke-linejoin="round"/>
+<circle cx="70" cy="122.359" r="5" fill="#0F4D92"/>
+<circle cx="286.667" cy="143.961" r="5" fill="#0F4D92"/>
+<circle cx="720" cy="177.906" r="5" fill="#0F4D92"/>
+<text x="743" y="183.906" fill="#0F4D92" text-anchor="start" font-weight="500" >Aiming short</text>
+</g></svg>

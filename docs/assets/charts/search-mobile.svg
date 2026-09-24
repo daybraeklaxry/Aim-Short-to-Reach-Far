@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 354" role="img" aria-labelledby="title desc">
+<title id="title">Average success by search iterations</title>
+<desc id="desc">Each point averages the four tasks with unchanged recorded starts. Aiming short is blue; aiming at the goal is gray.</desc>
+<g font-family="Inter, Arial, sans-serif" font-size="17" fill="#272727">
+<text x="43" y="25" fill="#272727" text-anchor="start" font-weight="400" >Average success (%)</text>
+<path d="M 43 292 H 322" fill="none" stroke="#deded8" stroke-width="1"/>
+<text x="33" y="297" fill="#272727" text-anchor="end" font-weight="400" >0</text>
+<path d="M 43 231.75 H 322" fill="none" stroke="#deded8" stroke-width="1"/>
+<text x="33" y="236.75" fill="#272727" text-anchor="end" font-weight="400" >25</text>
+<path d="M 43 171.5 H 322" fill="none" stroke="#deded8" stroke-width="1"/>
+<text x="33" y="176.5" fill="#272727" text-anchor="end" font-weight="400" >50</text>
+<path d="M 43 111.25 H 322" fill="none" stroke="#deded8" stroke-width="1"/>
+<text x="33" y="116.25" fill="#272727" text-anchor="end" font-weight="400" >75</text>
+<path d="M 43 51 H 322" fill="none" stroke="#deded8" stroke-width="1"/>
+<text x="33" y="56" fill="#272727" text-anchor="end" font-weight="400" >100</text>
+<path d="M 43 292 v 5" stroke="#767676"/>
+<text x="41" y="318" fill="#272727" text-anchor="end" font-weight="400" >1</text>
+<path d="M 52.6207 292 v 5" stroke="#767676"/>
+<text x="54.6207" y="318" fill="#272727" text-anchor="start" font-weight="400" >2</text>
+<path d="M 81.4828 292 v 5" stroke="#767676"/>
+<text x="81.4828" y="318" fill="#272727" text-anchor="middle" font-weight="400" >5</text>
+<path d="M 129.586 292 v 5" stroke="#767676"/>
+<text x="129.586" y="318" fill="#272727" text-anchor="middle" font-weight="400" >10</text>
+<path d="M 322 292 v 5" stroke="#767676"/>
+<text x="322" y="318" fill="#272727" text-anchor="middle" font-weight="400" >30</text>
+<text x="182.5" y="347" fill="#272727" text-anchor="middle" font-weight="400" >Search iterations</text>
+<polyline points="43,278.82 52.6207,277.879 81.4828,274.113 129.586,273.643 322,269.877" fill="none" stroke="#767676" stroke-width="2.5" stroke-dasharray="7 5" stroke-linejoin="round"/>
+<circle cx="43" cy="278.82" r="3.7" fill="#767676"/>
+<circle cx="52.6207" cy="277.879" r="3.7" fill="#767676"/>
+<circle cx="81.4828" cy="274.113" r="3.7" fill="#767676"/>
+<circle cx="129.586" cy="273.643" r="3.7" fill="#767676"/>
+<circle cx="322" cy="269.877" r="3.7" fill="#767676"/>
+<text x="322" y="255.877" fill="#62625e" text-anchor="end" font-weight="500" >Aiming at the goal</text>
+<polyline points="43,243.518 52.6207,219.982 81.4828,173.383 129.586,145.611 322,147.965" fill="none" stroke="#0F4D92" stroke-width="2.5"  stroke-linejoin="round"/>
+<circle cx="43" cy="243.518" r="3.7" fill="#0F4D92"/>
+<circle cx="52.6207" cy="219.982" r="3.7" fill="#0F4D92"/>
+<circle cx="81.4828" cy="173.383" r="3.7" fill="#0F4D92"/>
+<circle cx="129.586" cy="145.611" r="3.7" fill="#0F4D92"/>
+<circle cx="322" cy="147.965" r="3.7" fill="#0F4D92"/>
+<text x="322" y="133.965" fill="#0F4D92" text-anchor="end" font-weight="500" >Aiming short</text>
+</g></svg>
