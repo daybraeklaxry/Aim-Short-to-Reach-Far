@@ -24,280 +24,138 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..600&amp;family=Source+Serif+4:opsz,wght@20,400&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=four-tasks">
-  <script src="gallery.js?v=four-tasks" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&amp;family=Source+Serif+4:opsz,wght@20,400&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20260925">
+  <script src="gallery.js?v=20260925" defer></script>
+  <script src="results.js?v=20260925" defer></script>
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to article</a>
-<main id="main" class="article">
-  <header class="paper-header breakout">
-    <h1><span>Aim Short to Reach Far:</span> Your Frozen World Model Can Plan Better Than You Think</h1>
-    <p class="standfirst">World-model planners usually aim straight at the goal. Aiming at a nearby point on a remembered route lets the same frozen model reach goals it otherwise misses, with no training.</p>
-    <div class="byline">
-      <p class="authors"><span>Xvyuan Liu</span>, <span>Jianjie Fang</span>, <span>Chen Gao</span>, <span>Yong Li</span></p>
-      <p>Tsinghua University</p>
-      <p class="correspondence"><span>chgao96@gmail.com</span><span>liyong07@tsinghua.edu.cn</span></p>
-    </div>
-    <nav aria-label="Resources"><a href="paper.pdf">Paper</a><span aria-hidden="true">·</span><a href="https://github.com/daybraeklaxry/Aim-Short-to-Reach-Far">Code</a><span aria-hidden="true">·</span><a href="#citation">BibTeX</a></nav>
-  </header>
-  <div class="demo-group hero-comparisons breakout" id="opening-comparisons">
-      <div class="comparison-legend" aria-label="Comparison legend">
-        <span><span class="method-dot" aria-hidden="true"></span>Aiming at the goal</span>
-        <span><span class="method-dot blue" aria-hidden="true"></span>Aiming short</span>
-      </div>
-      <div class="comparison-grid"><article class="demo" id="pusht-000" aria-label="PushT comparison">
-      <h3>PushT</h3><p class="task-goal">Push the gray T onto the green goal shape.</p>
-      <div class="video-pair" tabindex="0" role="group" aria-label="PushT comparison; activate a video or press Space to pause or play this grid">
-        <figure class="video-side baseline">
-          <video muted loop playsinline preload="none" width="360" height="360" poster="assets/comparisons/pusht-000-baseline.jpg"
-            data-src="assets/comparisons/pusht-000-baseline.mp4" data-poster="assets/comparisons/pusht-000-baseline.jpg"
-            aria-label="PushT: Aiming at the goal. Replay of recorded physical states, with the final state held when the controller stops.">PushT: Aiming at the goal. Replay of recorded physical states, with the final state held when the controller stops.</video>
-        </figure><figure class="video-side ap">
-          <video muted loop playsinline preload="none" width="360" height="360" poster="assets/comparisons/pusht-000-ap.jpg"
-            data-src="assets/comparisons/pusht-000-ap.mp4" data-poster="assets/comparisons/pusht-000-ap.jpg"
-            aria-label="PushT: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.">PushT: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.</video>
-        </figure>
-      </div>
-    </article><article class="demo" id="cube-000" aria-label="Cube comparison">
-      <h3>Cube</h3><p class="task-goal">Move the red cube to the unmarked <a href="assets/demos/cube-000-goal.jpg">goal on the right</a>.</p>
-      <div class="video-pair" tabindex="0" role="group" aria-label="Cube comparison; activate a video or press Space to pause or play this grid">
-        <figure class="video-side baseline">
-          <video muted loop playsinline preload="none" width="360" height="360" poster="assets/comparisons/cube-000-baseline.jpg"
-            data-src="assets/comparisons/cube-000-baseline.mp4" data-poster="assets/comparisons/cube-000-baseline.jpg"
-            aria-label="Cube: Aiming at the goal. Replay of recorded physical states, with the final state held when the controller stops.">Cube: Aiming at the goal. Replay of recorded physical states, with the final state held when the controller stops.</video>
-        </figure><figure class="video-side ap">
-          <video muted loop playsinline preload="none" width="360" height="360" poster="assets/comparisons/cube-000-ap.jpg"
-            data-src="assets/comparisons/cube-000-ap.mp4" data-poster="assets/comparisons/cube-000-ap.jpg"
-            aria-label="Cube: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.">Cube: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.</video>
-        </figure>
-      </div>
-    </article><article class="demo" id="reacher-000" aria-label="Reacher comparison">
-      <h3>Reacher</h3><p class="task-goal">Match the unmarked <a href="assets/demos/reacher-000-goal.jpg">goal pose</a>: arm tip up and left.</p>
-      <div class="video-pair" tabindex="0" role="group" aria-label="Reacher comparison; activate a video or press Space to pause or play this grid">
-        <figure class="video-side baseline">
-          <video muted loop playsinline preload="none" width="360" height="360" poster="assets/comparisons/reacher-000-baseline.jpg"
-            data-src="assets/comparisons/reacher-000-baseline.mp4" data-poster="assets/comparisons/reacher-000-baseline.jpg"
-            aria-label="Reacher: Aiming at the goal. Replay of recorded physical states, with the final state held when the controller stops.">Reacher: Aiming at the goal. Replay of recorded physical states, with the final state held when the controller stops.</video>
-        </figure><figure class="video-side ap">
-          <video muted loop playsinline preload="none" width="360" height="360" poster="assets/comparisons/reacher-000-ap.jpg"
-            data-src="assets/comparisons/reacher-000-ap.mp4" data-poster="assets/comparisons/reacher-000-ap.jpg"
-            aria-label="Reacher: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.">Reacher: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.</video>
-        </figure>
-      </div>
-    </article><article class="demo" id="tworoom-008" aria-label="TwoRoom comparison">
-      <h3>TwoRoom</h3><p class="task-goal">Move through the gap to the unmarked <a href="assets/demos/tworoom-008-goal.jpg">goal on the right</a>.</p>
-      <div class="video-pair" tabindex="0" role="group" aria-label="TwoRoom comparison; activate a video or press Space to pause or play this grid">
-        <figure class="video-side baseline">
-          <video muted loop playsinline preload="none" width="360" height="360" poster="assets/comparisons/tworoom-008-baseline.jpg"
-            data-src="assets/comparisons/tworoom-008-baseline.mp4" data-poster="assets/comparisons/tworoom-008-baseline.jpg"
-            aria-label="TwoRoom: Aiming at the goal. Replay of recorded physical states, with the final state held when the controller stops.">TwoRoom: Aiming at the goal. Replay of recorded physical states, with the final state held when the controller stops.</video>
-        </figure><figure class="video-side ap">
-          <video muted loop playsinline preload="none" width="360" height="360" poster="assets/comparisons/tworoom-008-ap.jpg"
-            data-src="assets/comparisons/tworoom-008-ap.mp4" data-poster="assets/comparisons/tworoom-008-ap.jpg"
-            aria-label="TwoRoom: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.">TwoRoom: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.</video>
-        </figure>
-      </div>
-    </article></div>
-      <div class="grid-controls"><button class="group-replay" type="button" aria-label="Replay all comparisons in this grid">Replay</button></div>
-    </div>
-  <div class="opening-description breakout">
-    <p>Same frozen world model, same start, same goal in each pair. Aiming at the goal, the planner does not reach the goal within its step budget; aiming short, it does.</p>
-    <p>Selected examples: for each task, the first query in a fixed order where aiming short succeeds and aiming at the goal fails. Average success rates are shown below.</p>
+<a class="skip-link" href="#main">Skip to content</a>
+<nav class="site-nav" aria-label="Main navigation"><div class="nav-inner"><a class="wordmark" href="#top">Anchored Planning</a><div class="nav-links"><a href="#demos">Demos</a><a href="#method">Method</a><a href="#results">Results</a><a href="#analysis">Analysis</a><a href="#citation">Citation</a></div></div></nav>
+<main id="main">
+ <header class="hero container" id="top">
+  <h1>Aim Short to <span>Reach Far</span></h1>
+  <p class="paper-subtitle">Your Frozen World Model Can Plan Better Than You Think</p>
+  <div class="authors"><span>Xvyuan Liu</span><span>Jianjie Fang</span><a href="mailto:chgao96@gmail.com">Chen Gao<sup>*</sup></a><a href="mailto:liyong07@tsinghua.edu.cn">Yong Li<sup>*</sup></a></div>
+  <p class="affiliation">Tsinghua University</p>
+  <div class="hero-links"><a class="button primary" href="paper.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v5h5M10 12h5M10 16h5"/></svg>Read the paper</a><a class="button" href="https://github.com/daybraeklaxry/Aim-Short-to-Reach-Far"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-13-2 20"/></svg>Code &amp; data</a><a class="text-button" href="#demos">Watch the demos <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></div>
+ </header>
+ <section class="abstract-section" id="abstract"><div class="container abstract-layout"><h2>Abstract</h2><p>Planners built on visual world models commonly score each predicted outcome by its distance to the encoded goal image. We show that this target can limit control even with exact dynamics and globally optimal short-horizon search: reaching a goal may require actions that initially move away from it. With frozen LeWM models, intermediate targets substantially improve action synthesis and recorded-action ranking on Cube, PushT, Reacher, and TwoRoom. Learned targets and targets drawn from observed experience both produce these gains. We introduce Anchored Planning, which retrieves a recorded segment whose start and end resemble the current and goal observations, then aims at an observation shortly after its start. The frozen model scores actions toward this target from the current state. Without additional training, planning toward observed targets outperforms the released LeWM planner on every task in our long-range evaluation. Additional final-goal search falls short of the same gains. Lower successor-prediction error need not translate into better control. Success also depends on how far ahead the target is placed and on shrinking the retrieval span as execution advances. Changing only the target lets the same frozen model and planner reach goals that final-goal scoring misses.</p></div></section>
+ <section class="section container" id="demos">
+  <div class="section-intro"><h2>Watch the planner reach the goal.</h2><p>A nearby observation changes which actions the planner chooses. Explore paired rollouts from the same start, with the same final goal.</p></div>
+  <div class="demo-heading"><h3>Find actions with AP-CEM</h3><p>Both planners use the same frozen model and five-action CEM search. Only the target changes.</p></div>
+
+ <div class="demo-player" data-method="cem">
+  <div class="demo-toolbar">
+   <div class="task-tabs" role="tablist" aria-label="AP-CEM tasks"><button type="button" role="tab" id="cem-tab-pusht" aria-controls="cem-panel" aria-selected="true" tabindex="0" data-task="pusht">PushT</button><button type="button" role="tab" id="cem-tab-cube" aria-controls="cem-panel" aria-selected="false" tabindex="-1" data-task="cube">Cube</button><button type="button" role="tab" id="cem-tab-reacher" aria-controls="cem-panel" aria-selected="false" tabindex="-1" data-task="reacher">Reacher</button><button type="button" role="tab" id="cem-tab-tworoom" aria-controls="cem-panel" aria-selected="false" tabindex="-1" data-task="tworoom">TwoRoom</button></div>
+   <div class="example-picker" role="group" aria-label="AP-CEM example"><button type="button" data-example="0" aria-pressed="true">Example 1</button><button type="button" data-example="1" aria-pressed="false">Example 2</button></div>
   </div>
-  <dl class="findings breakout" aria-label="Results at a glance">
-    <div><dt>9.2% → 59.8%</dt><dd>Average success over four tasks. Same model, same search; only the target changes.</dd></div>
-    <div><dt>67.0% → 83.8%</dt><dd>When the planner chooses among eight recorded action sequences instead of searching.</dd></div>
-    <div><dt>2 vs 30</dt><dd>Two search iterations aiming short beat thirty aiming at the goal, on every task.</dd></div>
-  </dl>
-  <section class="reading-section" id="problem">
-    <h2>Why aiming at the goal fails</h2>
-    <p>Reaching a goal can require first moving away from it. When every candidate action is scored by its distance to the goal, the first steps of a good route look worse than standing still, so the planner rejects them, even if the world model predicts every outcome exactly. A nearby target taken from a recorded route rewards those first steps instead.</p>
-    <figure class="paper-figure breakout" id="figure-1">
-      <a href="assets/figure-1.svg" aria-label="Open the paper illustration at full size">
-        <img src="assets/figure-1.svg" width="396" height="150" loading="lazy" decoding="async" alt="The same predicted outcomes lead to different actions when scored against the goal or a nearby point on a recorded route. Aiming short sustains success on PushT.">
-      </a>
-      <figcaption>(a) The same three predicted outcomes. Scored against the goal, the planner picks u₁; scored against a nearby recorded target, it picks u₂, which lies on the route. (b) PushT: as the goal moves farther away, aiming at the goal collapses while aiming short keeps working. Gray: aiming at the goal. Blue: aiming short. Red and black show a learned target and the released LeWM planner; see the paper.</figcaption>
+  <div class="demo-panel" id="cem-panel" role="tabpanel" aria-labelledby="cem-tab-pusht">
+   <div class="demo-views">
+    <figure class="video-view baseline"><figcaption><strong>Final-goal CEM</strong><span>Search toward the final goal</span></figcaption>
+     <video muted playsinline preload="none" width="360" height="360" poster="assets/comparisons/pusht-000-baseline.jpg" aria-label="Final-goal CEM PushT replay"></video>
+     <p class="outcome" data-outcome="baseline">Ready to play</p>
     </figure>
-  </section>
-  <section class="reading-section" id="method">
-    <h2>How Anchored Planning aims short</h2>
-    <ol class="method-steps">
-      <li>Find a recorded moment that looks like now and later reached something that looks like the goal.</li>
-      <li>Take the observation five steps after that moment as the target.</li>
-      <li>Let the frozen world model predict where each candidate action leads, pick the one that lands closest to the target, execute a few steps, and repeat.</li>
-    </ol>
-    <p>The recorded route decides where to aim; the world model decides how to get there. Nothing is trained.</p>
-    <figure class="paper-figure breakout" id="figure-2">
-      <a href="assets/figure-2.svg" aria-label="Open the paper illustration at full size">
-        <img src="assets/figure-2.svg" width="960" height="504" loading="lazy" decoding="async" alt="Find a recorded moment matching now and a later moment matching the goal; take the nearby observation and choose actions with the frozen world model.">
-      </a>
-      <figcaption>Candidates come from search (left) or from recorded action sequences (right).</figcaption>
+    <figure class="video-view ap"><figcaption><strong>AP-CEM</strong><span>Search toward an observed target</span></figcaption>
+     <video muted playsinline preload="none" width="360" height="360" poster="assets/comparisons/pusht-000-ap.jpg" aria-label="AP-CEM PushT replay"></video>
+     <p class="outcome" data-outcome="ap">Ready to play</p>
     </figure>
-  </section>
-  <section class="reading-section" id="distance">
-    <h2>The farther the goal, the bigger the gap</h2>
-    <p>As the goal moves from 25 to 100 actions away, the average gain from aiming short grows from 33.4 to 47.9 points.</p>
-    <figure class="web-chart">
-      <picture>
-        <source media="(max-width: 760px)" srcset="assets/charts/distance-mobile.svg">
-        <img src="assets/charts/distance.svg" width="700" height="380" loading="lazy" decoding="async" alt="Mean success at goal distances of 25, 50 and 100 actions. The gap is 33.4 points at 25 actions and 47.9 points at 100 actions.">
-      </picture>
+    <aside class="goal-view"><p>Goal</p><a class="goal-link" href="assets/demos/pusht-000-goal.jpg" target="_blank" rel="noopener" aria-label="Open the goal image"><img class="goal-image" src="assets/demos/pusht-000-goal.jpg" width="180" height="180" loading="lazy" alt="Shared PushT goal"></a><p class="goal-description">Push and rotate the T-shaped block onto the green target.</p></aside>
+   </div>
+   <div class="playback"><button class="play-button" type="button" aria-label="Play AP-CEM comparison"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 11 7-11 7z"/></svg><span>Play</span></button><button class="replay-button" type="button" aria-label="Restart AP-CEM comparison"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11a8 8 0 1 1 2 7M4 4v7h7"/></svg></button><label class="sr-only" for="cem-timeline">AP-CEM playback position</label><input id="cem-timeline" class="timeline" type="range" min="0" max="1000" value="0" step="1"><output class="action-count">Action 0</output></div>
+   <p class="player-message" role="status"></p>
+  </div>
+ </div>
+  <div class="demo-heading second-demo" id="ap-rank"><h3>Choose recorded actions with AP-rank</h3><p>After the start is perturbed, replaying a recorded action can fail. AP-rank predicts how eight recorded action blocks would work from the current state, then chooses one.</p></div>
+
+ <div class="demo-player" data-method="rank">
+  <div class="demo-toolbar">
+   <div class="task-tabs" role="tablist" aria-label="AP-rank tasks"><button type="button" role="tab" id="rank-tab-pusht" aria-controls="rank-panel" aria-selected="true" tabindex="0" data-task="pusht">PushT</button><button type="button" role="tab" id="rank-tab-cube" aria-controls="rank-panel" aria-selected="false" tabindex="-1" data-task="cube">Cube</button></div>
+   <div class="example-picker" role="group" aria-label="AP-rank example"><button type="button" data-example="0" aria-pressed="true">Example 1</button><button type="button" data-example="1" aria-pressed="false">Example 2</button></div>
+  </div>
+  <div class="demo-panel" id="rank-panel" role="tabpanel" aria-labelledby="rank-tab-pusht">
+   <div class="demo-views">
+    <figure class="video-view baseline"><figcaption><strong>Direct</strong><span>Replay the closest record’s action</span></figcaption>
+     <video muted playsinline preload="none" width="360" height="360" poster="assets/comparisons/rank-pusht-001-baseline.jpg" aria-label="Direct PushT replay"></video>
+     <p class="outcome" data-outcome="baseline">Ready to play</p>
     </figure>
-  </section>
-  <section class="reading-section" id="search">
-    <h2>More search does not close the gap</h2>
-    <p>Two iterations aiming short beat thirty aiming at the goal.</p>
-    <figure class="web-chart">
-      <picture>
-        <source media="(max-width: 760px)" srcset="assets/charts/search-mobile.svg">
-        <img src="assets/charts/search.svg" width="700" height="380" loading="lazy" decoding="async" alt="Mean success with increasing search iterations. At thirty iterations, aiming at the goal reaches 9.2 percent and aiming short reaches 59.8 percent. Two iterations aiming short already beat thirty aiming at the goal.">
-      </picture>
+    <figure class="video-view ap"><figcaption><strong>AP-rank</strong><span>Predict and rank eight recorded actions</span></figcaption>
+     <video muted playsinline preload="none" width="360" height="360" poster="assets/comparisons/rank-pusht-001-ap.jpg" aria-label="AP-rank PushT replay"></video>
+     <p class="outcome" data-outcome="ap">Ready to play</p>
     </figure>
-  </section>
-  <details class="more-examples breakout" id="more-examples">
-    <summary>More examples</summary>
-    <div class="demo-group" id="second-comparisons">
-      <div class="comparison-legend" aria-label="Comparison legend">
-        <span><span class="method-dot" aria-hidden="true"></span>Aiming at the goal</span>
-        <span><span class="method-dot blue" aria-hidden="true"></span>Aiming short</span>
-      </div>
-      <div class="comparison-grid"><article class="demo" id="pusht-001" aria-label="PushT comparison">
-      <h3>PushT</h3><a class="task-goal-link" href="assets/demos/pusht-001-goal.jpg">Goal image</a>
-      <div class="video-pair" tabindex="0" role="group" aria-label="PushT comparison; activate a video or press Space to pause or play this grid">
-        <figure class="video-side baseline">
-          <video muted loop playsinline preload="none" width="360" height="360"
-            data-src="assets/comparisons/pusht-001-baseline.mp4" data-poster="assets/comparisons/pusht-001-baseline.jpg"
-            aria-label="PushT: Aiming at the goal. Replay of recorded physical states, with the final state held when the controller stops.">PushT: Aiming at the goal. Replay of recorded physical states, with the final state held when the controller stops.</video>
-        </figure><figure class="video-side ap">
-          <video muted loop playsinline preload="none" width="360" height="360"
-            data-src="assets/comparisons/pusht-001-ap.mp4" data-poster="assets/comparisons/pusht-001-ap.jpg"
-            aria-label="PushT: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.">PushT: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.</video>
-        </figure>
-      </div>
-    </article><article class="demo" id="cube-002" aria-label="Cube comparison">
-      <h3>Cube</h3><a class="task-goal-link" href="assets/demos/cube-002-goal.jpg">Goal image</a>
-      <div class="video-pair" tabindex="0" role="group" aria-label="Cube comparison; activate a video or press Space to pause or play this grid">
-        <figure class="video-side baseline">
-          <video muted loop playsinline preload="none" width="360" height="360"
-            data-src="assets/comparisons/cube-002-baseline.mp4" data-poster="assets/comparisons/cube-002-baseline.jpg"
-            aria-label="Cube: Aiming at the goal. Replay of recorded physical states, with the final state held when the controller stops.">Cube: Aiming at the goal. Replay of recorded physical states, with the final state held when the controller stops.</video>
-        </figure><figure class="video-side ap">
-          <video muted loop playsinline preload="none" width="360" height="360"
-            data-src="assets/comparisons/cube-002-ap.mp4" data-poster="assets/comparisons/cube-002-ap.jpg"
-            aria-label="Cube: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.">Cube: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.</video>
-        </figure>
-      </div>
-    </article><article class="demo" id="reacher-002" aria-label="Reacher comparison">
-      <h3>Reacher</h3><a class="task-goal-link" href="assets/demos/reacher-002-goal.jpg">Goal image</a>
-      <div class="video-pair" tabindex="0" role="group" aria-label="Reacher comparison; activate a video or press Space to pause or play this grid">
-        <figure class="video-side baseline">
-          <video muted loop playsinline preload="none" width="360" height="360"
-            data-src="assets/comparisons/reacher-002-baseline.mp4" data-poster="assets/comparisons/reacher-002-baseline.jpg"
-            aria-label="Reacher: Aiming at the goal. Replay of recorded physical states, with the final state held when the controller stops.">Reacher: Aiming at the goal. Replay of recorded physical states, with the final state held when the controller stops.</video>
-        </figure><figure class="video-side ap">
-          <video muted loop playsinline preload="none" width="360" height="360"
-            data-src="assets/comparisons/reacher-002-ap.mp4" data-poster="assets/comparisons/reacher-002-ap.jpg"
-            aria-label="Reacher: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.">Reacher: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.</video>
-        </figure>
-      </div>
-    </article><article class="demo" id="tworoom-012" aria-label="TwoRoom comparison">
-      <h3>TwoRoom</h3><a class="task-goal-link" href="assets/demos/tworoom-012-goal.jpg">Goal image</a>
-      <div class="video-pair" tabindex="0" role="group" aria-label="TwoRoom comparison; activate a video or press Space to pause or play this grid">
-        <figure class="video-side baseline">
-          <video muted loop playsinline preload="none" width="360" height="360"
-            data-src="assets/comparisons/tworoom-012-baseline.mp4" data-poster="assets/comparisons/tworoom-012-baseline.jpg"
-            aria-label="TwoRoom: Aiming at the goal. Replay of recorded physical states, with the final state held when the controller stops.">TwoRoom: Aiming at the goal. Replay of recorded physical states, with the final state held when the controller stops.</video>
-        </figure><figure class="video-side ap">
-          <video muted loop playsinline preload="none" width="360" height="360"
-            data-src="assets/comparisons/tworoom-012-ap.mp4" data-poster="assets/comparisons/tworoom-012-ap.jpg"
-            aria-label="TwoRoom: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.">TwoRoom: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.</video>
-        </figure>
-      </div>
-    </article></div>
-      <div class="grid-controls"><button class="group-replay" type="button" aria-label="Replay all comparisons in this grid">Replay</button></div>
-    </div>
-    <p>Here the planner does not search; it picks one of eight recorded action sequences.</p>
-    <div class="demo-group" id="recorded-comparisons">
-      <div class="comparison-legend" aria-label="Comparison legend">
-        <span><span class="method-dot" aria-hidden="true"></span>Replay recorded actions</span>
-        <span><span class="method-dot blue" aria-hidden="true"></span>Aiming short</span>
-      </div>
-      <div class="comparison-grid"><article class="demo" id="rank-pusht-001" aria-label="PushT comparison">
-      <h3>PushT</h3><a class="task-goal-link" href="assets/demos/rank-pusht-001-goal.jpg">Goal image</a>
-      <div class="video-pair" tabindex="0" role="group" aria-label="PushT comparison; activate a video or press Space to pause or play this grid">
-        <figure class="video-side baseline">
-          <video muted loop playsinline preload="none" width="360" height="360"
-            data-src="assets/comparisons/rank-pusht-001-baseline.mp4" data-poster="assets/comparisons/rank-pusht-001-baseline.jpg"
-            aria-label="PushT: Replay recorded actions. Replay of recorded physical states, with the final state held when the controller stops.">PushT: Replay recorded actions. Replay of recorded physical states, with the final state held when the controller stops.</video>
-        </figure><figure class="video-side ap">
-          <video muted loop playsinline preload="none" width="360" height="360"
-            data-src="assets/comparisons/rank-pusht-001-ap.mp4" data-poster="assets/comparisons/rank-pusht-001-ap.jpg"
-            aria-label="PushT: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.">PushT: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.</video>
-        </figure>
-      </div>
-    </article><article class="demo" id="rank-cube-001" aria-label="Cube comparison">
-      <h3>Cube</h3><a class="task-goal-link" href="assets/demos/rank-cube-001-goal.jpg">Goal image</a>
-      <div class="video-pair" tabindex="0" role="group" aria-label="Cube comparison; activate a video or press Space to pause or play this grid">
-        <figure class="video-side baseline">
-          <video muted loop playsinline preload="none" width="360" height="360"
-            data-src="assets/comparisons/rank-cube-001-baseline.mp4" data-poster="assets/comparisons/rank-cube-001-baseline.jpg"
-            aria-label="Cube: Replay recorded actions. Replay of recorded physical states, with the final state held when the controller stops.">Cube: Replay recorded actions. Replay of recorded physical states, with the final state held when the controller stops.</video>
-        </figure><figure class="video-side ap">
-          <video muted loop playsinline preload="none" width="360" height="360"
-            data-src="assets/comparisons/rank-cube-001-ap.mp4" data-poster="assets/comparisons/rank-cube-001-ap.jpg"
-            aria-label="Cube: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.">Cube: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.</video>
-        </figure>
-      </div>
-    </article><article class="demo" id="rank-pusht-002" aria-label="PushT comparison">
-      <h3>PushT</h3><a class="task-goal-link" href="assets/demos/rank-pusht-002-goal.jpg">Goal image</a>
-      <div class="video-pair" tabindex="0" role="group" aria-label="PushT comparison; activate a video or press Space to pause or play this grid">
-        <figure class="video-side baseline">
-          <video muted loop playsinline preload="none" width="360" height="360"
-            data-src="assets/comparisons/rank-pusht-002-baseline.mp4" data-poster="assets/comparisons/rank-pusht-002-baseline.jpg"
-            aria-label="PushT: Replay recorded actions. Replay of recorded physical states, with the final state held when the controller stops.">PushT: Replay recorded actions. Replay of recorded physical states, with the final state held when the controller stops.</video>
-        </figure><figure class="video-side ap">
-          <video muted loop playsinline preload="none" width="360" height="360"
-            data-src="assets/comparisons/rank-pusht-002-ap.mp4" data-poster="assets/comparisons/rank-pusht-002-ap.jpg"
-            aria-label="PushT: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.">PushT: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.</video>
-        </figure>
-      </div>
-    </article><article class="demo" id="rank-cube-088" aria-label="Cube comparison">
-      <h3>Cube</h3><a class="task-goal-link" href="assets/demos/rank-cube-088-goal.jpg">Goal image</a>
-      <div class="video-pair" tabindex="0" role="group" aria-label="Cube comparison; activate a video or press Space to pause or play this grid">
-        <figure class="video-side baseline">
-          <video muted loop playsinline preload="none" width="360" height="360"
-            data-src="assets/comparisons/rank-cube-088-baseline.mp4" data-poster="assets/comparisons/rank-cube-088-baseline.jpg"
-            aria-label="Cube: Replay recorded actions. Replay of recorded physical states, with the final state held when the controller stops.">Cube: Replay recorded actions. Replay of recorded physical states, with the final state held when the controller stops.</video>
-        </figure><figure class="video-side ap">
-          <video muted loop playsinline preload="none" width="360" height="360"
-            data-src="assets/comparisons/rank-cube-088-ap.mp4" data-poster="assets/comparisons/rank-cube-088-ap.jpg"
-            aria-label="Cube: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.">Cube: Aiming short. Replay of recorded physical states, with the final state held when the controller stops.</video>
-        </figure>
-      </div>
-    </article></div>
-      <div class="grid-controls"><button class="group-replay" type="button" aria-label="Replay all comparisons in this grid">Replay</button></div>
-    </div>
-  </details>
-  <section class="reading-section" id="meaning">
-    <h2>What this means</h2>
-    <p>Planning success with goal distance is how world models are usually compared. Our results show that this number reflects the planning objective, not just the model.</p>
-  </section>
-  <section class="reading-section resources" id="resources">
-    <h2>Paper, code and data</h2>
-    <ul class="resource-links"><li><a href="paper.pdf">Paper</a></li><li><a href="https://github.com/daybraeklaxry/Aim-Short-to-Reach-Far">Code</a></li><li><a href="https://github.com/daybraeklaxry/Aim-Short-to-Reach-Far/tree/main/data">Data</a></li></ul>
-    <p><code>python tools/reproduce_table1.py</code> regenerates Table 1 from 12,288 recorded outcomes.</p>
-  </section>
-  <section class="reading-section citation" id="citation">
-    <div class="citation-heading"><h2>Citation</h2><button type="button" id="copy-bibtex">Copy</button><span id="copy-status" class="sr-only" role="status"></span></div>
-    <pre><code id="bibtex">@misc{liu2026aimshort,
+    <aside class="goal-view"><p>Goal</p><a class="goal-link" href="assets/demos/rank-pusht-001-goal.jpg" target="_blank" rel="noopener" aria-label="Open the goal image"><img class="goal-image" src="assets/demos/rank-pusht-001-goal.jpg" width="180" height="180" loading="lazy" alt="Shared PushT goal"></a><p class="goal-description">Push and rotate the T-shaped block onto the green target.</p></aside>
+   </div>
+   <div class="playback"><button class="play-button" type="button" aria-label="Play AP-rank comparison"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 11 7-11 7z"/></svg><span>Play</span></button><button class="replay-button" type="button" aria-label="Restart AP-rank comparison"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11a8 8 0 1 1 2 7M4 4v7h7"/></svg></button><label class="sr-only" for="rank-timeline">AP-rank playback position</label><input id="rank-timeline" class="timeline" type="range" min="0" max="1000" value="0" step="1"><output class="action-count">Action 0</output></div>
+   <p class="player-message" role="status"></p>
+  </div>
+ </div>
+  <div class="selection-note"><p>These examples are the first two qualifying AP successes paired with baseline failures in query order. <a href="#results">The full evaluation</a> reports success rates across all queries.</p><details><summary>How the examples were selected</summary><p>AP must execute more than ten actions. AP-CEM examples use standard starts on all four tasks. AP-rank examples use the first assigned perturbation on PushT and Cube, with Direct as the baseline. The videos replay recorded simulator states at 20 actions per second and hold the final state after each controller stops.</p></details></div>
+ </section>
+ <section class="insight-section" id="insight"><div class="container">
+  <div class="section-intro"><h2>A good first step can lead away from the goal.</h2><p>A short search can reject a useful detour because it ends farther from the goal. This can happen even with an exact world model and globally optimal search. An observed target on a recorded route gives those first steps somewhere useful to aim.</p></div>
+
+ <div class="target-explainer">
+  <div class="target-controls"><h3>Switch the target. Keep the predictions.</h3><div class="switch-buttons" role="group" aria-label="Scoring target"><button type="button" data-target="final" aria-pressed="true">Final goal</button><button type="button" data-target="observed" aria-pressed="false">Observed target</button></div></div>
+  <div class="explainer-layout">
+   <svg class="target-diagram" viewBox="0 0 620 380" role="img" aria-labelledby="geometry-title geometry-desc">
+    <title id="geometry-title">The selected action changes when the target changes</title><desc id="geometry-desc">Three action endpoints stay fixed. The final goal favors action one. An observed target on a recorded route favors action two.</desc>
+    <defs><marker id="arrowhead" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7" fill="context-stroke"/></marker></defs>
+    <path class="recorded-route" d="M285 145 Q300 90 330 65 C430 -5 560 45 545 205"/>
+    <path class="action-path" data-path="1" d="M65 300 Q205 180 370 230"/><path class="action-path" data-path="2" d="M65 300 Q125 150 285 145"/><path class="action-path" data-path="3" d="M65 300 Q210 354 385 350"/>
+    <line class="score-line" data-line="1" x1="370" y1="230" x2="545" y2="205"/><line class="score-line" data-line="2" x1="285" y1="145" x2="545" y2="205"/><line class="score-line" data-line="3" x1="385" y1="350" x2="545" y2="205"/>
+    <circle cx="65" cy="300" r="7" fill="#182333"/><text x="30" y="336">Current state</text>
+    <circle class="candidate-point" data-point="1" cx="370" cy="230" r="7"/><text x="364" y="263">u₁</text>
+    <circle class="candidate-point" data-point="2" cx="285" cy="145" r="7"/><text x="256" y="125">u₂</text>
+    <circle class="candidate-point" data-point="3" cx="385" cy="350" r="7"/><text x="401" y="356">u₃</text>
+    <path id="final-target-point" d="m545 195 10 10-10 10-10-10z"/><text x="519" y="244">Goal</text>
+    <circle id="observed-target-point" cx="330" cy="65" r="8"/><text x="236" y="39">Observed target</text>
+   </svg>
+   <div class="explainer-text"><p class="selected-action" id="selected-action">The planner selects u₁.</p><p id="target-explanation" aria-live="polite">Its predicted endpoint is closest to the final goal, so it receives the lowest cost.</p><p class="geometry-note">Illustrative geometry. The dashed route comes from recorded experience, and the three candidate predictions stay fixed.</p><a href="assets/figure-1.svg" class="inline-link">View Figure 1 →</a></div>
+  </div>
+ </div>
+ </div></section>
+ <section class="section container" id="method">
+  <div class="section-intro"><h2>Use a route that was actually taken.</h2><p>Anchored Planning retrieves a segment whose start resembles the current image and whose distant endpoint resembles the goal. The observation five steps after the retrieved start becomes the target.</p></div>
+  <figure class="paper-figure method-figure"><a href="assets/figure-2.svg" aria-label="Open the Anchored Planning method figure"><img src="assets/figure-2.svg" width="960" height="504" loading="lazy" alt="Match the current and goal images to the start and distant endpoint of a recorded segment. Use its five-step successor as the target for CEM or recorded-action ranking."></a></figure>
+  <div class="method-explanation"><div><h3>Memory supplies the target.</h3><p>A recorded observation gives the planner a concrete place to aim. Retrieval looks farther along the trajectory than the model needs to predict.</p></div><div><h3>The model evaluates the actions.</h3><p>AP-CEM searches for a new action block. AP-rank chooses among recorded blocks. Both score predictions from the current state, and neither trains an additional model.</p></div></div>
+ </section>
+ <section class="results-section" id="results"><div class="container">
+  <div class="section-intro"><h2>What changes across the full evaluation?</h2><p>Changing only the target raises mean success on Cube, PushT, Reacher, and TwoRoom. The comparisons below use standard starts.</p></div>
+  <div class="result-comparisons">
+   <div class="result"><h3>Action synthesis with CEM</h3><div class="result-values"><div><span class="result-number baseline-number">9.2<span>%</span></span><p>Final-goal target</p></div><span class="result-arrow" aria-hidden="true">→</span><div><span class="result-number">59.8<span>%</span></span><p>Observed target</p></div></div></div>
+   <div class="result"><h3>Ranking recorded actions</h3><div class="result-values"><div><span class="result-number baseline-number">67.0<span>%</span></span><p>Final-goal target</p></div><span class="result-arrow" aria-hidden="true">→</span><div><span class="result-number">83.8<span>%</span></span><p>Observed target</p></div></div></div>
+  </div>
+  <p class="result-source">Mean success over four tasks. Each comparison keeps the frozen model and action rule fixed. <a href="paper.pdf#page=5">Full results in Table 1 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></p>
+
+  <div class="full-results" id="full-results"><div class="analysis-heading"><div><h3>Every task, both starting conditions.</h3><p>Success (%) over 128 queries per task. Perturbed results average the two assigned perturbations for each query.</p></div></div>
+   <div class="result-filters"><div class="switch-buttons" role="group" aria-label="Action rule"><button data-rule="cem" aria-pressed="true" type="button">CEM</button><button data-rule="rank" aria-pressed="false" type="button">Recorded-action ranking</button></div><div class="switch-buttons" role="group" aria-label="Starting condition"><button data-start="Standard" aria-pressed="true" type="button">Standard</button><button data-start="Perturbed" aria-pressed="false" type="button">Perturbed</button></div></div>
+   <div class="table-scroll" tabindex="0" role="region" aria-label="Success rates by task"><table class="data-table" id="main-results-table"><caption class="sr-only">Success rates by task and planning rule</caption><thead></thead><tbody></tbody></table></div>
+   <p class="table-description" id="results-description" aria-live="polite"></p>
+  </div>
+  <div class="result-story"><div><h3>The gain grows with goal distance.</h3><p>As the goal moves from 25 to 100 actions away, the average gain from observed targets grows from 33.4 to 47.9 percentage points.</p></div><figure><picture><source media="(max-width: 700px)" srcset="assets/charts/distance-mobile.svg"><img src="assets/charts/distance.svg" width="700" height="380" loading="lazy" alt="Mean success at goal offsets of 25, 50 and 100 actions. The observed-target advantage grows from 33.4 to 47.9 percentage points."></picture></figure></div>
+  <div class="result-story"><div><h3>More search does not close the gap.</h3><p>On every task, two AP-CEM iterations outperform thirty iterations of final-goal CEM. The improvement comes from changing the target, with fewer search iterations.</p></div><figure><picture><source media="(max-width: 700px)" srcset="assets/charts/search-mobile.svg"><img src="assets/charts/search.svg" width="700" height="380" loading="lazy" alt="Observed-target CEM with two iterations already beats final-goal CEM with thirty. At thirty iterations, their mean success rates are 59.8 and 9.2 percent."></picture></figure></div>
+ </div></section>
+
+ <section class="section container" id="analysis">
+  <div class="section-intro"><h2>What makes an observed target useful?</h2><p>The experiments separate target choice, search effort, and prediction. The following comparisons examine what the target changes during control and which parts of memory matter.</p></div>
+  <article class="analysis-block"><div class="analysis-heading"><h3>Successful routes can begin with a detour.</h3><p>We measure detours by an increase above a previous minimum in normalized physical error. Stalling means little task-relevant motion near the end of a failed rollout. On PushT, all 89 AP-CEM successes take a detour, while 100 of 125 final-goal CEM failures stall.</p></div><figure class="paper-figure"><a href="assets/figure-4.svg" aria-label="Open the behavior analysis figure"><img src="assets/figure-4.svg" width="1100" height="400" loading="lazy" alt="PushT error traces, stalling among failures, and detours among successes. Reacher has zero stalling under both plotted methods."></a><figcaption>Behavior at standard starts. Reacher’s zero stalling rate means its failed rollouts do not become stationary under the study’s definition.</figcaption></figure></article>
+  <article class="analysis-block"><div class="analysis-heading"><h3>A more accurate target does not always control better.</h3><p>The learned target predicts the recorded successor more accurately on every task. Observed targets nevertheless achieve higher CEM success on PushT and Reacher. On Cube and TwoRoom, the learned target performs better.</p></div><div class="table-scroll" tabindex="0" role="region" aria-label="Successor error and control success"><table class="data-table quality-table"><caption class="sr-only">Successor error and CEM success at standard starts</caption><thead><tr><th rowspan="2">Task</th><th colspan="2">Successor error ↓</th><th colspan="2">CEM success (%) ↑</th></tr><tr><th>Learned</th><th>Observed</th><th>Learned</th><th>Observed</th></tr></thead><tbody id="quality-rows"></tbody></table></div><p class="table-description">Mean squared distance to the recorded successor on held-out memory transitions, paired with control success at standard starts. Table 2 in the paper gives the same comparison.</p></article>
+  <article class="analysis-block"><div class="analysis-heading"><h3>Target placement and retrieval timing both matter.</h3><p>The target can lie one, three, five, or ten actions after the retrieved start, while prediction and execution still cover five actions. AP-CEM reaches its highest mean at a three-action target. AP-rank reaches its highest mean at the default five-action target.</p></div><div class="analysis-filter"><span>Mean success over four tasks</span><div class="switch-buttons" role="group" aria-label="Ablation starting condition"><button data-ablation-start="Standard" aria-pressed="true" type="button">Standard</button><button data-ablation-start="Perturbed" aria-pressed="false" type="button">Perturbed</button></div></div>
+   <div class="ablation-grid"><div><h4>How far ahead is the target?</h4><table class="data-table"><thead><tr><th>Offset</th><th>AP-CEM</th><th>AP-rank</th></tr></thead><tbody id="offset-rows"></tbody></table></div><div><h4>How much memory is used?</h4><table class="data-table"><thead><tr><th>Memory</th><th>AP-CEM</th><th>AP-rank</th></tr></thead><tbody id="memory-rows"></tbody></table></div></div>
+   <div class="retrieval-study"><div><h4>Keep the retrieval span moving.</h4><p>As execution advances, AP shortens the span used to find a matching route. Holding it fixed at the original span reduces AP-rank success from 83.8% to 9.6% at standard starts.</p></div><div id="retrieval-bars" class="retrieval-bars" aria-label="AP-rank retrieval ablation"></div></div>
+  </article>
+  <article class="analysis-block anchoring-study"><div><h3>Aim at the recorded endpoint.</h3><p>Anchoring uses the observed endpoint as the target. Displacement transport adds the recorded movement to the current state instead. The two can differ when the current state is offset from the recorded source.</p><p>Under the same CEM search, anchoring improves mean success from 53.7% to 59.8% at standard starts and from 46.0% to 55.1% at perturbed starts. Reacher is the exception: displacement transport performs better there.</p></div><div><table class="data-table anchor-table"><caption>Mean CEM success (%)</caption><thead><tr><th>Start</th><th>Transport</th><th>Anchored</th></tr></thead><tbody id="anchor-rows"></tbody></table><a class="inline-link" href="paper.pdf#page=23">Read the anchoring comparison →</a></div></article>
+  <div class="scope-note"><h3>What the evidence covers</h3><p>These experiments use frozen LeWM models on four simulated visual-control tasks. Learned intermediate targets also improve control, and LeWM leads at some shorter Reacher offsets. Testing other world-model families would show how far the gains extend.</p></div>
+ </section>
+ <section class="section container citation-section" id="citation"><div class="citation-intro"><h2>Citation</h2><p>Paper, implementation, and per-episode results are available below.</p><div class="footer-links"><a href="paper.pdf">Paper <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a><a href="https://github.com/daybraeklaxry/Aim-Short-to-Reach-Far">Repository <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></div></div><div class="citation-code"><button type="button" id="copy-bibtex"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V3H3v13h5"/></svg><span>Copy BibTeX</span></button><pre><code id="bibtex">@misc{liu2026aimshort,
   title  = {Aim Short to Reach Far: Your Frozen World Model Can Plan Better Than You Think},
   author = {Xvyuan Liu and Jianjie Fang and Chen Gao and Yong Li},
   year   = {2026},
   url    = {https://github.com/daybraeklaxry/Aim-Short-to-Reach-Far}
-}</code></pre>
-  </section>
+}</code></pre><span id="copy-status" class="sr-only" role="status"></span></div></section>
 </main>
-<footer class="site-footer"><p>Anchored Planning — Tsinghua University</p></footer>
+<footer class="site-footer container"><span>Anchored Planning</span><p>Tsinghua University</p><p>* Corresponding authors: <a href="mailto:chgao96@gmail.com">Chen Gao</a> and <a href="mailto:liyong07@tsinghua.edu.cn">Yong Li</a></p></footer>
+<script type="application/json" id="results-data">{"main": {"Standard": {"cube": {"CEM (final goal)": 7.03125, "AP-CEM": 46.875, "Direct": 82.03125, "Rank (final goal)": 62.5, "AP-rank": 73.4375, "CEM (learned target)": 62.5, "Rank (learned target)": 91.40625, "LeWM planner": 15.625}, "pusht": {"CEM (final goal)": 2.34375, "AP-CEM": 69.53125, "Direct": 51.5625, "Rank (final goal)": 25.78125, "AP-rank": 66.40625, "CEM (learned target)": 52.34375, "Rank (learned target)": 54.6875, "LeWM planner": 7.03125}, "reacher": {"CEM (final goal)": 25.78125, "AP-CEM": 75.78125, "Direct": 99.21875, "Rank (final goal)": 90.625, "AP-rank": 96.875, "CEM (learned target)": 54.6875, "Rank (learned target)": 95.3125, "LeWM planner": 66.40625}, "tworoom": {"CEM (final goal)": 1.5625, "AP-CEM": 46.875, "Direct": 99.21875, "Rank (final goal)": 89.0625, "AP-rank": 98.4375, "CEM (learned target)": 53.125, "Rank (learned target)": 96.875, "LeWM planner": 17.1875}}, "Perturbed": {"cube": {"CEM (final goal)": 2.734375, "AP-CEM": 29.6875, "Direct": 47.65625, "Rank (final goal)": 41.796875, "AP-rank": 45.703125, "CEM (learned target)": 38.671875, "Rank (learned target)": 50.0, "LeWM planner": 12.5}, "pusht": {"CEM (final goal)": 2.734375, "AP-CEM": 64.84375, "Direct": 17.96875, "Rank (final goal)": 12.890625, "AP-rank": 47.65625, "CEM (learned target)": 48.828125, "Rank (learned target)": 35.546875, "LeWM planner": 9.375}, "reacher": {"CEM (final goal)": 22.65625, "AP-CEM": 78.90625, "Direct": 96.875, "Rank (final goal)": 87.5, "AP-rank": 95.703125, "CEM (learned target)": 58.984375, "Rank (learned target)": 96.875, "LeWM planner": 68.75}, "tworoom": {"CEM (final goal)": 1.5625, "AP-CEM": 46.875, "Direct": 100.0, "Rank (final goal)": 88.671875, "AP-rank": 100.0, "CEM (learned target)": 55.078125, "Rank (learned target)": 98.4375, "LeWM planner": 16.796875}}}, "quality": {"cube": {"Learned": 19.70803451538086, "Observed": 63.055625915527344}, "pusht": {"Learned": 3.7744274139404297, "Observed": 10.668302536010742}, "reacher": {"Learned": 74.72413635253906, "Observed": 154.35128784179688}, "tworoom": {"Learned": 133.85696411132812, "Observed": 266.6763610839844}}, "ablations": {"Standard": {"offset": [{"label": "1", "cem_observed": 42.96875, "rank_observed": 69.53125}, {"label": "3", "cem_observed": 69.921875, "rank_observed": 78.515625}, {"label": "5 (default)", "cem_observed": 59.765625, "rank_observed": 83.7890625}, {"label": "10", "cem_observed": 54.1015625, "rank_observed": 81.640625}], "memory": [{"label": "10%", "cem_observed": 56.640625, "rank_observed": 77.5390625}, {"label": "25%", "cem_observed": 58.3984375, "rank_observed": 80.078125}, {"label": "50%", "cem_observed": 58.59375, "rank_observed": 82.03125}, {"label": "100%", "cem_observed": 59.765625, "rank_observed": 83.7890625}], "retrieval": [{"label": "Default retrieval", "value": 83.7890625}, {"label": "Without distant endpoint", "value": 85.7421875}, {"label": "Without displacement", "value": 83.0078125}, {"label": "Fixed retrieval span", "value": 9.5703125}], "anchor": {"observed": 59.765625, "transport": 53.7109375}}, "Perturbed": {"offset": [{"label": "1", "cem_observed": 37.890625, "rank_observed": 61.328125}, {"label": "3", "cem_observed": 62.59765625, "rank_observed": 68.45703125}, {"label": "5 (default)", "cem_observed": 55.078125, "rank_observed": 72.265625}, {"label": "10", "cem_observed": 52.734375, "rank_observed": 68.359375}], "memory": [{"label": "10%", "cem_observed": 52.1484375, "rank_observed": 68.9453125}, {"label": "25%", "cem_observed": 53.515625, "rank_observed": 70.41015625}, {"label": "50%", "cem_observed": 53.80859375, "rank_observed": 70.99609375}, {"label": "100%", "cem_observed": 55.078125, "rank_observed": 72.265625}], "retrieval": [{"label": "Default retrieval", "value": 72.265625}, {"label": "Without distant endpoint", "value": 72.8515625}, {"label": "Without displacement", "value": 72.0703125}, {"label": "Fixed retrieval span", "value": 11.328125}], "anchor": {"observed": 55.078125, "transport": 45.99609375}}}, "sources": ["main_results", "target_quality", "interventions"]}</script>
+<script type="application/json" id="demo-data">{"cem": {"pusht": [{"name": "pusht-000", "label": "PushT", "goal": "Push and rotate the T-shaped block onto the green target.", "baselineSteps": 280, "apSteps": 116, "actionsPerSecond": 20}, {"name": "pusht-001", "label": "PushT", "goal": "Push and rotate the T-shaped block onto the green target.", "baselineSteps": 280, "apSteps": 139, "actionsPerSecond": 20}], "cube": [{"name": "cube-000", "label": "Cube", "goal": "Move the cube to match the goal image.", "baselineSteps": 150, "apSteps": 20, "actionsPerSecond": 20}, {"name": "cube-002", "label": "Cube", "goal": "Move the cube to match the goal image.", "baselineSteps": 150, "apSteps": 40, "actionsPerSecond": 20}], "reacher": [{"name": "reacher-000", "label": "Reacher", "goal": "Move the arm into the pose shown in the goal image.", "baselineSteps": 300, "apSteps": 133, "actionsPerSecond": 20}, {"name": "reacher-002", "label": "Reacher", "goal": "Move the arm into the pose shown in the goal image.", "baselineSteps": 300, "apSteps": 164, "actionsPerSecond": 20}], "tworoom": [{"name": "tworoom-008", "label": "TwoRoom", "goal": "Pass through the opening to reach the position in the goal image.", "baselineSteps": 200, "apSteps": 95, "actionsPerSecond": 20}, {"name": "tworoom-012", "label": "TwoRoom", "goal": "Pass through the opening to reach the position in the goal image.", "baselineSteps": 200, "apSteps": 93, "actionsPerSecond": 20}]}, "rank": {"pusht": [{"name": "rank-pusht-001", "label": "PushT", "goal": "Push and rotate the T-shaped block onto the green target.", "baselineSteps": 280, "apSteps": 154, "actionsPerSecond": 20}, {"name": "rank-pusht-002", "label": "PushT", "goal": "Push and rotate the T-shaped block onto the green target.", "baselineSteps": 280, "apSteps": 138, "actionsPerSecond": 20}], "cube": [{"name": "rank-cube-001", "label": "Cube", "goal": "Move the cube to match the goal image.", "baselineSteps": 150, "apSteps": 44, "actionsPerSecond": 20}, {"name": "rank-cube-088", "label": "Cube", "goal": "Move the cube to match the goal image.", "baselineSteps": 150, "apSteps": 53, "actionsPerSecond": 20}]}}</script>
 </body>
 </html>
