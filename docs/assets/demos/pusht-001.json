@@ -1,0 +1,18 @@
+{
+  "task": "pusht",
+  "query_ordinal": 1,
+  "query_id": "ap-fresh-pusht-001",
+  "final_steps": 280,
+  "ap_steps": 139,
+  "name": "pusht-001",
+  "fps": 20,
+  "actions_per_second": 20,
+  "start": "standard",
+  "final_success": false,
+  "ap_success": true,
+  "model_calls": 0,
+  "simulated_actions": 0,
+  "rendering": "Simulator rendering of saved physical states; terminal states held.",
+  "goal_overlay": "PushT green overlay shows the evaluated goal pose.",
+  "selection": "First two query-ordered AP-CEM successes paired with final-goal failures per task, requiring more than ten executed AP-CEM actions."
+}

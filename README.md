@@ -43,7 +43,9 @@ the same main queries, goals, and task action allowances.
 | --- | --- |
 | `data/` | Current paper measurements and per-episode outcomes. |
 | `tools/reproduce_table1.py` | Standalone reconstruction of Table 1. |
-| `docs/` | Static project page, paper figures, and a recorded PushT replay. |
+| `docs/` | Static project page, paper figures, eight paired task demos, and a PushT recovery replay. |
+| `data/project_demos/` | Demo query identities and the saved physical states for both controllers. |
+| `tools/render_project_demos.py` | Render the paired demos from those saved states. |
 | `code/ap/` | Anchored Planning controller, asset configuration, and main query protocol. |
 | `code/expanded/` | Learned-target training, target quality, budget/offset/memory interventions, and exact-endpoint diagnostics. |
 | `code/original_sources/` | Frozen runtime modules imported by the experiment scripts. |
@@ -57,6 +59,37 @@ LeWM outcomes used by the paper. `data/first_block_episodes.csv` and
 `data/diagnostic_episode_metrics.csv` give the per-query diagnostic records.
 `data/legacy_tables.csv` and the local result snapshots under `code/ap/results/`
 document separate earlier supporting studies; they are not inputs to Table 1.
+
+## Replay the project-page demonstrations
+
+The gallery shows two standard-start examples per task, comparing AP-CEM with
+final-goal CEM from the same start and goal. For each task, we take the first two
+queries in query order where AP-CEM succeeds, final-goal CEM fails, and AP-CEM
+executes more than ten actions. These are selected success examples; the full
+success rates are reported separately in Table 1 and on the project page.
+
+The videos render saved simulator states at 20 actions per second and hold the
+terminal state after a controller stops. Rendering does not call a world model
+or execute new simulator actions. The PushT green overlay is set to the query's
+goal pose. The separate perturbed-start Direct/AP-rank replay is Figure 6's
+diagnostic example, not part of this eight-case comparison.
+
+With the task simulator dependencies described below, FFmpeg on `PATH`, and
+DejaVu Sans fonts installed in the Linux rendering environment:
+
+```bash
+MUJOCO_GL=osmesa PYOPENGL_PLATFORM=osmesa SDL_VIDEODRIVER=dummy \
+python tools/render_project_demos.py \
+  --trace-root data/project_demos/traces \
+  --cases data/project_demos/cases.json \
+  --output outputs/demos --task pusht
+```
+
+Use `cube`, `reacher`, or `tworoom` to render another task. The script checks paired
+starts, goals, outcomes, and state counts before rendering. It writes the videos,
+goal images, posters, and a small provenance JSON for each case. The saved data
+include physical states only; no model weights or original image datasets are
+needed for this replay.
 
 ## Running simulator experiments
 

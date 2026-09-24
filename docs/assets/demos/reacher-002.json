@@ -1,0 +1,17 @@
+{
+  "task": "reacher",
+  "query_ordinal": 2,
+  "query_id": "ap-fresh-reacher-002",
+  "final_steps": 300,
+  "ap_steps": 164,
+  "name": "reacher-002",
+  "fps": 20,
+  "actions_per_second": 20,
+  "start": "standard",
+  "final_success": false,
+  "ap_success": true,
+  "model_calls": 0,
+  "simulated_actions": 0,
+  "rendering": "Simulator rendering of saved physical states; terminal states held.",
+  "selection": "First two query-ordered AP-CEM successes paired with final-goal failures per task, requiring more than ten executed AP-CEM actions."
+}

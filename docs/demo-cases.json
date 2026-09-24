@@ -1,0 +1,74 @@
+[
+  {
+    "task": "pusht",
+    "query_ordinal": 0,
+    "query_id": "ap-fresh-pusht-000",
+    "final_steps": 280,
+    "ap_steps": 116,
+    "example": 1,
+    "name": "pusht-000"
+  },
+  {
+    "task": "cube",
+    "query_ordinal": 0,
+    "query_id": "ap-fresh-cube-000",
+    "final_steps": 150,
+    "ap_steps": 20,
+    "example": 1,
+    "name": "cube-000"
+  },
+  {
+    "task": "reacher",
+    "query_ordinal": 0,
+    "query_id": "ap-fresh-reacher-000",
+    "final_steps": 300,
+    "ap_steps": 133,
+    "example": 1,
+    "name": "reacher-000"
+  },
+  {
+    "task": "tworoom",
+    "query_ordinal": 8,
+    "query_id": "ap-fresh-tworoom-008",
+    "final_steps": 200,
+    "ap_steps": 95,
+    "example": 1,
+    "name": "tworoom-008"
+  },
+  {
+    "task": "pusht",
+    "query_ordinal": 1,
+    "query_id": "ap-fresh-pusht-001",
+    "final_steps": 280,
+    "ap_steps": 139,
+    "example": 2,
+    "name": "pusht-001"
+  },
+  {
+    "task": "cube",
+    "query_ordinal": 2,
+    "query_id": "ap-fresh-cube-002",
+    "final_steps": 150,
+    "ap_steps": 40,
+    "example": 2,
+    "name": "cube-002"
+  },
+  {
+    "task": "reacher",
+    "query_ordinal": 2,
+    "query_id": "ap-fresh-reacher-002",
+    "final_steps": 300,
+    "ap_steps": 164,
+    "example": 2,
+    "name": "reacher-002"
+  },
+  {
+    "task": "tworoom",
+    "query_ordinal": 12,
+    "query_id": "ap-fresh-tworoom-012",
+    "final_steps": 200,
+    "ap_steps": 93,
+    "example": 2,
+    "name": "tworoom-012"
+  }
+]
