@@ -100,15 +100,27 @@ class ComparisonPlayer {
       video.dataset.source = `assets/comparisons/${this.case.name}-${side}.mp4`;
       const method = i ? (this.method === 'cem' ? 'AP-CEM' : 'AP-rank') : (this.method === 'cem' ? 'Final-goal CEM' : 'Direct');
       video.setAttribute('aria-label', `${method} ${this.case.label} example ${this.example + 1}`);
+      const success = this.case[`${side}Success`];
+      const steps = this.case[`${side}Steps`];
+      const result = this.root.querySelector(`[data-result=${side}]`);
+      result.classList.toggle('success', success);
+      result.classList.toggle('failure', !success);
+      result.querySelector('.status-text').textContent = success ? 'Success' : 'Failure';
+      result.querySelector('.finish-step').textContent = `${steps} actions`;
+      result.setAttribute('aria-label', `${method}: ${success ? 'success' : 'failure'} after ${steps} actions`);
+      result.querySelector('svg').innerHTML = success ? '<path d="m5 12 4 4L19 6"/>' : '<path d="m6 6 12 12M18 6 6 18"/>';
     });
     const goal = this.root.querySelector('.goal-image');
     goal.src = `assets/demos/${this.case.name}-goal.jpg`;
     goal.alt = `Shared ${this.case.label} goal for example ${this.example + 1}`;
     this.root.querySelector('.goal-link').href = goal.src;
     this.root.querySelector('.goal-description').textContent = this.case.goal;
+    this.root.querySelector('.case-summary').textContent = this.case.baselineSuccess
+      ? 'Both methods reach the goal in this example.'
+      : `${this.method === 'cem' ? 'AP-CEM' : 'AP-rank'} reaches the goal. ${this.method === 'cem' ? 'Final-goal CEM' : 'Direct'} does not.`;
     this.timeline.value = 0;
     this.timeline.disabled = true;
-    this.updateProgress();
+    this.updateProgress(true);
   }
   load() {
     if (this.loaded) return;
@@ -153,20 +165,22 @@ class ComparisonPlayer {
     this.videos.forEach(video => { if (Number.isFinite(video.duration)) video.currentTime = Math.min(fraction * video.duration, Math.max(0, video.duration - .05)); });
     this.updateProgress();
   }
-  updateProgress() {
+  updateProgress(reset = false) {
     const [clock, follower] = this.videos;
-    const time = clock.currentTime || 0;
-    const action = Math.min(this.case.baselineSteps, Math.floor(time * this.case.actionsPerSecond));
-    if (Number.isFinite(clock.duration)) this.timeline.value = Math.round(time / clock.duration * 1000);
+    const time = reset ? 0 : clock.currentTime || 0;
+    const total = Math.max(this.case.baselineSteps, this.case.apSteps);
+    const action = Math.min(total, Math.floor(time * this.case.actionsPerSecond));
+    if (!reset && Number.isFinite(clock.duration)) this.timeline.value = Math.round(time / clock.duration * 1000);
     this.counter.textContent = `Action ${action}`;
-    this.timeline.setAttribute('aria-valuetext', `Action ${action} of ${this.case.baselineSteps}`);
-    const baseline = this.root.querySelector('[data-outcome=baseline]');
-    const ap = this.root.querySelector('[data-outcome=ap]');
-    baseline.textContent = action >= this.case.baselineSteps ? 'Goal not reached' : `${action} actions`;
-    const reached = action >= this.case.apSteps;
-    ap.textContent = reached ? `Goal reached in ${this.case.apSteps} actions` : `${action} actions`;
-    ap.classList.toggle('reached', reached);
-    if (follower.readyState >= 2 && Math.abs(time - follower.currentTime) > .12) follower.currentTime = time;
+    this.timeline.setAttribute('aria-valuetext', `Action ${action} of ${total}`);
+    for (const side of ['baseline', 'ap']) {
+      const outcome = this.root.querySelector(`[data-outcome=${side}]`);
+      const steps = this.case[`${side}Steps`];
+      const ended = action >= steps;
+      outcome.textContent = ended ? (this.case[`${side}Success`] ? 'Goal reached' : 'Goal not reached') : `Action ${Math.min(action, steps)} of ${steps}`;
+      outcome.classList.toggle('reached', ended && this.case[`${side}Success`]);
+    }
+    if (!reset && follower.readyState >= 2 && Math.abs(time - follower.currentTime) > .12) follower.currentTime = time;
   }
 }
 

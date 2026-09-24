@@ -1,0 +1,17 @@
+{
+  "task": "reacher",
+  "query_id": "ap-fresh-reacher-000",
+  "query_ordinal": 0,
+  "condition": "prefix_a",
+  "direct_steps": 163,
+  "rank_steps": 145,
+  "direct_success": true,
+  "rank_success": true,
+  "name": "rank-reacher-000",
+  "fps": 20,
+  "actions_per_second": 20,
+  "rendering": "Replay of recorded physical states, holding each final state after stopping.",
+  "selection": "First two query-ordered AP-rank successes longer than ten actions under the first assigned perturbation, preferring Direct failures where available. Both outcomes are shown.",
+  "model_calls_for_rendering": 0,
+  "simulated_actions_for_rendering": 0
+}

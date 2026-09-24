@@ -1,18 +1,17 @@
 {
-  "task": "cube",
+  "task": "tworoom",
+  "query_id": "ap-fresh-tworoom-001",
   "query_ordinal": 1,
-  "query_id": "ap-fresh-cube-001",
   "condition": "prefix_a",
-  "direct_steps": 150,
-  "rank_steps": 44,
-  "name": "rank-cube-001",
+  "direct_steps": 97,
+  "rank_steps": 94,
+  "direct_success": true,
+  "rank_success": true,
+  "name": "rank-tworoom-001",
   "fps": 20,
   "actions_per_second": 20,
-  "rendering": "Saved physical states; terminal states held after stopping.",
+  "rendering": "Replay of recorded physical states, holding each final state after stopping.",
   "selection": "First two query-ordered AP-rank successes longer than ten actions under the first assigned perturbation, preferring Direct failures where available. Both outcomes are shown.",
   "model_calls_for_rendering": 0,
-  "simulated_actions_for_rendering": 0,
-  "goal_overlay": null,
-  "direct_success": false,
-  "rank_success": true
+  "simulated_actions_for_rendering": 0
 }

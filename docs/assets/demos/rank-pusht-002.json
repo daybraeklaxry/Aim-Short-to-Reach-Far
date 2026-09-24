@@ -9,8 +9,10 @@
   "fps": 20,
   "actions_per_second": 20,
   "rendering": "Saved physical states; terminal states held after stopping.",
-  "selection": "First two query-ordered Direct failures paired with AP-rank successes of more than ten actions, under the first assigned perturbation, on PushT and Cube.",
+  "selection": "First two query-ordered AP-rank successes longer than ten actions under the first assigned perturbation, preferring Direct failures where available. Both outcomes are shown.",
   "model_calls_for_rendering": 0,
   "simulated_actions_for_rendering": 0,
-  "goal_overlay": "PushT green overlay shows the evaluated goal pose."
+  "goal_overlay": "PushT green overlay shows the evaluated goal pose.",
+  "direct_success": false,
+  "rank_success": true
 }

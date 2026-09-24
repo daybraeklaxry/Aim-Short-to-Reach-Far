@@ -5,7 +5,9 @@
     "query_id": "ap-fresh-pusht-001",
     "condition": "prefix_a",
     "direct_steps": 280,
-    "rank_steps": 154
+    "rank_steps": 154,
+    "direct_success": false,
+    "rank_success": true
   },
   {
     "task": "pusht",
@@ -13,7 +15,9 @@
     "query_id": "ap-fresh-pusht-002",
     "condition": "prefix_a",
     "direct_steps": 280,
-    "rank_steps": 138
+    "rank_steps": 138,
+    "direct_success": false,
+    "rank_success": true
   },
   {
     "task": "cube",
@@ -21,7 +25,9 @@
     "query_id": "ap-fresh-cube-001",
     "condition": "prefix_a",
     "direct_steps": 150,
-    "rank_steps": 44
+    "rank_steps": 44,
+    "direct_success": false,
+    "rank_success": true
   },
   {
     "task": "cube",
@@ -29,6 +35,48 @@
     "query_id": "ap-fresh-cube-088",
     "condition": "prefix_a",
     "direct_steps": 150,
-    "rank_steps": 53
+    "rank_steps": 53,
+    "direct_success": false,
+    "rank_success": true
+  },
+  {
+    "task": "reacher",
+    "query_id": "ap-fresh-reacher-000",
+    "query_ordinal": 0,
+    "condition": "prefix_a",
+    "direct_steps": 163,
+    "rank_steps": 145,
+    "direct_success": true,
+    "rank_success": true
+  },
+  {
+    "task": "reacher",
+    "query_id": "ap-fresh-reacher-001",
+    "query_ordinal": 1,
+    "condition": "prefix_a",
+    "direct_steps": 145,
+    "rank_steps": 43,
+    "direct_success": true,
+    "rank_success": true
+  },
+  {
+    "task": "tworoom",
+    "query_id": "ap-fresh-tworoom-000",
+    "query_ordinal": 0,
+    "condition": "prefix_a",
+    "direct_steps": 83,
+    "rank_steps": 98,
+    "direct_success": true,
+    "rank_success": true
+  },
+  {
+    "task": "tworoom",
+    "query_id": "ap-fresh-tworoom-001",
+    "query_ordinal": 1,
+    "condition": "prefix_a",
+    "direct_steps": 97,
+    "rank_steps": 94,
+    "direct_success": true,
+    "rank_success": true
   }
 ]

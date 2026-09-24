@@ -13,7 +13,7 @@ def render(case, root, out, trace_export):
     traces = [json.loads((root / task / f'confirm_{query}_{condition}_{arm}.json').read_text()) for arm in arms]
     assert traces[0]['trajectory'][0] == traces[1]['trajectory'][0]
     assert traces[0]['true_goal'] == traces[1]['true_goal']
-    assert [t['compact']['success'] for t in traces] == [False, True]
+    assert [t['compact']['success'] for t in traces] == [case['direct_success'], case['rank_success']]
     for trace, count in zip(traces, [case['direct_steps'], case['rank_steps']]):
         assert len(trace['trajectory']) == count + 1 == trace['compact']['primitive_steps'] + 1
     envs = [make_env(task, t) for t in traces]
@@ -39,10 +39,10 @@ def render(case, root, out, trace_export):
             canvas.paste(pics[i], (x, 38))
             draw.text((x + 180, 17), ['Direct', 'AP-rank'][i], fill=colors[i], font=title, anchor='mm')
             status = f'Action {index}'
-            if i == 1 and t >= case['rank_steps']:
-                status = f'Reached at action {case["rank_steps"]}'
-            elif i == 0 and t >= case['direct_steps']:
-                status = f'Not reached in {case["direct_steps"]} actions'
+            count = trace['compact']['primitive_steps']
+            if t >= count:
+                outcome = 'Success' if trace['compact']['success'] else 'Failure'
+                status = f'{outcome} after {count} actions'
             draw.text((x + 180, 413), status, fill=colors[i], font=status_font, anchor='mm')
         return canvas
 
@@ -61,7 +61,7 @@ def render(case, root, out, trace_export):
         env.close()
     meta = dict(case, name=name, fps=20, actions_per_second=20,
                 rendering='Saved physical states; terminal states held after stopping.',
-                selection='First two query-ordered Direct failures paired with AP-rank successes of more than ten actions, under the first assigned perturbation, on PushT and Cube.',
+                selection='First two query-ordered AP-rank successes longer than ten actions under the first assigned perturbation, preferring Direct failures where available. Both outcomes are shown.',
                 model_calls_for_rendering=0, simulated_actions_for_rendering=0,
                 goal_overlay='PushT green overlay shows the evaluated goal pose.' if task == 'pusht' else None)
     (out / f'{name}.json').write_text(json.dumps(meta, indent=2) + '\n')
@@ -83,7 +83,7 @@ if __name__ == '__main__':
     p.add_argument('--trace-root', type=Path, required=True)
     p.add_argument('--cases', type=Path, required=True)
     p.add_argument('--output', type=Path, required=True)
-    p.add_argument('--task', choices=['pusht','cube'], required=True)
+    p.add_argument('--task', choices=['pusht','cube','reacher','tworoom'], required=True)
     p.add_argument('--export-traces', type=Path)
     args = p.parse_args()
     args.output.mkdir(parents=True, exist_ok=True)
