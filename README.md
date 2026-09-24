@@ -1,6 +1,6 @@
 <h1 align="center">Aim Short to Reach Far</h1>
 
-<p align="center"><strong>Goal Distance Underestimates Your Frozen World Model</strong></p>
+<p align="center"><strong>Your Frozen World Model Can Plan Better Than You Think</strong></p>
 
 <p align="center">
   Xvyuan Liu, Jianjie Fang, Chen Gao, Yong Li<br>
@@ -65,7 +65,7 @@ The [reproduction guide](REPRODUCING.md#code-and-data-layout) maps each experime
 
 ```bibtex
 @misc{liu2026aimshort,
-  title  = {Aim Short to Reach Far: Goal Distance Underestimates Your Frozen World Model},
+  title  = {Aim Short to Reach Far: Your Frozen World Model Can Plan Better Than You Think},
   author = {Xvyuan Liu and Jianjie Fang and Chen Gao and Yong Li},
   year   = {2026},
   url    = {https://github.com/daybraeklaxry/Aim-Short-to-Reach-Far}

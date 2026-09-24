@@ -1,4 +1,4 @@
-# Aim Short to Reach Far: Goal Distance Underestimates Your Frozen World Model
+# Aim Short to Reach Far: Your Frozen World Model Can Plan Better Than You Think
 
 This directory preserves the original implementation and earlier result snapshots. Its local analysis commands reproduce those snapshots. For the current manuscript results, use `../../data/`; for the released LeWM baseline, use `../lewm/audit/official_baseline.py`. See the repository root README for all current entry points.
 
