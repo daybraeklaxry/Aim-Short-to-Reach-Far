@@ -10,7 +10,9 @@
 <p align="center">
   <a href="https://daybraeklaxry.github.io/Aim-Short-to-Reach-Far/"><strong>Project Page</strong></a>
   &emsp;
-  <a href="https://daybraeklaxry.github.io/Aim-Short-to-Reach-Far/paper.pdf"><strong>Paper</strong></a>
+  <a href="https://arxiv.org/abs/2609.30036"><strong>arXiv</strong></a>
+  &emsp;
+  <a href="https://arxiv.org/pdf/2609.30036"><strong>PDF</strong></a>
   &emsp;
   <a href="https://daybraeklaxry.github.io/Aim-Short-to-Reach-Far/#demos"><strong>Demos</strong></a>
   &emsp;
@@ -50,7 +52,7 @@
   </tr>
 </table>
 
-These are selected successful cases from paired evaluations. [Explore all twelve demos](https://daybraeklaxry.github.io/Aim-Short-to-Reach-Far/#demos) across Cube, PushT, Reacher, and TwoRoom, or see the [full evaluation results](https://daybraeklaxry.github.io/Aim-Short-to-Reach-Far/#results).
+These are selected successful cases from paired evaluations. [Explore all sixteen demos](https://daybraeklaxry.github.io/Aim-Short-to-Reach-Far/#demos) across Cube, PushT, Reacher, and TwoRoom, or see the [full evaluation results](https://daybraeklaxry.github.io/Aim-Short-to-Reach-Far/#results).
 
 ## Using the repository
 
@@ -68,7 +70,10 @@ The [reproduction guide](REPRODUCING.md#code-and-data-layout) maps each experime
   title  = {Aim Short to Reach Far: Your Frozen World Model Can Plan Better Than You Think},
   author = {Xvyuan Liu and Jianjie Fang and Chen Gao and Yong Li},
   year   = {2026},
-  url    = {https://github.com/daybraeklaxry/Aim-Short-to-Reach-Far}
+  eprint = {2609.30036},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.LG},
+  url    = {https://arxiv.org/abs/2609.30036}
 }
 ```
 
