@@ -32,7 +32,7 @@ the two assigned prefixes within each query. The mean row weights tasks equally.
 We round after aggregation. This command reads the recorded measurements and
 does not run new simulator episodes.
 
-The LeWM rows use the released `WorldModelPolicy` / `CEMSolver`, planning and
+The LeWM rows use the [LeWM planner](https://github.com/lucas-maes/le-wm) (`WorldModelPolicy` / `CEMSolver`), planning and
 executing up to 25 primitive actions. The other predictive controllers use
 five-action blocks and the action mapping described in the paper. All rows use
 the same main queries, goals, and task action allowances.
@@ -50,13 +50,13 @@ the same main queries, goals, and task action allowances.
 | `code/ap/` | Anchored Planning controller, asset configuration, and main query protocol. |
 | `code/expanded/` | Learned-target training, target quality, budget/offset/memory interventions, and exact-endpoint diagnostics. |
 | `code/original_sources/` | Frozen runtime modules imported by the experiment scripts. |
-| `code/lewm/baseline/official_baseline.py` | Released LeWM baseline on the main queries. |
-| `code/lewm/protocol_check/` | Released-evaluator comparison and five-action replanning variant. |
+| `code/lewm/baseline/official_baseline.py` | LeWM planner on the main queries. |
+| `code/lewm/protocol_check/` | LeWM evaluator comparison and five-action replanning variant. |
 | `lewm_checks/` | Query identities, per-seed parity, single-factor checks, and recorded LeWM outcomes. |
 | `reproduction_inputs/` | Target-model training records, target-quality samples, and runtime protocol metadata. |
 
-`data/main_episodes.csv` and `data/intervention_episodes.csv` include the released
-LeWM outcomes used by the paper. `data/first_block_episodes.csv` and
+`data/main_episodes.csv` and `data/intervention_episodes.csv` include the LeWM planner
+outcomes used by the paper. `data/first_block_episodes.csv` and
 `data/diagnostic_episode_metrics.csv` give the per-query diagnostic records.
 
 ## Replay the project-page demonstrations
@@ -135,7 +135,7 @@ points are:
 - `code/expanded/run_suite.py`: target, budget, goal-offset, and memory settings.
 - `code/expanded/target_quality.py`: held-out target accuracy measurements.
 - `code/expanded/run_exact_v2.py`: exact-endpoint and first-block interventions.
-- `code/lewm/baseline/official_baseline.py`: the paper's released LeWM baseline.
+- `code/lewm/baseline/official_baseline.py`: the paper's LeWM planner baseline.
 
 Machine-specific source paths have been replaced with repository-relative
 `runtime/ap/` and `external/` paths. Run these scripts from the repository root

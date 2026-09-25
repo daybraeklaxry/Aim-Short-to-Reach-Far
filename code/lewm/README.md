@@ -1,6 +1,6 @@
-# Released LeWM baseline
+# LeWM planner
 
-The primary runner is `baseline/official_baseline.py`. It uses the released
+The primary runner is `baseline/official_baseline.py`. It uses the [LeWM planner](https://github.com/lucas-maes/le-wm) with
 `WorldModelPolicy` and `CEMSolver`, planning and executing up to 25 primitive
 actions. Main-query per-episode measurements are in `../../data/main_episodes.csv`.
 all measured goal offsets are in `../../lewm_checks/released_planner_episodes.csv`.

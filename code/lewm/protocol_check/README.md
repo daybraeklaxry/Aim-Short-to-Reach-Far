@@ -1,7 +1,6 @@
 # LeWM protocol-check sources
 
-These programs collect the additional measurements in Appendix D.2. The released
-evaluator snapshot is unchanged and includes its MIT license and public source
+These programs collect the additional measurements in Appendix D.2. The [LeWM evaluator](https://github.com/lucas-maes/le-wm) snapshot is unchanged and includes its MIT license and public source
 record. `../baseline/official_baseline.py` is the same planning implementation used
 for the paper's main LeWM results.
 
@@ -21,13 +20,13 @@ changed. `fetch_runtime_wheels.py` documents the isolated additional dependencie
 ## Evaluation order
 
 1. `prepare_official_assets.py --task TASK` links the existing dataset and serializes
-   the released checkpoint object, checking equality of all state tensors.
+   the LeWM checkpoint object, checking equality of all state tensors.
 2. `observe_official.py --task TASK --seed SEED --mode official` executes the
-   unchanged released `eval.py`. Repeat with `--mode wrapper` to run the main
+   unchanged LeWM `eval.py`. Repeat with `--mode wrapper` to run the main
    planning implementation on identical reference queries and the same CEM stream.
    Seeds are 42, 43, 44 and each run uses 50 queries. The observer records query
    identities, actions and outcomes. Completed output directories are not reused.
-3. `summarize_checks.py` writes official-reproduction and parity CSV files. Complete
+3. `summarize_checks.py` writes LeWM evaluation and parity CSV files. Complete
    all three task seeds before interpreting the task's follow-up experiments.
 4. `run_gap_factor.py --task TASK --factor FACTOR --start 0 --stop 128` runs one
    changed main-H25 setting. Factors are `official_queries`, `goal_frame24`, and

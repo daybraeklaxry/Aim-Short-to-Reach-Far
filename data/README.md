@@ -1,6 +1,6 @@
 # Recorded measurements
 
-These files accompany the paper. Main-query measurements use the released LeWM planner. The tables in the PDF present standard starts and the query-wise perturbation average. These CSV files also give both individual prefixes, all measured settings, and sample counts.
+These files accompany the paper. Main-query measurements use the [LeWM planner](https://github.com/lucas-maes/le-wm). The tables in the PDF present standard starts and the query-wise perturbation average. These CSV files also give both individual prefixes, all measured settings, and sample counts.
 
 The root command `python tools/reproduce_table1.py` recomputes Table 1 from
 `main_episodes.csv`. The other per-episode files are `intervention_episodes.csv`,
@@ -38,7 +38,7 @@ learned, and observed targets. `cem_transport` uses the transported recorded
 displacement. `rank_final`, `rank_learned`, and `rank_observed` score the same
 eight retrieved action blocks. `direct` executes the closest record's block.
 
-LeWM uses the released `WorldModelPolicy` and `CEMSolver`, planning five blocks
+The LeWM planner uses `WorldModelPolicy` and `CEMSolver`, planning five blocks
 and executing up to five blocks with five primitive actions per block. Actions
 are de-normalized by the pretrained action normalizer and sent to the simulator.
 The other main-study controllers clip proposals to the action bounds before

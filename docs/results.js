@@ -21,7 +21,7 @@ function renderMainResults() {
   table.querySelector('tbody').innerHTML = rows.join('');
   table.querySelector('caption').textContent = `${resultStart} starts. ${resultRule==='cem'?'CEM and LeWM':'Recorded-action ranking'}. Success in percent.`;
   document.querySelector('#results-description').textContent = resultRule === 'cem'
-    ? 'Final-goal, learned-target, and AP-CEM use the same five-action search. LeWM uses its released 25-action planner. Main-evaluation goal offsets range from 100 to 150 actions.'
+    ? 'Final-goal, learned-target, and AP-CEM use the same five-action search. The LeWM planner uses 25-action plans. Main-evaluation goal offsets range from 100 to 150 actions.'
     : 'The three ranking methods score the same eight retrieved action blocks with different targets. Direct executes the closest record’s action without prediction. Main-evaluation goal offsets range from 100 to 150 actions.';
 }
 document.querySelectorAll('[data-rule]').forEach(button=>button.addEventListener('click',()=>{resultRule=button.dataset.rule;selectButton('data-rule',resultRule);renderMainResults();}));

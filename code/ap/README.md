@@ -2,7 +2,7 @@
 
 This directory contains retrieval, action selection, and simulator evaluation
 for frozen LeWM models. The paper's recorded results are in `../../data/`.
-The released LeWM baseline is `../lewm/baseline/official_baseline.py`.
+The [LeWM planner](https://github.com/lucas-maes/le-wm) entry point is `../lewm/baseline/official_baseline.py`.
 
 For paper results, run `python tools/reproduce_table1.py` from the repository
 root. See [REPRODUCING.md](../../REPRODUCING.md) for the full experiment map.
@@ -33,7 +33,7 @@ execution. CEM does not use the recorded action values to initialize its search.
 
 ## External assets
 
-Obtain the released model state dictionaries and original HDF5 datasets
+Obtain the LeWM model state dictionaries and original HDF5 datasets
 from the [LeWM checkpoints and data collection](https://huggingface.co/collections/quentinll/lewm).
 Preserve the original dataset row order, episode lengths, and offsets:
 the frozen protocols refer directly to those row indices.
@@ -91,7 +91,7 @@ unless already configured. It records the effective renderer settings.
 `.venv-reacher` folder and `requirements/native-reacher.txt`. Its recorded
 runtime uses MuJoCo 3.10.0 and DM-Control 1.0.43. Cube, PushT, and TwoRoom
 use MuJoCo 3.12.0 and DM-Control 1.0.44. The evaluator checks this pair before
-running. This difference is required for the released Reacher observations.
+running. This difference is required for the source Reacher observations.
 
 The native requirements pin the directly used packages observed in the
 runtime. They are not a complete OS image or a tested clean-install lock

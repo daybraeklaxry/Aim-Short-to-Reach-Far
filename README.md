@@ -60,7 +60,7 @@ These are selected successful cases from paired evaluations. [Explore all sixtee
 - **[Code and setup](code/ap/README.md#external-assets):** controller implementation, pretrained models, datasets, and simulator dependencies.
 - **[Reproduction guide](REPRODUCING.md):** recompute the paper's tables, run evaluations, and render paired demonstrations from saved states.
 - **[Recorded results](data/README.md):** per-episode measurements, definitions, and units.
-- **[LeWM evaluation](lewm_checks/README.md):** released-planner settings and comparisons with the released evaluator.
+- **[LeWM evaluation](lewm_checks/README.md):** settings of the [LeWM planner](https://github.com/lucas-maes/le-wm) and comparisons with the LeWM evaluator.
 
 The [reproduction guide](REPRODUCING.md#code-and-data-layout) maps each experiment to its code and data.
 

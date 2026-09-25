@@ -14,8 +14,8 @@ the same queries, goals, and prefix assignments.
 The nested memory subsets use seed `26091600`. Each subset is selected once,
 and its retrieval statistics are recomputed from its member episodes.
 
-The released-evaluator comparison averages seeds `42`, `43`, and `44`, with
-50 queries per seed. The released configuration specifies seed `42`.
+The LeWM evaluator comparison averages seeds `42`, `43`, and `44`, with
+50 queries per seed. The LeWM configuration specifies seed `42`.
 
 ## Encodings and action normalization
 
@@ -34,15 +34,15 @@ scale, and affine transform. It is fitted to finite source-dataset action rows
 after removing NaNs. Action clipping and execution follow the controller
 settings described in Appendix A.
 
-## Runtime and released planner
+## Runtime and LeWM planner
 
 The experiments use NVIDIA H20 GPUs. The main study uses Python `3.11.14`,
 PyTorch `2.7.1`, CUDA `12.6`, and cuDNN `90501`.
 Cube, PushT, and TwoRoom use MuJoCo `3.12.0`. Reacher uses MuJoCo `3.10.0`
 with dm-control `1.0.43`.
 
-The released baseline uses `WorldModelPolicy` and `CEMSolver` from
-`stable-worldmodel` version `0.0.6`. On Cube, the released evaluator restores
+The [LeWM planner](https://github.com/lucas-maes/le-wm) uses `WorldModelPolicy` and `CEMSolver` from
+`stable-worldmodel` version `0.0.6`. On Cube, the LeWM evaluator restores
 the full recorded `qpos` and `qvel`, while the main-study controllers start
 from a state reconstructed from the public observation. See Appendix D.2
 for the evaluation-protocol comparison.

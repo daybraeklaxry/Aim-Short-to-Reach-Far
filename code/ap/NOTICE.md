@@ -14,7 +14,7 @@ reference is not a claim that all experiment-specific sources came from
 that upstream commit. The model/data source is the public LeWM collection:
 https://huggingface.co/collections/quentinll/lewm.
 
-The external simulator and official CEM implementation are supplied by
+The external simulator and LeWM's CEM solver are supplied by
 `stable-worldmodel` 0.0.6 (https://github.com/galilai-group/stable-worldmodel).
 They remain external dependencies with their own licenses. Checkpoints,
 datasets, native binaries, and trajectory images are not redistributed.
@@ -26,7 +26,7 @@ Included experiment sources:
 | `jepa.py`, `module.py` | LeWM runtime source, copied unchanged |
 | `model.py` | Targeted model/preprocessing/strict checkpoint-loader functions extracted from the experiment runtime. Local imports and an explicit inference entry point |
 | `environments.py` | Recorded reset, task success, and state snapshot functions extracted from the experiment runtime |
-| `native_adapter.py` | Original native float32 scoring and official CEM adapter |
+| `native_adapter.py` | Original native float32 scoring and LeWM CEM adapter |
 | `observation_bank.py` | Original observation-only bank, feature normalization, exact top-k search, and train/episode filtering |
 | `gaussian_cem.py` | Original five-step bounded Gaussian optimizer and seed function |
 | `evaluation_helpers.py`, `lifecycle.py`, `action_domain.py` | Original evaluator-prefix, renderer-cleanup, and Box-projection helpers |
