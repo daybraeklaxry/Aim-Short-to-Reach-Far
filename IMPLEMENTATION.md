@@ -31,7 +31,7 @@ the frozen encoder in FP32.
 
 LeWM's pretrained action `StandardScaler` keeps its original float64 mean,
 scale, and affine transform. It is fitted to finite source-dataset action rows
-after removing NaNs. Action projection and execution follow the controller
+after removing NaNs. Action clipping and execution follow the controller
 settings described in Appendix A.
 
 ## Runtime and released planner
@@ -60,5 +60,5 @@ for the evaluation-protocol comparison.
 | [`lewm_checks/lewm_replan5_episodes.csv`](lewm_checks/lewm_replan5_episodes.csv) | Episode outcomes and prediction work for five-action LeWM replanning. |
 
 The data directories also contain separate-start results and behavior-threshold
-sweeps. Their layout and the supporting-study snapshots are described in
+sweeps. Their layout is described in
 [REPRODUCING.md](REPRODUCING.md#code-and-data-layout).

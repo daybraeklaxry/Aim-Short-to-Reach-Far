@@ -1,82 +1,90 @@
 [
   {
     "task": "pusht",
-    "query_ordinal": 1,
-    "query_id": "ap-fresh-pusht-001",
+    "query_id": "ap-fresh-pusht-006",
+    "query_ordinal": 6,
     "condition": "prefix_a",
-    "direct_steps": 280,
-    "rank_steps": 154,
-    "direct_success": false,
-    "rank_success": true
+    "baseline_arm": "ap_final",
+    "baseline_steps": 280,
+    "ap_steps": 141,
+    "baseline_success": false,
+    "ap_success": true
   },
   {
     "task": "pusht",
-    "query_ordinal": 2,
-    "query_id": "ap-fresh-pusht-002",
+    "query_id": "ap-fresh-pusht-007",
+    "query_ordinal": 7,
     "condition": "prefix_a",
-    "direct_steps": 280,
-    "rank_steps": 138,
-    "direct_success": false,
-    "rank_success": true
+    "baseline_arm": "ap_final",
+    "baseline_steps": 280,
+    "ap_steps": 140,
+    "baseline_success": false,
+    "ap_success": true
   },
   {
     "task": "cube",
-    "query_ordinal": 1,
     "query_id": "ap-fresh-cube-001",
+    "query_ordinal": 1,
     "condition": "prefix_a",
-    "direct_steps": 150,
-    "rank_steps": 44,
-    "direct_success": false,
-    "rank_success": true
+    "baseline_arm": "ap_final",
+    "baseline_steps": 150,
+    "ap_steps": 44,
+    "baseline_success": false,
+    "ap_success": true
   },
   {
     "task": "cube",
-    "query_ordinal": 88,
-    "query_id": "ap-fresh-cube-088",
+    "query_id": "ap-fresh-cube-002",
+    "query_ordinal": 2,
     "condition": "prefix_a",
-    "direct_steps": 150,
-    "rank_steps": 53,
-    "direct_success": false,
-    "rank_success": true
-  },
-  {
-    "task": "reacher",
-    "query_id": "ap-fresh-reacher-000",
-    "query_ordinal": 0,
-    "condition": "prefix_a",
-    "direct_steps": 163,
-    "rank_steps": 145,
-    "direct_success": true,
-    "rank_success": true
+    "baseline_arm": "ap_final",
+    "baseline_steps": 150,
+    "ap_steps": 41,
+    "baseline_success": false,
+    "ap_success": true
   },
   {
     "task": "reacher",
     "query_id": "ap-fresh-reacher-001",
     "query_ordinal": 1,
     "condition": "prefix_a",
-    "direct_steps": 145,
-    "rank_steps": 43,
-    "direct_success": true,
-    "rank_success": true
+    "baseline_arm": "ap_final",
+    "baseline_steps": 300,
+    "ap_steps": 43,
+    "baseline_success": false,
+    "ap_success": true
   },
   {
-    "task": "tworoom",
-    "query_id": "ap-fresh-tworoom-000",
-    "query_ordinal": 0,
+    "task": "reacher",
+    "query_id": "ap-fresh-reacher-016",
+    "query_ordinal": 16,
     "condition": "prefix_a",
-    "direct_steps": 83,
-    "rank_steps": 98,
-    "direct_success": true,
-    "rank_success": true
+    "baseline_arm": "ap_final",
+    "baseline_steps": 300,
+    "ap_steps": 158,
+    "baseline_success": false,
+    "ap_success": true
   },
   {
     "task": "tworoom",
     "query_id": "ap-fresh-tworoom-001",
     "query_ordinal": 1,
     "condition": "prefix_a",
-    "direct_steps": 97,
-    "rank_steps": 94,
-    "direct_success": true,
-    "rank_success": true
+    "baseline_arm": "ap_final",
+    "baseline_steps": 200,
+    "ap_steps": 94,
+    "baseline_success": false,
+    "ap_success": true
+  },
+  {
+    "task": "tworoom",
+    "query_id": "ap-fresh-tworoom-009",
+    "query_ordinal": 9,
+    "condition": "prefix_a",
+    "baseline_arm": "ap_final",
+    "baseline_steps": 200,
+    "ap_steps": 92,
+    "baseline_success": false,
+    "ap_success": true
   }
 ]

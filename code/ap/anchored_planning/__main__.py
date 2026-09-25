@@ -6,12 +6,11 @@ from pathlib import Path
 def main():
     parser = argparse.ArgumentParser(description="Anchored Planning reproduction tools")
     sub = parser.add_subparsers(dest="command", required=True)
-    analyze = sub.add_parser("analyze", help="Recompute released statistics on CPU")
+    analyze = sub.add_parser("analyze", help="Summarize simulator outcomes on CPU")
     analyze.add_argument("--study", choices=("main", "local-target"), required=True)
-    analyze.add_argument("--root", type=Path, default=Path.cwd(), help="Release folder containing protocols/ and results/")
-    analyze.add_argument("--outcomes", type=Path, help="Optional directory of fresh outcomes_*.jsonl files")
+    analyze.add_argument("--root", type=Path, default=Path.cwd(), help="Folder containing protocols/")
+    analyze.add_argument("--outcomes", type=Path, required=True, help="Directory of outcomes_*.jsonl files")
     analyze.add_argument("--output", type=Path, required=True)
-    analyze.add_argument("--check-reference", action="store_true", help="Compare all table fields to released tables")
     for command, description in (("inspect-assets", "Inspect external file schemas and dependency versions"),
                                   ("encode-cache", "Encode an external dataset into a retrieval cache"),
                                   ("evaluate", "Run frozen queries in the native simulator")):

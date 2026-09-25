@@ -198,23 +198,13 @@ def check_tables(tables, reference):
 def run(args):
     study = args.study.replace("-", "_")
     protocol = read_json(args.root / "protocols" / f"{study}.json")
-    reference = args.root / "results" / study
-    if args.outcomes:
-        records = records_from_outcomes(args.outcomes, protocol, study)
-    elif study == "main":
-        records = read_json(reference / "successes.json")
-    else:
-        records = read_csv(reference / "paired_queries.csv")
+    records = records_from_outcomes(args.outcomes, protocol, study)
     if study == "main":
         tables, summary = main_tables(main_tensor(records, protocol))
     else:
         tables, summary = local_tables(records, protocol)
-    if args.output.resolve() == reference.resolve():
-        raise ValueError("Choose a separate output folder to preserve the supplied evidence")
-    checked = check_tables(tables, reference) if args.check_reference else None
     for name, rows in tables.items():
         write_csv(args.output / name, rows)
     write_json(args.output / "summary.json", summary)
     print(json.dumps(dict(study=study, tables=len(tables), rows=sum(map(len, tables.values())),
-        reference_rows_checked=checked, output=str(args.output),
-        source="fresh outcomes" if args.outcomes else "released compact successes")))
+        output=str(args.output), source="evaluation outcomes")))

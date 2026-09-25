@@ -2,7 +2,7 @@ from pathlib import Path
 import argparse,inspect,json,sys,time
 import torch
 R=Path(__file__).parent
-sys.path.insert(0,str(R.parent/'audit'))
+sys.path.insert(0,str(R.parent/'baseline'))
 import official_baseline as baseline
 p=argparse.ArgumentParser();p.add_argument('--task',required=True);a=p.parse_args()
 start=time.time()

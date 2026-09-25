@@ -1,0 +1,18 @@
+{
+  "task": "pusht",
+  "query_id": "ap-fresh-pusht-006",
+  "query_ordinal": 6,
+  "condition": "prefix_a",
+  "baseline_arm": "ap_final",
+  "baseline_steps": 280,
+  "ap_steps": 141,
+  "baseline_success": false,
+  "ap_success": true,
+  "name": "rank-final-pusht-006",
+  "fps": 20,
+  "actions_per_second": 20,
+  "rendering": "Replay of recorded physical states, holding each final state after stopping.",
+  "selection": "First two query-ordered AP-rank successes longer than ten actions paired with final-goal ranking failures under the first assigned perturbation.",
+  "model_calls_for_rendering": 0,
+  "simulated_actions_for_rendering": 0
+}

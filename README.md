@@ -9,14 +9,14 @@
 
 <p align="center">
   <a href="https://daybraeklaxry.github.io/Aim-Short-to-Reach-Far/"><strong>Project Page</strong></a>
-  &emsp;
+  &emsp.
   <a href="https://arxiv.org/abs/2609.30036"><strong>arXiv</strong></a>
-  &emsp;
+  &emsp.
   <a href="https://arxiv.org/pdf/2609.30036"><strong>PDF</strong></a>
-  &emsp;
+  &emsp.
   <a href="https://daybraeklaxry.github.io/Aim-Short-to-Reach-Far/#demos"><strong>Demos</strong></a>
-  &emsp;
-  <a href="REPRODUCING.md"><strong>Code &amp; Data Guide</strong></a>
+  &emsp.
+  <a href="REPRODUCING.md"><strong>Code &amp. Data Guide</strong></a>
 </p>
 
 <p align="center">
@@ -36,8 +36,9 @@
   </tr>
   <tr>
     <td width="50%" align="center">
-      <a href="https://daybraeklaxry.github.io/Aim-Short-to-Reach-Far/assets/demos/rank-pusht-001.mp4">
-        <img src="docs/assets/demos/rank-pusht-001-poster.jpg" alt="PushT after a start perturbation: Direct fails while AP-rank reaches the goal." width="420">
+      <a href="https://daybraeklaxry.github.io/Aim-Short-to-Reach-Far/#ap-rank">
+        <img src="docs/assets/comparisons/rank-final-pusht-006-baseline-end.jpg" alt="Final-goal ranking on PushT" width="48%">
+        <img src="docs/assets/comparisons/rank-final-pusht-006-ap-end.jpg" alt="AP-rank on the same PushT query" width="48%">
       </a>
     </td>
     <td width="50%" align="center">
@@ -47,7 +48,7 @@
     </td>
   </tr>
   <tr>
-    <td align="center">Choose actions for the current state after a perturbation.<br><a href="https://daybraeklaxry.github.io/Aim-Short-to-Reach-Far/assets/demos/rank-pusht-001.mp4">Watch AP-rank</a></td>
+    <td align="center">Final-goal ranking and AP-rank from the same perturbed start.<br><a href="https://daybraeklaxry.github.io/Aim-Short-to-Reach-Far/#ap-rank">Watch AP-rank</a></td>
     <td align="center">Search toward an observed target with the same frozen model.<br><a href="https://daybraeklaxry.github.io/Aim-Short-to-Reach-Far/assets/demos/pusht-000.mp4">Watch AP-CEM</a></td>
   </tr>
 </table>

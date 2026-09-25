@@ -1,0 +1,18 @@
+{
+  "task": "reacher",
+  "query_id": "ap-fresh-reacher-001",
+  "query_ordinal": 1,
+  "condition": "prefix_a",
+  "baseline_arm": "ap_final",
+  "baseline_steps": 300,
+  "ap_steps": 43,
+  "baseline_success": false,
+  "ap_success": true,
+  "name": "rank-final-reacher-001",
+  "fps": 20,
+  "actions_per_second": 20,
+  "rendering": "Replay of recorded physical states, holding each final state after stopping.",
+  "selection": "First two query-ordered AP-rank successes longer than ten actions paired with final-goal ranking failures under the first assigned perturbation.",
+  "model_calls_for_rendering": 0,
+  "simulated_actions_for_rendering": 0
+}

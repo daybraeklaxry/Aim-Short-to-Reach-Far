@@ -3,7 +3,7 @@ from pathlib import Path
 import argparse,copy,json,sys,time
 import h5py,numpy as np,torch
 R=Path(__file__).parent
-sys.path.insert(0,str(R.parent/'audit'))
+sys.path.insert(0,str(R.parent/'baseline'))
 import official_baseline as baseline
 
 p=argparse.ArgumentParser();p.add_argument('--task',required=True);p.add_argument('--factor',required=True,choices=['budget50','official_queries','goal_frame24','dataset_initial_image','cube_full_state']);p.add_argument('--start',type=int,default=0);p.add_argument('--stop',type=int,default=128)

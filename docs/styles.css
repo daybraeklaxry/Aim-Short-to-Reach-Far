@@ -120,7 +120,7 @@ p {
 .nav-links {
   display:flex;
   gap:32px;
-  font-size:15px;
+  font-size:16px;
 }
 .nav-links a {
   padding-block:16px;
@@ -302,7 +302,7 @@ sup {
   background:none;
   padding:5px 11px;
   border-radius:4px;
-  font-size:14px;
+  font-size:16px;
   color:var(--muted);
 }
 .example-picker button[aria-pressed=true] {
@@ -340,7 +340,7 @@ sup {
   color:var(--blue);
 }
 .video-view figcaption span {
-  font-size:14px;
+  font-size:16px;
   color:var(--muted);
   line-height:1.5;
   display:block;
@@ -360,7 +360,7 @@ sup {
   gap:8px;
   padding:12px 0;
   min-height:51px;
-  font-size:14px;
+  font-size:16px;
   font-variant-numeric:tabular-nums;
 }
 .status-pill {
@@ -399,7 +399,7 @@ sup {
 }
 .outcome {
   padding:11px 0 0;
-  font-size:15px;
+  font-size:16px;
   min-height:36px;
   font-variant-numeric:tabular-nums;
 }
@@ -426,7 +426,7 @@ sup {
   border:1px solid var(--line);
 }
 .goal-description {
-  font-size:14px;
+  font-size:16px;
   line-height:1.65;
   margin-top:14px;
 }
@@ -452,7 +452,7 @@ sup {
   gap:8px;
   justify-content:flex-start;
   min-width:79px;
-  font-size:15px;
+  font-size:16px;
   font-weight:500;
 }
 .playback .play-button svg {
@@ -470,14 +470,14 @@ sup {
   cursor:pointer;
 }
 .action-count {
-  font-size:14px;
+  font-size:16px;
   min-width:81px;
   text-align:right;
   font-variant-numeric:tabular-nums;
   color:var(--muted);
 }
 .player-message {
-  font-size:14px;
+  font-size:16px;
   color:var(--muted);
 }
 .player-message:empty {
@@ -598,7 +598,7 @@ sup {
 }
 .result-values p {
   margin-top:9px;
-  font-size:15px;
+  font-size:16px;
 }
 .result-arrow {
   font-size:30px;
@@ -691,7 +691,7 @@ sup {
   border:1px solid var(--line);
   border-radius:5px;
   padding:7px 10px;
-  font-size:13px;
+  font-size:16px;
 }
 .citation-code button svg {
   width:16px;
@@ -710,7 +710,7 @@ sup {
   align-items:center;
   padding:26px 0 38px;
   border-top:1px solid var(--line);
-  font-size:13px;
+  font-size:16px;
 }
 .site-footer>span {
   font-weight:600;
@@ -741,13 +741,13 @@ sup {
     padding:20px 19px 0;
   }
   .video-view figcaption span {
-    font-size:13px;
+    font-size:16px;
   }
   .goal-view {
     padding-left:14px;
   }
   .goal-description {
-    font-size:13px;
+    font-size:16px;
   }
   .demo-heading {
     gap:28px;
@@ -835,14 +835,14 @@ sup {
     margin:0;
   }
   .goal-description {
-    font-size:14px;
+    font-size:16px;
     max-width:470px;
   }
   .goal-image,.goal-link {
     width:69px;
   }
   .video-view figcaption span {
-    font-size:14px;
+    font-size:16px;
   }
   .demo-toolbar {
     padding-inline:15px;
@@ -851,7 +851,7 @@ sup {
     padding-inline:13px;
   }
   .selection-note {
-    font-size:15px;
+    font-size:16px;
   }
   .insight-section {
     padding:57px 0;
@@ -882,7 +882,7 @@ sup {
     gap:10px;
   }
   .result-values p {
-    font-size:13px;
+    font-size:16px;
   }
   .result-story {
     grid-template-columns:1fr;
@@ -929,11 +929,11 @@ sup {
     width:calc(100% - 36px);
   }
   .wordmark {
-    font-size:15px;
+    font-size:16px;
   }
   .nav-links {
     gap:18px;
-    font-size:13px;
+    font-size:16px;
   }
   .nav-links a:last-child {
     display:none;
@@ -958,14 +958,14 @@ sup {
     max-width:350px;
   }
   .authors {
-    font-size:15px;
+    font-size:16px;
     gap:5px 16px;
     max-width:335px;
     margin:auto;
     line-height:1.8;
   }
   .affiliation {
-    font-size:15px;
+    font-size:16px;
     margin-top:8px;
   }
   .hero-links {
@@ -975,7 +975,7 @@ sup {
   }
   .button {
     min-height:44px;
-    font-size:14px;
+    font-size:16px;
     padding:9px 14px;
   }
   .button svg {
@@ -985,7 +985,7 @@ sup {
   .text-button {
     flex-basis:100%;
     justify-content:center;
-    font-size:14px;
+    font-size:16px;
     padding:7px;
   }
   .abstract-layout h2 {
@@ -1030,7 +1030,7 @@ sup {
     justify-content:space-between;
   }
   .task-tabs button {
-    font-size:14px;
+    font-size:16px;
     padding:17px 10px 13px;
   }
   .example-picker {
@@ -1038,7 +1038,7 @@ sup {
     margin-top:12px;
   }
   .example-picker button {
-    font-size:13px;
+    font-size:16px;
     padding:5px 12px;
   }
   .demo-panel {
@@ -1056,13 +1056,13 @@ sup {
     font-size:17px;
   }
   .video-view figcaption span {
-    font-size:12px;
+    font-size:16px;
     line-height:1.5;
     margin-top:4px;
     max-width:145px;
   }
   .outcome {
-    font-size:12px;
+    font-size:16px;
     min-height:42px;
     line-height:1.5;
     padding-top:9px;
@@ -1073,11 +1073,11 @@ sup {
     justify-content:flex-start;
     gap:5px;
     padding:10px 0;
-    font-size:13px;
+    font-size:16px;
     min-height:74px;
   }
   .case-summary {
-    font-size:14px;
+    font-size:16px;
     margin-top:13px;
   }
   .goal-view {
@@ -1089,10 +1089,10 @@ sup {
     width:62px;
   }
   .goal-view>p:first-child {
-    font-size:14px;
+    font-size:16px;
   }
   .goal-description {
-    font-size:12px;
+    font-size:16px;
     line-height:1.6;
   }
   .playback {
@@ -1102,7 +1102,7 @@ sup {
   }
   .playback .play-button {
     min-width:65px;
-    font-size:13px;
+    font-size:16px;
     gap:5px;
   }
   .playback .play-button svg {
@@ -1116,13 +1116,13 @@ sup {
   }
   .action-count {
     min-width:65px;
-    font-size:12px;
+    font-size:16px;
   }
   .second-demo {
     margin-top:45px;
   }
   .selection-note {
-    font-size:14px;
+    font-size:16px;
     margin-top:22px;
   }
   .insight-section {
@@ -1132,7 +1132,7 @@ sup {
     padding:12px 8px;
   }
   .paper-figure figcaption {
-    font-size:14px;
+    font-size:16px;
     margin:15px 10px 4px;
   }
   .method-figure {
@@ -1182,14 +1182,14 @@ sup {
     font-size:25px;
   }
   .result-values p {
-    font-size:14px;
+    font-size:16px;
   }
   .result-arrow {
     font-size:29px;
     margin-top:10px;
   }
   .result-source {
-    font-size:14px;
+    font-size:16px;
     margin-top:28px;
   }
   .result-source a {
@@ -1214,18 +1214,18 @@ sup {
     font-size:16px;
   }
   .footer-links {
-    font-size:15px;
+    font-size:16px;
     margin-top:17px;
   }
   .citation-code {
     padding:14px;
   }
   .citation-code pre {
-    font-size:12px;
+    font-size:16px;
     line-height:1.8;
   }
   .site-footer {
-    font-size:12px;
+    font-size:16px;
     line-height:1.8;
     padding-bottom:25px;
   }
@@ -1250,7 +1250,7 @@ sup {
   }
   .task-tabs button {
     padding-inline:7px;
-    font-size:13px;
+    font-size:16px;
   }
   .video-view figcaption {
     min-height:94px;
@@ -1271,7 +1271,7 @@ sup {
   border:0;
   border-radius:4px;
   padding:8px 14px;
-  font-size:14px;
+  font-size:16px;
   color:var(--muted);
   white-space:nowrap;
 }
@@ -1387,7 +1387,7 @@ sup {
   line-height:1.8;
 }
 .explainer-text .geometry-note {
-  font-size:14px;
+  font-size:16px;
   border-top:1px solid var(--line);
   margin-top:23px;
   padding-top:16px;
@@ -1443,7 +1443,7 @@ sup {
   font-weight:500;
 }
 .data-table thead th {
-  font-size:14px;
+  font-size:16px;
   color:var(--muted);
   font-weight:500;
   background:rgba(255,255,255,.65);
@@ -1465,7 +1465,7 @@ sup {
   font-weight:600;
 }
 .table-description {
-  font-size:15px;
+  font-size:16px;
   line-height:1.8;
   margin-top:17px;
   max-width:980px;
@@ -1541,7 +1541,7 @@ sup {
   display:flex;
   justify-content:space-between;
   gap:20px;
-  font-size:14px;
+  font-size:16px;
   margin-bottom:7px;
 }
 .bar-row strong {
@@ -1577,7 +1577,7 @@ sup {
   margin-top:15px;
 }
 .anchor-table {
-  font-size:15px;
+  font-size:16px;
 }
 .anchor-table th,.anchor-table td {
   padding:12px 10px;
@@ -1653,7 +1653,7 @@ sup {
     margin-bottom:17px;
   }
   .switch-buttons button {
-    font-size:13px;
+    font-size:16px;
     padding:8px 11px;
   }
   .explainer-layout {
@@ -1684,16 +1684,16 @@ sup {
   }
   .full-results .data-table {
     min-width:490px;
-    font-size:15px;
+    font-size:16px;
   }
   .data-table th,.data-table td {
     padding:11px 10px;
   }
   .data-table thead th {
-    font-size:13px;
+    font-size:16px;
   }
   .table-description {
-    font-size:14px;
+    font-size:16px;
   }
   .analysis-block {
     padding-top:37px;
@@ -1724,7 +1724,7 @@ sup {
     font-size:25px;
   }
   .anchor-table {
-    font-size:14px;
+    font-size:16px;
   }
   .anchor-table th,.anchor-table td {
     padding-inline:6px;
@@ -1734,7 +1734,7 @@ sup {
     padding:21px;
   }
   .bar-row>div:first-child {
-    font-size:13px;
+    font-size:16px;
   }
   .citation-section {
     padding-top:12px;
@@ -1743,13 +1743,13 @@ sup {
 @media(max-width:360px) {
   .nav-links {
     gap:10px;
-    font-size:12px;
+    font-size:16px;
   }
   .wordmark {
-    font-size:14px;
+    font-size:16px;
   }
   .switch-buttons button {
-    font-size:12px;
+    font-size:16px;
     padding-inline:8px;
   }
 }
@@ -1778,4 +1778,95 @@ sup {
   * {
     transition:none!important;
   }
+}
+
+/* The first viewport includes a paired replay. */
+.hero-layout {
+  max-width:1280px;
+  display:grid;
+  grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);
+  align-items:center;
+  gap:44px;
+  padding-top:44px;
+  padding-bottom:48px;
+  text-align:left;
+}
+.hero-copy { min-width:0; }
+.hero-copy h1 { font-size:clamp(40px,4.6vw,66px);line-height:1.08;margin:0 0 24px; }
+.hero-copy .paper-subtitle { font-size:26px;line-height:1.4;margin:0 0 24px;max-width:550px; }
+.hero-copy .authors { justify-content:flex-start;gap:8px 20px;font-size:18px; }
+.hero-copy .affiliation { margin:12px 0 24px;font-size:18px; }
+.hero-copy .hero-links { justify-content:flex-start;gap:12px;flex-wrap:wrap; }
+.hero-copy .text-button { margin:0;padding:10px 0;font-size:16px; }
+.abstract-section { padding-top:35px;padding-bottom:45px; }
+.demo-group + .demo-group { margin-top:64px; }
+.demo-heading { margin-bottom:25px; }
+.demo-grid { display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px; }
+.demo-card { min-width:0;overflow:hidden;background:#fff; }
+.card-task { font-size:24px;line-height:1.35;margin:0;padding:20px 22px 8px; }
+.demo-card .demo-panel { padding:12px 20px 0; }
+.demo-card .demo-views { display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px; }
+.demo-card .video-view figcaption { min-height:50px;padding-bottom:10px;margin:0;border-bottom-width:2px; }
+.demo-card .video-view figcaption strong { font-size:18px;line-height:1.4; }
+.demo-card .video-view video { display:block; }
+.demo-card .run-result { font-size:16px;align-items:flex-start;flex-direction:column;justify-content:flex-start;gap:4px;min-height:82px;padding:10px 0; }
+.demo-card .status-pill { padding:3px 7px; }
+.demo-card .outcome { font-size:16px;min-height:35px;padding-top:8px;line-height:1.4; }
+.demo-card .goal-view { grid-column:1/-1;display:grid;grid-template-columns:42px 58px minmax(0,1fr);align-items:center;gap:12px;border:0;border-top:1px solid var(--line);padding:14px 0 4px;margin-top:5px; }
+.demo-card .goal-view>p:first-child { font-size:16px;margin:0; }
+.demo-card .goal-link,.demo-card .goal-image { display:block;width:58px;height:58px;max-width:none; }
+.demo-card .goal-description { font-size:16px;line-height:1.45;margin:0; }
+.demo-card .playback { display:grid;grid-template-columns:auto auto minmax(30px,1fr) auto;gap:10px;align-items:center;padding:16px 0;margin-top:12px; }
+.demo-card .playback button,.demo-card .action-count { font-size:16px;white-space:nowrap; }
+.demo-card .playback .timeline { min-width:0;width:100%; }
+.demo-card .player-message { font-size:16px; }
+.hero-demo .card-task { font-size:22px; }
+.hero-demo .goal-view { display:none; }
+.more-examples { margin-top:26px; }
+.more-examples summary { width:fit-content;border:1px solid #b9c7da;border-radius:5px;padding:11px 18px;font-size:18px;font-weight:500;cursor:pointer;color:var(--blue); }
+.more-examples[open] summary { margin-bottom:26px; }
+.selection-note { font-size:16px;line-height:1.7;max-width:960px;margin-top:32px; }
+.data-table th,.data-table td,.table-description,.result-source { font-size:16px; }
+.citation-code pre,.citation-code code { font-size:16px; }
+.site-footer,.site-footer p,.site-footer a { font-size:16px; }
+.site-nav a,.button,.switch-buttons button { font-size:16px; }
+@media(max-width:1000px) {
+  .hero-layout { gap:28px;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr); }
+  .hero-copy .paper-subtitle { font-size:23px; }
+  .hero-copy .authors { display:grid;grid-template-columns:1fr 1fr;gap:8px; }
+  .demo-grid { gap:18px; }
+  .demo-card .demo-panel { padding:10px 14px 0; }
+  .card-task { padding:18px 15px 6px; }
+}
+@media(max-width:800px) {
+  .hero-layout { display:flex;flex-direction:column;gap:30px;padding-top:32px; }
+  .hero-copy { width:100%; }
+  .hero-copy h1 { font-size:44px; }
+  .hero-copy .paper-subtitle { font-size:23px; }
+  .hero-demo { width:100%;max-width:620px; }
+  .demo-grid { grid-template-columns:minmax(0,1fr);gap:24px; }
+  .demo-card .demo-panel { padding:12px 20px 0; }
+  .card-task { padding:20px 22px 8px; }
+  .site-nav .nav-links a[href="#method"],.site-nav .nav-links a[href="#citation"] { display:none; }
+}
+@media(max-width:600px) {
+  .hero-copy h1 { font-size:40px; }
+  .hero-copy .authors { display:grid;grid-template-columns:1fr 1fr;font-size:17px; }
+  .hero-copy .paper-subtitle { font-size:22px; }
+  .hero-copy .button { padding:11px 12px; }
+  .site-nav .nav-links a[href="#analysis"] { display:none; }
+  .nav-inner { gap:12px; }
+  .site-nav .nav-links { gap:12px; }
+  .demo-card .demo-panel { padding:10px 12px 0; }
+  .card-task { font-size:22px;padding:17px 14px 6px; }
+  .demo-card .demo-views { gap:10px; }
+  .demo-card .video-view figcaption { min-height:52px; }
+  .demo-card .video-view figcaption strong { font-size:16px; }
+  .demo-card .goal-view { grid-template-columns:40px 50px minmax(0,1fr);gap:9px; }
+  .demo-card .goal-link,.demo-card .goal-image { width:50px;height:50px; }
+  .demo-card .playback { gap:7px;grid-template-columns:auto auto minmax(26px,1fr); }
+  .demo-card .action-count { grid-column:1/-1;text-align:right; }
+  .hero-demo .card-task { font-size:20px; }
+  .more-examples summary { font-size:17px; }
+  .citation-code pre { padding:60px 16px 22px; }
 }

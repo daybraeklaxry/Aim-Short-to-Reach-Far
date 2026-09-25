@@ -5,7 +5,7 @@ from types import SimpleNamespace
 import argparse,copy,json,sys,time
 import torch
 R=Path(__file__).parent
-sys.path.insert(0,str(R.parent/'audit'))
+sys.path.insert(0,str(R.parent/'baseline'))
 import official_baseline as baseline
 
 p=argparse.ArgumentParser();p.add_argument('--task',required=True);p.add_argument('--start',type=int,required=True);p.add_argument('--stop',type=int,required=True);p.add_argument('--conditions',default='clean,prefix_a,prefix_b');p.add_argument('--profile',action='store_true')

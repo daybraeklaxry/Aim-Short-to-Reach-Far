@@ -26,7 +26,7 @@ report['cuda_visible_devices']=os.environ.get('CUDA_VISIBLE_DEVICES')
 arrays={}
 baseline=native=None
 if a.mode=='wrapper':
-    sys.path.insert(0,str(R.parent/'audit'))
+    sys.path.insert(0,str(R.parent/'baseline'))
     import official_baseline as baseline
     _,_,_,_,_,_,_,native,_=baseline.runtime.load_runtime(a.task,'confirm')
     report['wrapper_entrypoints']=['official_baseline.policy_for','official_baseline.raw_info','official_baseline.released_block']

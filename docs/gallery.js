@@ -5,8 +5,8 @@ class ComparisonPlayer {
   constructor(root) {
     this.root = root;
     this.method = root.dataset.method;
-    this.task = 'pusht';
-    this.example = 0;
+    this.task = root.dataset.task;
+    this.example = Number(root.dataset.example);
     this.videos = [...root.querySelectorAll('video')];
     this.button = root.querySelector('.play-button');
     this.timeline = root.querySelector('.timeline');
@@ -19,27 +19,6 @@ class ComparisonPlayer {
     this.starting = false;
     this.generation = 0;
     this.setCase();
-    root.querySelectorAll('[data-task]').forEach(button => {
-      button.addEventListener('click', () => this.changeTask(button.dataset.task));
-      button.addEventListener('keydown', event => {
-        const tabs = [...root.querySelectorAll('[data-task]')];
-        const index = tabs.indexOf(button);
-        let next;
-        if (event.key === 'ArrowRight') next = (index + 1) % tabs.length;
-        if (event.key === 'ArrowLeft') next = (index - 1 + tabs.length) % tabs.length;
-        if (event.key === 'Home') next = 0;
-        if (event.key === 'End') next = tabs.length - 1;
-        if (next === undefined) return;
-        event.preventDefault();
-        tabs[next].focus();
-        this.changeTask(tabs[next].dataset.task);
-      });
-    });
-    root.querySelectorAll('[data-example]').forEach(button => button.addEventListener('click', () => {
-      this.example = Number(button.dataset.example);
-      this.setCase();
-      this.load();
-    }));
     this.button.addEventListener('click', () => {
       this.userStarted = true;
       this.userPaused = this.videos.some(video => !video.paused);
@@ -73,13 +52,6 @@ class ComparisonPlayer {
       this.updatePlayback();
     });
   }
-  changeTask(task) {
-    if (this.task === task) return;
-    this.task = task;
-    this.example = 0;
-    this.setCase();
-    this.load();
-  }
   setCase() {
     this.pause();
     this.generation++;
@@ -87,18 +59,11 @@ class ComparisonPlayer {
     this.loaded = false;
     this.case = examples[this.method][this.task][this.example];
     this.message.textContent = '';
-    this.root.querySelectorAll('[data-task]').forEach(button => {
-      const selected = button.dataset.task === this.task;
-      button.setAttribute('aria-selected', String(selected));
-      button.tabIndex = selected ? 0 : -1;
-    });
-    this.root.querySelector('.demo-panel').setAttribute('aria-labelledby', `${this.method}-tab-${this.task}`);
-    this.root.querySelectorAll('[data-example]').forEach(button => button.setAttribute('aria-pressed', String(Number(button.dataset.example) === this.example)));
     this.videos.forEach((video, i) => {
       const side = i ? 'ap' : 'baseline';
       video.poster = `assets/comparisons/${this.case.name}-${side}.jpg`;
       video.dataset.source = `assets/comparisons/${this.case.name}-${side}.mp4`;
-      const method = i ? (this.method === 'cem' ? 'AP-CEM' : 'AP-rank') : (this.method === 'cem' ? 'Final-goal CEM' : 'Direct');
+      const method = i ? (this.method === 'cem' ? 'AP-CEM' : 'AP-rank') : (this.method === 'cem' ? 'Final-goal CEM' : 'Final-goal rank');
       video.setAttribute('aria-label', `${method} ${this.case.label} example ${this.example + 1}`);
       const success = this.case[`${side}Success`];
       const steps = this.case[`${side}Steps`];
@@ -115,9 +80,6 @@ class ComparisonPlayer {
     goal.alt = `Shared ${this.case.label} goal for example ${this.example + 1}`;
     this.root.querySelector('.goal-link').href = goal.src;
     this.root.querySelector('.goal-description').textContent = this.case.goal;
-    this.root.querySelector('.case-summary').textContent = this.case.baselineSuccess
-      ? 'Both methods reach the goal in this example.'
-      : `${this.method === 'cem' ? 'AP-CEM' : 'AP-rank'} reaches the goal. ${this.method === 'cem' ? 'Final-goal CEM' : 'Direct'} does not.`;
     this.timeline.value = 0;
     this.timeline.disabled = true;
     this.updateProgress(true);

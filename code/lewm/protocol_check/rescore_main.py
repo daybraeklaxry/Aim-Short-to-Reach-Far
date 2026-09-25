@@ -8,7 +8,7 @@ import mujoco
 import stable_worldmodel
 
 R=Path(__file__).parent
-BASE=R.parent/'audit/official_results'
+BASE=R.parent/'baseline/official_results'
 out=R/'lewm_checks';out.mkdir(exist_ok=True)
 rows=[];cube=None
 for task in ['cube','pusht','reacher','tworoom']:

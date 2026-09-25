@@ -8,20 +8,20 @@ from render_project_demos import make_env, restore, image, goal_image
 
 def render(case, root, out):
     task, query, condition = case['task'], case['query_id'], case['condition']
-    arms = ['direct', 'ap_observed']
+    arms = ['ap_final', 'ap_observed']
     traces = [json.loads((root / task / f'confirm_{query}_{condition}_{arm}.json').read_text()) for arm in arms]
     assert traces[0]['trajectory'][0] == traces[1]['trajectory'][0]
     assert traces[0]['true_goal'] == traces[1]['true_goal']
-    for trace, side in zip(traces, ['direct', 'rank']):
+    for trace, side in zip(traces, ['baseline', 'ap']):
         assert len(trace['trajectory']) == case[f'{side}_steps'] + 1
         assert trace['compact']['success'] == case[f'{side}_success']
         assert trace['compact']['primitive_steps'] == case[f'{side}_steps']
-    name = f'rank-{task}-{case["query_ordinal"]:03d}'
+    name = f'rank-final-{task}-{case["query_ordinal"]:03d}'
     assets = out / 'comparisons'
     demos = out / 'demos'
     assets.mkdir(parents=True, exist_ok=True)
     demos.mkdir(parents=True, exist_ok=True)
-    longest = max(case['direct_steps'], case['rank_steps'])
+    longest = max(case['baseline_steps'], case['ap_steps'])
     for trace, arm, side in zip(traces, arms, ['baseline', 'ap']):
         env = make_env(task, trace)
         if side == 'ap':
@@ -56,10 +56,10 @@ def render(case, root, out):
         (dest / f'confirm_{query}_{condition}_{arm}.json').write_text(json.dumps(public) + '\n')
     meta = dict(case, name=name, fps=20, actions_per_second=20,
                 rendering='Replay of recorded physical states, holding each final state after stopping.',
-                selection='First two query-ordered AP-rank successes longer than ten actions, preferring Direct failures where available. Both outcomes are shown.',
+                selection='First two query-ordered AP-rank successes longer than ten actions paired with final-goal ranking failures under the first assigned perturbation.',
                 model_calls_for_rendering=0, simulated_actions_for_rendering=0)
     (demos / f'{name}.json').write_text(json.dumps(meta, indent=2) + '\n')
-    print(json.dumps({'case':name, 'direct_success':case['direct_success'], 'rank_success':case['rank_success']}), flush=True)
+    print(json.dumps({'case':name, 'baseline_success':case['baseline_success'], 'ap_success':case['ap_success']}), flush=True)
 
 
 if __name__ == '__main__':

@@ -3,7 +3,7 @@ from pathlib import Path
 import csv,json,statistics
 
 R=Path(__file__).parent;OUT=R/'lewm_checks';OUT.mkdir(exist_ok=True)
-OLD=R.parent/'audit/official_results'
+OLD=R.parent/'baseline/official_results'
 tasks=['cube','pusht','reacher','tworoom']
 
 def write(name,rows):

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 354" role="img" aria-labelledby="title desc">
 <title id="title">Average success by search iterations (log scale)</title>
-<desc id="desc">Each point averages the four tasks with unchanged recorded starts. Aiming short is blue; aiming at the goal is gray.</desc>
+<desc id="desc">Each point averages the four tasks with unchanged recorded starts. AP-CEM is blue; aiming at the goal is gray.</desc>
 <g font-family="Inter, Arial, sans-serif" font-size="17" fill="#272727">
 <text x="43" y="25" fill="#272727" text-anchor="start" font-weight="400" >Average success (%)</text>
 <path d="M 43 292 H 307" fill="none" stroke="#deded8" stroke-width="1"/>
@@ -36,7 +36,7 @@
 <circle cx="167.924" cy="173.383" r="3.7" fill="#0F4D92"/>
 <circle cx="221.726" cy="145.611" r="3.7" fill="#0F4D92"/>
 <circle cx="307" cy="147.965" r="3.7" fill="#0F4D92"/>
-<text x="307" y="129.965" fill="#0F4D92" text-anchor="end" font-weight="500" >Aiming short</text>
+<text x="307" y="129.965" fill="#0F4D92" text-anchor="end" font-weight="500" >AP-CEM</text>
 <path class="reference-line" d="M 43 269.877 H 307" fill="none" stroke="#767676" stroke-width="1" stroke-dasharray="4 5"/>
-<text x="307" y="252.877" fill="#62625e" text-anchor="end" font-weight="400" font-size="17">30 iterations, aiming at the goal</text>
+<text x="307" y="252.877" fill="#62625e" text-anchor="end" font-weight="400" font-size="17">Final-goal CEM (30 iterations)</text>
 </g></svg>

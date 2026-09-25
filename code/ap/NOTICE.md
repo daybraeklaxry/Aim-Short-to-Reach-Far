@@ -24,14 +24,14 @@ Included experiment sources:
 | Release source | Origin and packaging change |
 | --- | --- |
 | `jepa.py`, `module.py` | LeWM runtime source, copied unchanged |
-| `model.py` | Targeted model/preprocessing/strict checkpoint-loader functions extracted from the experiment runtime; local imports and an explicit inference entry point |
+| `model.py` | Targeted model/preprocessing/strict checkpoint-loader functions extracted from the experiment runtime. Local imports and an explicit inference entry point |
 | `environments.py` | Recorded reset, task success, and state snapshot functions extracted from the experiment runtime |
 | `native_adapter.py` | Original native float32 scoring and official CEM adapter |
 | `observation_bank.py` | Original observation-only bank, feature normalization, exact top-k search, and train/episode filtering |
 | `gaussian_cem.py` | Original five-step bounded Gaussian optimizer and seed function |
 | `evaluation_helpers.py`, `lifecycle.py`, `action_domain.py` | Original evaluator-prefix, renderer-cleanup, and Box-projection helpers |
-| `planners.py` | Main `TargetRank`/`TargetGaussian` and local `ObservationGaussian` assembled behind explicit arguments; same numerical scoring and target expressions |
-| `statistics.py` | Original main-study bootstrap and numerical table estimators; new I/O is in `analysis.py` |
+| `planners.py` | Main `TargetRank`/`TargetGaussian` and local `ObservationGaussian` assembled behind explicit arguments. Same numerical scoring and target expressions |
+| `statistics.py` | Original main-study bootstrap and numerical table estimators. New I/O is in `analysis.py` |
 | `analysis.py`, `runtime.py`, `__main__.py` | Release integration: relative asset paths, bounded HDF5/cache I/O, CLI, result export, and focused checks |
 
 `protocols/main.json` and `protocols/local_target.json` retain the completed
@@ -40,17 +40,9 @@ removed episodes, numerical settings, and fixed prefix source rows. Local
 machine paths and historical worker/approval records were omitted. The
 model/dataset/cache basenames are retained in `asset_inventory.json`.
 
-`results/main/successes.json` was exported from the completed main-study
-success outcomes in frozen protocol order. The other main CSV tables were
-copied from the completed statistics output. The local-target CSV/JSON
-files were copied from its separate completed analysis. No outcome was
-changed or pooled between the cohorts during packaging.
-
-`results/supporting/` contains the saved local-prediction diagnostics,
-native-controller comparison, and search-budget statistics used by Tables
-4--6. The native comparison retains its original field names; `released`
-denotes the native LeWM controller. `examples/reproduce_supporting_tables.py`
-formats the original estimates at the precision used in the manuscript.
+The current paper's per-episode measurements are supplied in the repository's
+`data/` directory. The root reproduction guide describes their protocols and
+aggregation.
 
 The portable runner reconstructs the evaluator directly from the public
 dataset row indices instead of requiring the original machine's private

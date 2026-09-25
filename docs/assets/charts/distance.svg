@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 380" role="img" aria-labelledby="title desc">
 <title id="title">Average success by goal distance (actions)</title>
-<desc id="desc">Each point averages the four tasks with unchanged recorded starts. Aiming short is blue; aiming at the goal is gray.</desc>
+<desc id="desc">Each point averages the four tasks with unchanged recorded starts. AP-CEM is blue; aiming at the goal is gray.</desc>
 <g font-family="Inter, Arial, sans-serif" font-size="18" fill="#272727">
 <text x="56" y="25" fill="#272727" text-anchor="start" font-weight="400" >Average success (%)</text>
 <path d="M 56 316 H 644" fill="none" stroke="#deded8" stroke-width="1"/>
@@ -24,10 +24,10 @@
 <circle cx="56" cy="198.066" r="5" fill="#767676"/>
 <circle cx="252" cy="265.605" r="5" fill="#767676"/>
 <circle cx="644" cy="283.27" r="5" fill="#767676"/>
-<text x="644" y="265.27" fill="#62625e" text-anchor="end" font-weight="500" >Aiming at the goal</text>
+<text x="644" y="265.27" fill="#62625e" text-anchor="end" font-weight="500" >Final-goal CEM</text>
 <polyline points="56,109.227 252,127.41 644,155.984" fill="none" stroke="#0F4D92" stroke-width="3"  stroke-linejoin="round"/>
 <circle cx="56" cy="109.227" r="5" fill="#0F4D92"/>
 <circle cx="252" cy="127.41" r="5" fill="#0F4D92"/>
 <circle cx="644" cy="155.984" r="5" fill="#0F4D92"/>
-<text x="644" y="137.984" fill="#0F4D92" text-anchor="end" font-weight="500" >Aiming short</text>
+<text x="644" y="137.984" fill="#0F4D92" text-anchor="end" font-weight="500" >AP-CEM</text>
 </g></svg>
