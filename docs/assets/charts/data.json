@@ -9,7 +9,7 @@
     ],
     "series": {
       "cem_final": {
-        "label": "Aiming at the goal",
+        "label": "Final-goal CEM",
         "points": [
           {
             "x": 25,
@@ -44,7 +44,7 @@
         ]
       },
       "cem_observed": {
-        "label": "Aiming short",
+        "label": "AP-CEM",
         "points": [
           {
             "x": 25,
@@ -90,7 +90,7 @@
     ],
     "series": {
       "cem_final": {
-        "label": "Aiming at the goal",
+        "label": "Final-goal CEM",
         "points": [
           {
             "x": 1,
@@ -145,7 +145,7 @@
         ]
       },
       "cem_observed": {
-        "label": "Aiming short",
+        "label": "AP-CEM",
         "points": [
           {
             "x": 1,

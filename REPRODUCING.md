@@ -118,7 +118,7 @@ included. Start with [the asset and environment instructions](code/ap/README.md)
 and `code/ap/examples/assets.json`. Upstream model/data links and the task-specific
 reset-state fields are listed there.
 
-The five-arm controller has a configurable evaluation entry point:
+The controller package provides a configurable evaluation entry point:
 
 ```bash
 python -m pip install -r code/ap/requirements/analysis.txt

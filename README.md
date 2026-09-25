@@ -9,14 +9,14 @@
 
 <p align="center">
   <a href="https://daybraeklaxry.github.io/Aim-Short-to-Reach-Far/"><strong>Project Page</strong></a>
-  &emsp.
+  &emsp;
   <a href="https://arxiv.org/abs/2609.30036"><strong>arXiv</strong></a>
-  &emsp.
+  &emsp;
   <a href="https://arxiv.org/pdf/2609.30036"><strong>PDF</strong></a>
-  &emsp.
+  &emsp;
   <a href="https://daybraeklaxry.github.io/Aim-Short-to-Reach-Far/#demos"><strong>Demos</strong></a>
-  &emsp.
-  <a href="REPRODUCING.md"><strong>Code &amp. Data Guide</strong></a>
+  &emsp;
+  <a href="REPRODUCING.md"><strong>Code &amp; Data Guide</strong></a>
 </p>
 
 <p align="center">

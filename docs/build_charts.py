@@ -11,7 +11,7 @@ DATA = DOCS.parent / "data"
 OUTPUT = DOCS / "assets" / "charts"
 BLUE, GRAY, INK, GRID = "#0F4D92", "#767676", "#272727", "#deded8"
 TASKS = {"cube", "pusht", "reacher", "tworoom"}
-ARMS = {"cem_final": "Aiming at the goal", "cem_observed": "Aiming short"}
+ARMS = {"cem_final": "Final-goal CEM", "cem_observed": "AP-CEM"}
 rows = list(csv.DictReader((DATA / "interventions.csv").open(encoding="utf-8")))
 main = list(csv.DictReader((DATA / "main_results.csv").open(encoding="utf-8")))
 
@@ -54,7 +54,7 @@ def svg_chart(data, xlabel, mobile=False, logarithmic=False):
     y = lambda value: bottom - value / 100 * (bottom - top)
     parts = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">',
              f'<title id="title">Average success by {escape(xlabel.lower())}</title>',
-             '<desc id="desc">Each point averages the four tasks with unchanged recorded starts. Aiming short is blue; aiming at the goal is gray.</desc>',
+             '<desc id="desc">Each point averages the four tasks with unchanged recorded starts. AP-CEM is blue, and Final-goal CEM is gray.</desc>',
              f'<g font-family="Inter, Arial, sans-serif" font-size="{font}" fill="{INK}">']
 
     def text(xp, yp, content, color=INK, anchor="start", weight=400, extra=""):
@@ -83,7 +83,7 @@ def svg_chart(data, xlabel, mobile=False, logarithmic=False):
     if logarithmic:
         reference = data["series"]["cem_final"]["points"][-1]["mean"]
         parts.append(f'<path class="reference-line" d="M {left} {y(reference):g} H {right}" fill="none" stroke="{GRAY}" stroke-width="1" stroke-dasharray="4 5"/>')
-        text(right, y(reference)-17, "30 iterations, aiming at the goal", "#62625e", anchor="end",
+        text(right, y(reference)-17, "Final-goal CEM (30 iterations)", "#62625e", anchor="end",
              extra=f'font-size="{17 if mobile else 16}"')
     parts.append('</g></svg>')
     return "\n".join(parts) + "\n"

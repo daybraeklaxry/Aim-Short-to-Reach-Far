@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 380" role="img" aria-labelledby="title desc">
 <title id="title">Average success by search iterations (log scale)</title>
-<desc id="desc">Each point averages the four tasks with unchanged recorded starts. AP-CEM is blue; aiming at the goal is gray.</desc>
+<desc id="desc">Each point averages the four tasks with unchanged recorded starts. AP-CEM is blue, and Final-goal CEM is gray.</desc>
 <g font-family="Inter, Arial, sans-serif" font-size="18" fill="#272727">
 <text x="56" y="25" fill="#272727" text-anchor="start" font-weight="400" >Average success (%)</text>
 <path d="M 56 316 H 644" fill="none" stroke="#deded8" stroke-width="1"/>
