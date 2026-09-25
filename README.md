@@ -3,8 +3,9 @@
 <p align="center"><strong>Your Frozen World Model Can Plan Better Than You Think</strong></p>
 
 <p align="center">
-  Xvyuan Liu, Jianjie Fang, Chen Gao, Yong Li<br>
-  Tsinghua University
+  Xvyuan Liu<sup>†</sup>, Jianjie Fang<sup>†</sup>, Chen Gao, Yong Li<br>
+  Tsinghua University<br>
+  <sup>†</sup>Equal contribution
 </p>
 
 <p align="center">
