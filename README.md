@@ -3,9 +3,9 @@
 <p align="center"><strong>Your Frozen World Model Can Plan Better Than You Think</strong></p>
 
 <p align="center">
-  Xvyuan Liu<sup>†</sup>, Jianjie Fang<sup>†</sup>, Chen Gao, Yong Li<br>
-  Tsinghua University<br>
-  <sup>†</sup>Equal contribution
+  Xvyuan Liu<sup>1,2,†</sup>, Jianjie Fang<sup>1,†</sup>, Wei Wu<sup>2</sup>, Chen Gao<sup>1,*</sup>, Yong Li<sup>1,*</sup><br>
+  <sup>1</sup>Tsinghua University&emsp;<sup>2</sup>Manifold AI<br>
+  <sup>†</sup>Equal contribution&emsp;<sup>*</sup>Corresponding authors
 </p>
 
 <p align="center">
@@ -70,7 +70,7 @@ The [reproduction guide](REPRODUCING.md#code-and-data-layout) maps each experime
 ```bibtex
 @misc{liu2026aimshort,
   title  = {Aim Short to Reach Far: Your Frozen World Model Can Plan Better Than You Think},
-  author = {Xvyuan Liu and Jianjie Fang and Chen Gao and Yong Li},
+  author = {Xvyuan Liu and Jianjie Fang and Wei Wu and Chen Gao and Yong Li},
   year   = {2026},
   eprint = {2609.30036},
   archivePrefix = {arXiv},
